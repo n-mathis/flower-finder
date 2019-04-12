@@ -29,6 +29,18 @@ def upload_file():
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
 
+@app.route('/more_info', methods=['GET', 'POST'])
+def more_info():
+    if request.method == 'POST':
+        # do stuff when the form is submitted
+
+        # redirect to end the POST handling
+        # the redirect can be to the same route or somewhere else
+        return redirect(url_for('index'))
+    preds = request.args.get('preds')
+    # show the form, it wasn't submitted
+    return render_template('more.html',prediction=preds)
+
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 app.config['ALLOWED_EXTENSIONS']=ALLOWED_EXTENSIONS
