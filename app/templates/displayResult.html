@@ -3,19 +3,20 @@
     <head>
         <title>Flowers</title>
     </head>
-    {% if prediction %}
-    <h2>It is a {{ prediction }}!</h2>
-    {% endif %}
+
     <body>
+        {% if prediction %}
+        <h2>It is a {{ prediction }}!</h2>
+        {% endif %}
         <!-- <center> -->
-            <h1> Flowers </h1>
-            Welcome to the flower identification app!
+            <!-- <h1> Flowers </h1> -->
+            <!-- Welcome to the flower identification app!
             No matter your flower needs, this is your one stop shop.
             <br></br>
             Upload an image of a flower that you see on a hike or in your garden and we will identify it for you!
             <br></br>
             You can learn more about the details of the flower and how to plant it and take care of it!
-            <br></br>
+            <br></br> -->
             <!-- <a href="{{ url_for('more_info'),preds=prediction }}" class="button">More Info</a>  -->
         <!-- </center> -->
     </body>
