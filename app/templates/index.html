@@ -12,9 +12,41 @@
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         </head>
-    <h2>Upload an image of a flwoer and we'll tell what kind it is</h1>
-    <form method=post enctype=multipart/form-data>
-      <input type=file name=file>
-      <input type=submit value=Upload>
-    </form>
+        <body>
+            <center>
+                <h1>Identify!</h1>
+                Select a image of a flower to upload.
+                <br></br>
+                <form method=post enctype=multipart/form-data>
+                  <input type=file name=file>
+                  <input type=submit value=Upload>
+                </form>
+              </center>
+        </body>
     </html>
+    <!-- <body>
+        <div class="topnav">
+          <a class="active" href="{{ url_for('home') }}" class="button">Home</a>
+          <a href="{{ url_for('identify') }}" class="button">Identify</a>
+          <a href="{{ url_for('database') }}" class="button">Database</a>
+          <a href="{{ url_for('citations') }}" class="button">Citations</a>
+        </div>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="identify.html">Identify</a>
+            <a href="database.html">Database</a>
+            <a href="citations.html">Citations</a>
+          </div>
+        <div>
+          <center>
+            <h1>Identify!</h1>
+            Select a image of a flower to upload.
+            <br></br>
+            <form method=post enctype=multipart/form-data>
+              <input type=file name=file>
+              <input type=submit value=Upload>
+            </form>
+          </center>
+        </div> -->
+      
+      </body>
