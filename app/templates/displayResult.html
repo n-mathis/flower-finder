@@ -7,9 +7,8 @@
             {% if prediction %}
             <h2>It is a {{ prediction }}!</h2>
             {% endif %}
-            You can learn more about the details of the flower and how to plant it and take care of it!
-            <br></br>
-            <a href="{{ url_for('more_info'),preds=prediction }}" class="button">More Info</a> 
+            <p>You can learn more about the details of the flower and how to plant it and take care of it!</p>
+            <!-- <a href="{{ url_for('more_info'),preds=prediction }}" class="button">More Info</a>  -->
         </center>
     </body>
     <!-- {% if filename %}
