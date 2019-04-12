@@ -1,24 +1,12 @@
     <!doctype html>
-    <htmL>
-    <head>
-        <title>Garden Grower</title>
-    </head>
-    <body>
-        {% if prediction %}
-        <h2>It is a {{ prediction }}!</h2>
-        <!-- <div>
-            <center>
-                <h1> Flowers </h1>
-                You can learn more about the details of the flower and how to plant it and take care of it!
-                <br></br>
-                <a href="{{ url_for('more_info'),preds=prediction }}" class="button">More Info</a> 
-            </center>
-        </div> -->
-        {% endif %}
-    </body>
-    </html>
+    <html>
+    <title>Flowers</title>
+    {% if prediction %}
+    <h2>It is a {{ prediction }}!</h2>
+    {% endif %}
     <!-- {% if filename %}
     <h2>{{ filename }}</h2> -->
     <!--<img src="{{ url_for('get_file', filename=filename) }}">-->
     <!-- <img src="/static/{{ url_for('get_file', filename=filename) }}">
     {% endif %} -->
+    </html>
