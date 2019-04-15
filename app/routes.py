@@ -52,8 +52,8 @@ def database():
     # show the form, it wasn't submitted
     return render_template('database.html')
 
-@app.route('/citation', methods=['GET', 'POST'])
-def citation():
+@app.route('/citations', methods=['GET', 'POST'])
+def citations():
     if request.method == 'POST':
         # do stuff when the form is submitted
 
@@ -61,7 +61,7 @@ def citation():
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
     # show the form, it wasn't submitted
-    return render_template('citation.html')
+    return render_template('citations.html')
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
