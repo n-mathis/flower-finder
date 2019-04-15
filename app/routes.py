@@ -8,7 +8,7 @@ from app import predictor
 def get_file(filename):
     return send_from_directory('static',filename)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/result', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
@@ -40,6 +40,17 @@ def more_info():
     preds = request.args.get('preds')
     # show the form, it wasn't submitted
     return render_template('more.html',prediction=preds)
+
+@app.route('/database', methods=['GET', 'POST'])
+def database():
+    if request.method == 'POST':
+        # do stuff when the form is submitted
+
+        # redirect to end the POST handling
+        # the redirect can be to the same route or somewhere else
+        return redirect(url_for('index'))
+    # show the form, it wasn't submitted
+    return render_template('database.html')
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
