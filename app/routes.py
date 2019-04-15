@@ -8,7 +8,7 @@ from app import predictor
 def get_file(filename):
     return send_from_directory('static',filename)
 
-@app.route('/result', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
