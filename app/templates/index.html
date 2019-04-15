@@ -13,14 +13,13 @@
         
         </head>
         <body>
-            
-              <div class="topnav">
-                  <a class="active" href="index.html">Home</a>
-                  <a href="identify.html">Identify</a>
-                  <a href="{{url_for('database')}}" class="button" value="database">Database</a> 
-                  <a href="citations.html">Citations</a>
-                </div>
-              <div>
+          <div class="topnav">
+              <a class="active" href="index.html">Home</a>
+              <a href="identify.html">Identify</a>
+              <a href="{{url_for('database')}}" class="button" value="database">Database</a> 
+              <a href="{{url_for('citation')}}" class="button" value="citation">Citation</a>
+          </div>
+          <div>
           <center>
           <h1>Identify!</h1>
           <h2>Upload an image of a flower and we'll tell what kind it is.</h1>

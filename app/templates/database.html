@@ -11,11 +11,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
+  <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="identify.html">Identify</a>
+      <a href="{{url_for('database')}}" class="button" value="database">Database</a> 
+      <a href="{{url_for('citation')}}" class="button" value="citation">Citation</a>
+  </div>
   <div>
     <center>
-	    <h1>More information about {{prediction}}</h1>
+      Database
   
     </center>
   </div>
