@@ -29,6 +29,12 @@ def upload_file():
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
 
+
+
+@app.route('/')
+def home_route():
+    return flask.render_template("index.html")
+
 @app.route('/more_info', methods=['GET', 'POST'])
 def more_info():
     if request.method == 'POST':
@@ -40,6 +46,8 @@ def more_info():
     preds = request.args.get('preds')
     # show the form, it wasn't submitted
     return render_template('more.html',prediction=preds)
+
+
 
 @app.route('/database', methods=['GET', 'POST'])
 def database():
