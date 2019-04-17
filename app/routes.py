@@ -47,28 +47,12 @@ def more_info():
     # show the form, it wasn't submitted
     return render_template('more.html',prediction=preds)
 
-
-
-@app.route('/database', methods=['GET', 'POST'])
+@app.route('/database')
 def database():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-    # show the form, it wasn't submitted
     return render_template('database.html')
 
-@app.route('/citations', methods=['GET', 'POST'])
+@app.route('/citations')
 def citations():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-    # show the form, it wasn't submitted
     return render_template('citations.html')
 
 # allowed image types
