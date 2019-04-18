@@ -32,7 +32,7 @@ def upload_file():
 
 
 def flowerInfo(prediction):
-    with open('Data.csv') as f:
+    with open('../cs121/app/Data.csv') as f:
         csv_f = csv.reader(f)
         flowers = {}
         for row in csv_f:
