@@ -31,6 +31,14 @@ def upload_file():
     return render_template('index.html')
 
 
+def flowerInfo(prediction):
+    with open('Data.csv') as f:
+        csv_f = csv.reader(f)
+        flowers = {}
+        for row in csv_f:
+            flowers[row[0]] = row
+        return flowers[prediction]
+
 @app.route('/more_info', methods=['GET', 'POST'])
 def more_info():
     if request.method == 'POST':
@@ -40,8 +48,8 @@ def more_info():
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
     preds = request.args.get('preds')
-    flowerInfo = flowerInfo(preds)
-    return render_template('more.html',prediction=preds,info=flowerInfo)
+    flower = flowerInfo(preds)
+    return render_template('more.html',prediction=preds)
 
 @app.route('/')
 def home_route():
@@ -64,11 +72,4 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
 
-def flowerInfo(prediction):
-    with open('Data.csv') as f:
-        csv_f = csv.reader(f)
-        flowers = {}
-        for row in csv_f:
-            flowers[row[0]] = row
-        return flowers[prediction]
 
