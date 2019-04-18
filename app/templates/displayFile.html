@@ -1,4 +1,5 @@
     <!doctype html>
+    <html lang="en">
     <title>Cats</title>
     <h2>It is a something!</h2>
     {% if filename %}
@@ -6,3 +7,4 @@
     <!--<img src="{{ url_for('get_file', filename=filename) }}">-->
     <img src="/static/{{ url_for('get_file', filename=filename) }}">
     {% endif %}
+    </html>
