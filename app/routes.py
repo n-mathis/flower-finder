@@ -41,11 +41,11 @@ def more_info():
         return redirect(url_for('index'))
     preds = request.args.get('preds')
 
-    f = open('Data.csv')
-    csv_f = csv.reader(f)
-    flowers = {}
-    for row in csv_f:
-      flowers[row[0]] = row
+    #f = open('Data.csv')
+    #csv_f = csv.reader(f)
+    #flowers = {}
+    #for row in csv_f:
+      #flowers[row[0]] = row
     return render_template('more.html',prediction=preds)
 
 @app.route('/')
