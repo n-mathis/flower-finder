@@ -41,7 +41,7 @@ def more_info():
         return redirect(url_for('index'))
     preds = request.args.get('preds')
     flowerInfo = flowerInfo(preds)
-    return render_template('more.html',prediction=preds)
+    return render_template('more.html',prediction=preds,info=flowerInfo)
 
 @app.route('/')
 def home_route():
