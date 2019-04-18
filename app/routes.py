@@ -3,6 +3,7 @@ from app import app
 import os
 from werkzeug import secure_filename
 from app import predictor 
+import csv
 
 @app.route('/<filename>')
 def get_file(filename):
@@ -29,6 +30,15 @@ def upload_file():
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
 
+
+def flowerInfo(prediction):
+    with open('../cs121/app/Data.csv') as f:
+        csv_f = csv.reader(f)
+        flowers = {}
+        for row in csv_f:
+            flowers[row[0]] = row
+        return flowers[prediction]
+
 @app.route('/more_info', methods=['GET', 'POST'])
 def more_info():
     if request.method == 'POST':
@@ -38,8 +48,20 @@ def more_info():
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
     preds = request.args.get('preds')
-    # show the form, it wasn't submitted
+    flower = flowerInfo(preds)
     return render_template('more.html',prediction=preds)
+
+@app.route('/')
+def home_route():
+    return flask.render_template("index.html")
+
+@app.route('/database')
+def database():
+    return render_template('database.html')
+
+@app.route('/citations')
+def citations():
+    return render_template('citations.html')
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
@@ -49,3 +71,5 @@ app.config['ALLOWED_EXTENSIONS']=ALLOWED_EXTENSIONS
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
+
+

@@ -3,6 +3,11 @@
         <title>Garden Grower</title>
     </head>
     <body>
+        <div class="topnav">
+              <a class="active" href="/">Home</a>
+              <a href="/database" class="button" value="database">Database</a> 
+              <a href="/citations" class="button" value="citations">Citations</a>
+          </div>
         <div>
             <center>
                 {% if prediction %}
@@ -10,12 +15,10 @@
                 {% endif %}
                 You can learn more about the details of the flower and how to plant it and take care of it!
                 <br></br>
+                <img src="/static/{{ url_for('get_file', filename=filename) }}">
+
 		<a href="{{url_for('more_info', preds=prediction)}}" class="button" value="more_info">More Info</a> 
             </center>
         </div>
     </body>
-    <!-- {% if filename %}
-    <h2>{{ filename }}</h2> -->
-    <!--<img src="{{ url_for('get_file', filename=filename) }}">-->
-    <!-- <img src="/static/{{ url_for('get_file', filename=filename) }}">
-    {% endif %} -->
+
