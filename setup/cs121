@@ -1,14 +1,9 @@
 server {
     listen 80;
-<<<<<<< HEAD
-<<<<<<< HEAD
     server_name ec2-18-144-47-250.us-west-1.compute.amazonaws.com www.ec2-18-144-47-250.us-west-1.compute.amazonaws.com;
-=======
     server_name ec2-13-56-212-10.us-west-1.compute.amazonaws.com www.ec2-13-56-212-10.us-west-1.compute.amazonaws.com;
->>>>>>> bc6b8b83badee505da8dd5daef1658b302a4e5aa
-=======
     server_name ec2-52-53-218-12.us-west-1.compute.amazonaws.com www.ec2-52-53-218-12.us-west-1.compute.amazonaws.com;
->>>>>>> 7104be9381c9f3dac37b86af7402ba188f76952b
+    server_name ec2-13-57-16-10.us-west-1.compute.amazonaws.com www.ec2-13-57-16-10.us-west-1.compute.amazonaws.com;
 
     root /home/ubuntu/cs121;
 

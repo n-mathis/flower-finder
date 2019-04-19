@@ -131,7 +131,6 @@
  - - [12/Apr/2019:03:25:43 +0000] "GET /apple-touch-icon-precomposed.png HTTP/1.0" 404 232 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0"
  - - [12/Apr/2019:03:25:43 +0000] "GET /apple-touch-icon.png HTTP/1.0" 404 232 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0"
  - - [12/Apr/2019:03:25:43 +0000] "GET /favicon.ico HTTP/1.0" 404 232 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.4 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.4 facebookexternalhit/1.1 Facebot Twitterbot/1.0"
-<<<<<<< HEAD
  - - [14/Apr/2019:22:22:45 +0000] "GET / HTTP/1.0" 200 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [14/Apr/2019:22:22:45 +0000] "GET /stylesheet.css HTTP/1.0" 404 232 "http://ec2-54-215-221-71.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [14/Apr/2019:22:22:46 +0000] "GET /favicon.ico HTTP/1.0" 404 232 "http://ec2-54-215-221-71.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
@@ -264,8 +263,6 @@
  - - [17/Apr/2019:09:30:04 +0000] "GET /js/stylesheet.js HTTP/1.0" 404 232 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [17/Apr/2019:09:30:06 +0000] "GET /citations HTTP/1.0" 200 819 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [17/Apr/2019:09:30:06 +0000] "GET /stylesheet.css HTTP/1.0" 404 232 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/citations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
-<<<<<<< HEAD
-=======
  - - [13/Apr/2019:03:56:07 +0000] "GET / HTTP/1.0" 200 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
  - - [13/Apr/2019:03:56:07 +0000] "GET /stylesheet.css HTTP/1.0" 404 232 "http://ec2-54-241-128-70.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
  - - [13/Apr/2019:03:56:10 +0000] "GET / HTTP/1.0" 200 1226 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
@@ -516,8 +513,7 @@
  - - [18/Apr/2019:22:58:58 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [18/Apr/2019:22:58:58 +0000] "GET /cs121/app/templates/stylesheet.css HTTP/1.0" 404 232 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [18/Apr/2019:22:59:01 +0000] "POST / HTTP/1.0" 500 290 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
->>>>>>> bc6b8b83badee505da8dd5daef1658b302a4e5aa
-=======
+
  - - [17/Apr/2019:09:45:47 +0000] "GET /citations HTTP/1.0" 200 2538 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [17/Apr/2019:09:45:47 +0000] "GET /css/stylesheet.css HTTP/1.0" 404 232 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/citations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [17/Apr/2019:09:45:47 +0000] "GET /stylesheet.css HTTP/1.0" 404 232 "http://ec2-18-144-47-250.us-west-1.compute.amazonaws.com/citations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
@@ -775,4 +771,23 @@
  - - [18/Apr/2019:22:46:45 +0000] "GET /js/main.js HTTP/1.0" 404 232 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/database" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [18/Apr/2019:22:46:45 +0000] "GET /js/main.js HTTP/1.0" 404 232 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/database" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
  - - [18/Apr/2019:22:47:36 +0000] "GET / HTTP/1.0" 200 5092 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
->>>>>>> 7104be9381c9f3dac37b86af7402ba188f76952b
+ - - [18/Apr/2019:23:04:43 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+ - - [18/Apr/2019:23:04:43 +0000] "GET /cs121/app/templates/stylesheet.css HTTP/1.0" 404 232 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+ - - [18/Apr/2019:23:04:50 +0000] "POST / HTTP/1.0" 200 870 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+ - - [18/Apr/2019:23:04:52 +0000] "GET /more_info?preds=beardediris HTTP/1.0" 200 564 "http://ec2-52-53-218-12.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+ - - [19/Apr/2019:22:43:18 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:18 +0000] "GET /cs121/app/templates/stylesheet.css HTTP/1.0" 404 232 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:18 +0000] "GET /favicon.ico HTTP/1.0" 404 232 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:28 +0000] "POST / HTTP/1.0" 200 870 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:30 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:31 +0000] "GET /citations HTTP/1.0" 200 799 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:43:31 +0000] "GET /stylesheet.css HTTP/1.0" 404 232 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/citations" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:44:08 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"
+ - - [19/Apr/2019:22:49:58 +0000] "POST / HTTP/1.0" 200 870 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:54:55 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:54:55 +0000] "GET /cs121/app/templates/stylesheet.css HTTP/1.0" 404 232 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:55:05 +0000] "POST / HTTP/1.0" 200 870 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:55:31 +0000] "GET / HTTP/1.0" 200 1204 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:55:37 +0000] "POST / HTTP/1.0" 200 779 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+ - - [19/Apr/2019:22:55:43 +0000] "GET /more_info?preds=beardediris HTTP/1.0" 200 564 "http://ec2-13-57-16-10.us-west-1.compute.amazonaws.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+
