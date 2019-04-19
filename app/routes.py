@@ -5,12 +5,8 @@ from flask import render_template, redirect, url_for, request, send_from_directo
 from app import app
 import os
 from werkzeug import secure_filename
-<<<<<<< HEAD
-from app import predictor
-=======
 from app import predictor 
 import csv
->>>>>>> bc6b8b83badee505da8dd5daef1658b302a4e5aa
 
 @app.route('/<filename>')
 def get_file(filename):
@@ -55,13 +51,8 @@ def more_info():
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
     preds = request.args.get('preds')
-<<<<<<< HEAD
-    # show the form, it wasn't submitted
-    return render_template('more.html', prediction=preds)
-=======
     flower = flowerInfo(preds)
     return render_template('more.html',prediction=preds)
->>>>>>> bc6b8b83badee505da8dd5daef1658b302a4e5aa
 
 @app.route('/')
 def home_route():
