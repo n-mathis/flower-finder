@@ -1,3 +1,6 @@
+"""
+    functions that route the html pages
+"""
 from flask import render_template, redirect, url_for, request, send_from_directory, flash
 from app import app
 import os
@@ -7,7 +10,7 @@ import csv
 
 @app.route('/<filename>')
 def get_file(filename):
-    return send_from_directory('static',filename)
+    return send_from_directory('static', filename)
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
@@ -24,9 +27,9 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            save_to=(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
-            pred_class=predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
+            pred_class = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
 
@@ -63,9 +66,20 @@ def database():
 def citations():
     return render_template('citations.html')
 
+@app.route('/home', methods=['GET', 'POST'])
+def home():
+    if request.method == 'POST':
+        # do stuff when the form is submitted
+
+        # redirect to end the POST handling
+        # the redirect can be to the same route or somewhere else
+        return redirect(url_for('index'))
+    # show the form, it wasn't submitted
+    return render_template('index.html')
+
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
-app.config['ALLOWED_EXTENSIONS']=ALLOWED_EXTENSIONS
+app.config['ALLOWED_EXTENSIONS'] = ALLOWED_EXTENSIONS
 
 # is file allowed to be uploaded?
 def allowed_file(filename):
