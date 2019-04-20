@@ -1,6 +1,6 @@
 /* general backgroud*/
 body {
-    background-color: #ADACB5;
+    background-color: #D8D5DB;
     /* #B5CBB7 */
     font-family: 'Courier New', Courier, monospace
 }
@@ -31,12 +31,12 @@ h1 {
 }
 
 .navbar {
-  background-color: #D8D5DB;
+  background-color: #ADACB5;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #D8D5DB;
+    background-color: #ADACB5;
     overflow: hidden;
     font-family: 'Courier New';
   }
@@ -60,7 +60,7 @@ h1 {
   /* Add a color to the active/current link */
   .topnav a.active {
       /* 7F9D6F */
-    background-color: #4E5166;
+    background-color: #D8D5DB;
     color: #2D3142;
   }
 
@@ -68,7 +68,7 @@ h1 {
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #4E5166;
+    background-color: #D8D5DB;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -89,7 +89,7 @@ h1 {
 
     /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ADACB5;
+    background-color: #D8D5DB;
 }
 
 /* Style the tab content */
