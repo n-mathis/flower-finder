@@ -1,15 +1,15 @@
 /* general backgroud*/
 body {
     background-color: #000000;
-    font-family: 'Courier New';
+    font-family: Times;
 }
 h1 {
     color: black;
-    font-family: 'Courier New';
+    font-family: Times;
 }
 h2{
     color: black;
-    font-family: 'Courier New';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .button {
