@@ -18,7 +18,7 @@ h1 {
 }
 
 .button {
-  background-color: #D8D5DB;
+  background-color: #ADACB5;
   border: none;
   color: #2D3142;
   padding: 15px 32px;
@@ -68,7 +68,7 @@ h1 {
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #D8D5DB;
+    background-color: #ADACB5;
 }
 
 /* Style the buttons that are used to open the tab content */
