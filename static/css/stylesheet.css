@@ -68,7 +68,7 @@ h1 {
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #f1f1f1;
+    background-color: #DDEDAA;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -84,12 +84,12 @@ h1 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #DDEDAA;
+    background-color: #B5DDA4;
 }
 
     /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #B5DDA4;
 }
 
 /* Style the tab content */
@@ -104,7 +104,7 @@ h1 {
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #f1f1f1;
+    background-color: #DDEDAA;
 }
   
 /* Style the buttons that are used to open the tab content */
@@ -120,12 +120,12 @@ h1 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #DDEDAA;
+    background-color: #B5DDA4;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #E6EED6;
 }
 
 /* Style the tab content */
