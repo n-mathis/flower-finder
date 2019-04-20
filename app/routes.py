@@ -40,7 +40,7 @@ def upload_file():
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             flower = flowerInfo(str(pred_class))
             name = flower[1]
-            return render_template('displayResult.html', filename=filename, prediction=name, index = index, output = output)
+            return render_template('displayResult.html', filename=filename, prediction=pred_class, name=name, index = index, output = output)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
