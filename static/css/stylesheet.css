@@ -9,11 +9,11 @@ h1 {
 }
 
 .heightset{
-    max-height: 64px;
+    max-height: 256px;
 }
 
 .widthset{
-    max-width: 64px;
+    max-width: 256px;
 }
 
 .button {
