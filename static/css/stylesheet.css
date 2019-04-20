@@ -1,10 +1,11 @@
 /* general backgroud*/
 body {
-    background-color: #B5CBB7;
+    background-color: #CAE7B9;
+    /* #B5CBB7 */
     font-family: 'Courier New', Courier, monospace
 }
 h1 {
-    color: black;
+    color: #042A2B;
     font-family: 'Courier New';
 }
 
@@ -19,7 +20,7 @@ h1 {
 .button {
   background-color: #7F9D6F;
   border: none;
-  color: black;
+  color: #042A2B;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -43,7 +44,7 @@ h1 {
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: black;
+    color: #042A2B;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -60,7 +61,7 @@ h1 {
   .topnav a.active {
       /* 7F9D6F */
     background-color: #7F9D6F;
-    color: black;
+    color: #042A2B;
   }
 
 /* Style the tab */
@@ -83,7 +84,7 @@ h1 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #DDEDAA;
 }
 
     /* Create an active/current tablink class */
@@ -119,7 +120,7 @@ h1 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #DDEDAA;
 }
 
 /* Create an active/current tablink class */
