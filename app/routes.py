@@ -71,8 +71,8 @@ def more_info():
         watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
         soil = soil, website = website, citation = citation)
 
-@app.route('/')
-def home_route():
+@app.route('/home')
+def home():
     return flask.render_template("index.html")
 
 @app.route('/database')
