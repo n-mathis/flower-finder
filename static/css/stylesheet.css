@@ -1,9 +1,15 @@
 /* general backgroud*/
 body {
     background-color: #B5CBB7;
+    font-family: 'Courier New', Courier, monospace
 }
 h1 {
-    color: black
+    color: black;
+    font-family: 'Courier New', Courier, monospace
+}
+h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace
 }
 
 .button {
@@ -27,6 +33,7 @@ h1 {
 .topnav {
     background-color: #96BA84;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace
   }
   
   /* Style the links inside the navigation bar */
