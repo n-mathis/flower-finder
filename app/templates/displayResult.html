@@ -12,7 +12,7 @@
                 {% endif %}
                 You can learn more about the details of the flower and how to plant it and take care of it!
                 <br></br>
-                <img src="/static/{{ url_for('get_file', filename=filename) }}">
+                <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
 
 		<a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info</a> 
             </center>
