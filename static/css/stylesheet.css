@@ -1,15 +1,15 @@
 /* general backgroud*/
 body {
-    background-color: #000000;
-    font-family: Times;
+    /* background-color: #B5CBB7; */
+    font-family: 'Courier New', Courier, monospace
 }
 h1 {
     color: black;
-    font-family: Times;
+    font-family: 'Courier New';
 }
 h2{
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New';
 }
 
 .button {
@@ -21,7 +21,6 @@ h2{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: 'Courier New';
   margin: 4px 2px;
   cursor: pointer;
 }
