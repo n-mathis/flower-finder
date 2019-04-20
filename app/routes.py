@@ -29,7 +29,7 @@ def upload_file():
             filename = secure_filename(file.filename)
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
-            pred_class = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
+            pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             return render_template('displayResult.html', filename=filename, prediction=pred_class)
     return render_template('index.html')
 
@@ -50,7 +50,7 @@ def more_info():
         # redirect to end the POST handling
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
-    species, index, outputs  = request.args.get('preds')
+    preds  = request.args.get('preds')
     flower = flowerInfo(preds)
     name = flower[1]
     gen_info = flower[2]
