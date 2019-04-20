@@ -50,9 +50,24 @@ def more_info():
         # redirect to end the POST handling
         # the redirect can be to the same route or somewhere else
         return redirect(url_for('index'))
-    preds = request.args.get('preds')
+    species, index, outputs  = request.args.get('preds')
     flower = flowerInfo(preds)
-    return render_template('more.html',prediction=preds)
+    name = flower[1]
+    gen_info = flower[2]
+    lifecycle = flower[3]
+    difficulty = flower[4]
+    planting = flower[5]
+    watering = flower[6]
+    seasons = flower[7]
+    warnings = flower[8]
+    sunlight = flower[9]
+    soil = flower[10]
+    website = flower[11]
+    citation = flower[12]
+    return render_template('more.html', prediction = name, flower = flower, name = name, \
+        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting \
+        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight \
+        soil = soil, website = website, citation = citation)
 
 @app.route('/')
 def home_route():
