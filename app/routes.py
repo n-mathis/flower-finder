@@ -65,8 +65,8 @@ def more_info():
     website = flower[11]
     citation = flower[12]
     return render_template('more.html', prediction = name, flower = flower, name = name, \
-        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting \
-        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight \
+        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
+        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
         soil = soil, website = website, citation = citation)
 
 @app.route('/')
