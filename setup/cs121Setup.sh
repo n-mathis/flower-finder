@@ -21,6 +21,12 @@ pip install -r ~/cs121/setup/requirements.txt
 deactivate
 
 #get learning model
+
+# echo "Geting fastai model"
+# cd ~/cs121/app/models
+# wget https://www.cs.hmc.edu/~z/cs121fastaiModel/stage-2.pth
+# cd ~/cs121
+
 #echo "Geting fastai model"
 #cd ~/cs121/app/models
 #wget https://www.cs.hmc.edu/~z/cs121fastaiModel/stage-2.pth
