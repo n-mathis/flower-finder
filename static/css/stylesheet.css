@@ -1,11 +1,11 @@
 /* general backgroud*/
 body {
-    background-color: #8AA399;
+    background-color: #ADACB5;
     /* #B5CBB7 */
     font-family: 'Courier New', Courier, monospace
 }
 h1 {
-    color: #042A2B;
+    color: #2D3142;
     font-family: 'Courier New';
 }
 
@@ -18,9 +18,9 @@ h1 {
 }
 
 .button {
-  background-color: #7F9D6F;
+  background-color: #D8D5DB;
   border: none;
-  color: #042A2B;
+  color: #2D3142;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -31,12 +31,12 @@ h1 {
 }
 
 .navbar {
-  background-color: #7F9D6F
+  background-color: #D8D5DB;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #96BA84;
+    background-color: #D8D5DB;
     overflow: hidden;
     font-family: 'Courier New';
   }
@@ -44,7 +44,7 @@ h1 {
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #042A2B;
+    color: #2D3142;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -53,22 +53,22 @@ h1 {
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #96BA84;
+    background-color: #EAE8FF;
     color: #5B5B5B;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
       /* 7F9D6F */
-    background-color: #7F9D6F;
-    color: #042A2B;
+    background-color: #4E5166;
+    color: #2D3142;
   }
 
 /* Style the tab */
 .tab {
     overflow: hidden;
     /* border: 1px solid #ccc; */
-    background-color: #CAE7B9;
+    background-color: #4E5166;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -84,54 +84,17 @@ h1 {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #B5DDA4;
+    background-color: #EAE8FF;
 }
 
     /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #B5DDA4;
+    background-color: #ADACB5;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    /* border: 1px solid #ccc; */
-    border-top: none;
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    /* border: 1px solid #ccc; */
-    background-color: #8AA399;
-}
-  
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #DDEDAA;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #E6EED6;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    /* border: 1px solid #ccc; */
     border-top: none;
 }
