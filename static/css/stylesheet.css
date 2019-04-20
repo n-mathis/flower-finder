@@ -8,6 +8,14 @@ h1 {
     font-family: 'Courier New';
 }
 
+.heightset{
+    max-height: 64px;
+}
+
+.widthset{
+    max-width: 64px;
+}
+
 .button {
   background-color: #7F9D6F;
   border: none;
