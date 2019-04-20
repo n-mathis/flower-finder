@@ -14,26 +14,45 @@
     </div>
     <!-- Tab links -->
     <div class="tab">
-        <button class="tablinks" onclick="openInfo(event, 'London')">London</button>
-        <button class="tablinks" onclick="openInfo(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openInfo(event, 'Tokyo')">Tokyo</button>
+        <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
+        <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">Lifecycle and Seasons</button>
+        <button class="tablinks" onclick="openInfo(event, 'difficulty-planting')">Planting</button>
+        <button class="tablinks" onclick="openInfo(event, 'sunlight-watering-soil-warnings')">More Care Info</button>
+        <button class="tablinks" onclick="openInfo(event, 'citation')">Citation</button>
     </div>
       
-      <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+    <!-- Tab content -->
+    <div id="gen_info" class="tabcontent">
+        <h3>General Info</h3>
+        <p>{{gen_info}}</p>
+    </div>
+        
+    <div id="lifecycle-seasons" class="tabcontent">
+        <h3>Lifecycle and Seasons</h3>
+        <p>{{lifecycle}}</p>
+        <br></br>
+        <p>{{seasons}}</p>
+    </div>
+    <div id="difficulty-planting" class="tabcontent">
+        <h3>Planting</h3>
+        <p>{{difficulty}}</p>
+        <br></br>
+        <p>{{planting}}</p>
+    </div>
+    <div id="sunlight-watering-soil-warnings" class="tabcontent">
+        <h3>More Care Info</h3>
+        <p>{{sunlight}}</p>
+        <br></br>
+        <p>{{watering}}</p>
+        <br></br>
+        <p>{{soil}}</p>
+        <br></br>
+        <p>{{warnings}}</p>
+    </div>
+    <div id="citation" class="tabcontent">
+        <h3>Citation</h3>
+        <p>{{citation}}</p>
+    </div>
   
 </body>
 </html>
