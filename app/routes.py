@@ -66,16 +66,16 @@ def upload_file():
         'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
         'windflower', 'yellowiris']
 
-        for i in len(classes)
-            flower_prob.append(
-                {"flower": classes[i], "prob": output[i]})
-        flower_prob = sorted(predictions, key=lambda x: x["output"], reverse=True)
-        flower_prob = predictions[0:5]
+        #for i in len(classes)
+            #flower_prob.append(
+             #   {"flower": classes[i], "prob": output[i]})
+        #flower_prob = sorted(predictions, key=lambda x: x["output"], reverse=True)
+        #flower_prob = predictions[0:5]
         
 
 
             return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, index = index, output = output, flower_prob = flower_prob)
+             name=name, index = index, output = output)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
