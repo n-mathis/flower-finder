@@ -40,7 +40,42 @@ def upload_file():
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             flower = flowerInfo(str(pred_class))
             name = flower[1]
-            return render_template('displayResult.html', filename=filename, prediction=pred_class, name=name, index = index, output = output)
+
+
+            flower_prob = []
+
+            output = output.toList()
+
+            classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
+        'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
+        'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
+        'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
+        'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
+        'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
+        'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
+        'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
+        'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
+        'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
+        'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
+        'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
+        'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
+        'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
+        'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
+        'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
+        'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
+        'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
+        'windflower', 'yellowiris']
+
+        for i in len(classes)
+            flower_prob.append(
+                {"flower": classes[i], "prob": output[i]})
+        flower_prob = sorted(predictions, key=lambda x: x["output"], reverse=True)
+        flower_prob = predictions[0:5]
+        
+
+
+            return render_template('displayResult.html', filename=filename, prediction=pred_class,
+             name=name, index = index, output = output, flower_prob = flower_prob)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
@@ -67,6 +102,7 @@ def more_info():
     warnings = flower[8]
     website = flower[11]
     citation = flower[12]
+
     return render_template('more.html', prediction = name, flower = flower, name = name, \
         gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
         watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
