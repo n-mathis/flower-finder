@@ -71,7 +71,7 @@ def upload_file():
         'windflower', 'yellowiris']
 
 
-        flower_prob = list(zip(flower_prob, ouput_list))
+        flower_prob = list(zip(flower_prob, output_list))
 
         #for i in len(classes)
             #flower_prob.append(
