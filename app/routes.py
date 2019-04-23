@@ -72,7 +72,7 @@ def upload_file():
 
         i = 0;
         while i < len(classes):
-            flower_prob = flower.prob.append(classes[i], ouput_list[i])
+            flower_prob = flower_prob.append(classes[i], ouput_list[i])
             i += 1
 
         #for i in len(classes)
