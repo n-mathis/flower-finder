@@ -70,8 +70,10 @@ def upload_file():
         'windflower', 'yellowiris']
 
 
-        for i in len(classes):
+        int i = 0;
+        while i < len(classes):
             flower_prob = flower.prob.append(classes[i], ouput_list[i])
+            i++
 
         #for i in len(classes)
             #flower_prob.append(
