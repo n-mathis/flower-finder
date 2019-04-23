@@ -80,7 +80,7 @@ def upload_file():
         
 
 
-            return render_template('displayResult.html', filename=filename, prediction=pred_class,
+        return render_template('displayResult.html', filename=filename, prediction=pred_class,
              name=name, index = index, output = output)
     return render_template('index.html')
 
