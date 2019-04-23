@@ -47,7 +47,7 @@ def upload_file():
 
             ##output = output.toList()
 
-            ouput_list = [element.item() for element in output.flatten()]
+            output_list = [element.item() for element in output.flatten()]
 
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
