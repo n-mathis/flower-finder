@@ -54,9 +54,13 @@ def more_info():
     flower = flowerInfo(preds)
     return render_template('more.html',prediction=preds)
 
-@app.route('/')
-def home_route():
-    return flask.render_template("index.html")
+# @app.route('/')
+# def home_route():
+#     return flask.render_template("index.html")
+
+@app.route('/identify')
+def identify():
+    return flask.render_template("identify.html")
 
 @app.route('/database')
 def database():

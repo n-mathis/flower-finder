@@ -1,0 +1,31 @@
+<!doctype html>
+{% extends "base.html" %} {% block content %}  
+    <html lang="en">
+        <title>Identify</title> 
+        <body>
+            <div class="jumbotron">
+                <h1 class="display-4">Identify your flower!</h1>
+                    <p class="lead">Upload an image of a flower and we'll tell what kind it is.</p>
+                    <hr class="my-4">
+                    <p>Make sure to upload a .png, .jpeg, or .jpg file.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">
+                        <form method=post enctype=multipart/form-data>
+                        <input type=file name=file>
+                        <input type=submit value=Upload>
+                      </form>
+                    </a>
+            </div>
+          <!-- <div class = "identify"> 
+          <center>
+          <h1>Identify your flower!</h1>
+          <h2>Upload an image of a flower and we'll tell what kind it is.</h2>
+          <h4> Make sure to upload a .png, .jpeg, or .jpg file. </h4>
+          <form method=post enctype=multipart/form-data>
+            <input type=file name=file>
+            <input type=submit value=Upload>
+          </form>
+          </center>
+          -->
+        </body>
+    </html>
+{% endblock %}
