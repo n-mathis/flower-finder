@@ -47,8 +47,7 @@ def upload_file():
 
             ##output = output.toList()
 
-            for i in output: 
-                a = 0;
+            ouput_list = [element.item() for element in tensor.flatten()]
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
         'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
