@@ -69,6 +69,10 @@ def upload_file():
         'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
         'windflower', 'yellowiris']
 
+
+        for i in len(classes):
+            flower_prob = flower.prob.append(classes[i], ouput_list[i])
+
         #for i in len(classes)
             #flower_prob.append(
              #   {"flower": classes[i], "prob": output[i]})
