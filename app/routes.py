@@ -44,7 +44,11 @@ def upload_file():
 
             flower_prob = []
 
-            output = output.toList()
+
+            ##output = output.toList()
+
+            for i in output: 
+                a = 0;
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
         'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
