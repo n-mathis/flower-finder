@@ -81,7 +81,7 @@ def upload_file():
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, index = index, output = output)
+             name=name, flower_prob = flower_prob)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
