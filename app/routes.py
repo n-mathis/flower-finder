@@ -49,6 +49,7 @@ def upload_file():
 
             ouput_list = [element.item() for element in output.flatten()]
 
+
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
         'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
         'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
@@ -81,7 +82,7 @@ def upload_file():
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, flower_prob = flower_prob)
+             name=name, output_list = output_list, flower_prob = flower_prob)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
