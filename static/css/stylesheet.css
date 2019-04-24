@@ -71,6 +71,12 @@ h1 {
     background-color: #4c586d;
   }
 
+.rectangle-thin{
+    height: 2px;
+    width: auto;
+    
+}
+
 .center-fit{
     max-width: 100%;
     max-height: 100vh;
