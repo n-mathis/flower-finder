@@ -46,6 +46,9 @@ h1 {
     transform: translate(-50%, -50%);
     width: 100%;
 }
+.background-image{
+    opacity: 0.2;
+}
 .rectangle {
     height: 5px;
     width: auto;
