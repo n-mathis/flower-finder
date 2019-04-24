@@ -113,7 +113,7 @@ h1 {
 .topnav {
     background-color: #ADACB5;
     overflow: hidden;
-    font-family: 'Courier New';
+    font-family: 'Times New Roman', Times, serif;
   }
   
   /* Style the links inside the navigation bar */
@@ -430,6 +430,7 @@ h1 {
   .accordion > .card .card-header {
     margin-bottom: -1px;
   }
+
   /* Jumbotron  */
   .jumbotron {
     padding: 2rem 1rem;
@@ -446,11 +447,12 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
   }
 
-  .m-4 {
+  .my-4 {
     margin: 1.5rem !important;
     font-family: 'Times New Roman', Times, serif;
   }
-  /* Jumbotron button color  */
+
+  /* Jumbotron button  */
   .btn {
     display: inline-block;
     font-weight: 400;
