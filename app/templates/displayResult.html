@@ -15,6 +15,7 @@
                 <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
                 <br></br>
 		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info</a> 
+                <p> {{top_three}} </p> 
             </center>
         </div>
     </body>

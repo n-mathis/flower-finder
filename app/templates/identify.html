@@ -1,0 +1,18 @@
+<!doctype html>
+{% extends "base.html" %} {% block content %}  
+    <html lang="en">
+    <head>
+    </head>
+        <body>
+          <div>
+          <center>
+          <h1>Identify!</h1>
+          <p>Upload an image of a flower and we'll tell what kind it is.</p>
+          <form method=post enctype=multipart/form-data>
+            <input type=file name=file>
+            <input type=submit value=Upload>
+          </form>
+          </center>
+        </body>
+    </html>
+{% endblock %}
