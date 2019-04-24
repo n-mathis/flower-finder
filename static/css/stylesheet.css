@@ -437,6 +437,18 @@ h1 {
     border: 4px;
     background-color: #e9ecef;
     border-radius: 0.3rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .m-4 {
+    margin: 1.5rem !important;
+    font-family: 'Times New Roman', Times, serif;
   }
   /* Jumbotron button color  */
   .btn {
