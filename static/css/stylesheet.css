@@ -28,6 +28,11 @@ h1 {
     display: grid;
     height: 100%
 }
+.rectangle {
+    height: 5px;
+    width: auto;
+    background-color: #4c586d;
+  }
 
 .center-fit{
     max-width: 100%;
