@@ -42,12 +42,8 @@ def upload_file():
             name = flower[1]
 
 
-            flower_prob = []
 
-
-            ##output = output.toList()
-
-            ##output_list = [element.item() for element in output.flatten()]
+            output_list = [element.item() for element in output.flatten()]
 
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
@@ -71,7 +67,7 @@ def upload_file():
         'windflower', 'yellowiris']
 
 
-        #flower_prob = list(zip(flower_prob, output_list))
+        flower_prob = list(zip(classes, output_list))
 
         #for i in len(classes)
             #flower_prob.append(
@@ -82,7 +78,7 @@ def upload_file():
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, output = output)
+             name=name, flower_prob = flower_prob)_
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
