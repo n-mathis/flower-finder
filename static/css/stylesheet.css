@@ -77,15 +77,22 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: 'Times New Roman', Times, serif;
-  }
-  h1, h2, h3, h4, h5, h6,
+}
+
+h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
     color: #2D3142;
     font-family: 'Times New Roman', Times, serif;
-  }
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .center-fit{
     max-width: 100%;
     max-height: 100vh;
