@@ -121,7 +121,7 @@ def citations():
     return render_template('citations.html')
 
 @app.route('/identify')
-def citations():
+def identify():
     return render_template('identify.html')
 
 
