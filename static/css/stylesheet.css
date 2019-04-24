@@ -2,11 +2,23 @@
 body {
     background-color: #D8D5DB;
     /* #B5CBB7 */
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Times New Roman', Times, serif;
 }
 h1 {
     color: #2D3142;
     font-family: 'Courier New';
+}
+
+.page-title{
+    color: #4c586d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.subpage-title{
+    color: #4c586d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .heightset{
