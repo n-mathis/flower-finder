@@ -69,16 +69,13 @@ def upload_file():
 
         flower_prob = list(zip(classes, output_list))
 
-        #for i in len(classes)
-            #flower_prob.append(
-             #   {"flower": classes[i], "prob": output[i]})
-        #flower_prob = sorted(predictions, key=lambda x: x["output"], reverse=True)
-        #flower_prob = predictions[0:5]
-        
+        flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
+
+        top_three = flower_prob[0:3]
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, flower_prob = flower_prob)_
+             name=name, top_three = top_three)
     return render_template('index.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
