@@ -20,7 +20,7 @@ def flowerInfo(prediction):
 def get_file(filename):
     return send_from_directory('static', filename)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/identify', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part
@@ -76,7 +76,7 @@ def upload_file():
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
              name=name, top_three = top_three)
-    return render_template('index.html')
+    return render_template('identify.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
 def more_info():
@@ -110,7 +110,7 @@ def more_info():
 
 @app.route('/')
 def home_route():
-    return flask.render_template("index.html")
+    return render_template("index.html")
 
 @app.route('/database')
 def database():
@@ -119,22 +119,6 @@ def database():
 @app.route('/citations')
 def citations():
     return render_template('citations.html')
-
-@app.route('/identify')
-def identify():
-    return render_template('identify.html')
-
-
-@app.route('/home', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-    # show the form, it wasn't submitted
-    return render_template('index.html')
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
