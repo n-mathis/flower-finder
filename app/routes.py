@@ -110,7 +110,7 @@ def more_info():
 
 @app.route('/')
 def home_route():
-    return flask.render_template("index.html")
+    return render_template("index.html")
 
 @app.route('/database')
 def database():
@@ -119,7 +119,6 @@ def database():
 @app.route('/citations')
 def citations():
     return render_template('citations.html')
-
 
 # allowed image types
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
