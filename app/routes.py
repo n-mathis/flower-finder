@@ -20,64 +20,6 @@ def flowerInfo(prediction):
 def get_file(filename):
     return send_from_directory('static', filename)
 
-@app.route('/', methods=['GET', 'POST'])
-def upload_file():
-    if request.method == 'POST':
-        # check if the post request has the file part
-        if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
-        file = request.files['file']
-        # if user does not select file, browser also
-        # submit an empty part without filename
-        if file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
-        if file and allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            file.save(save_to)
-            pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
-            flower = flowerInfo(str(pred_class))
-            name = flower[1]
-
-
-
-            output_list = [element.item() for element in output.flatten()]
-
-
-            classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
-        'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
-        'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
-        'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
-        'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
-        'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
-        'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
-        'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
-        'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
-        'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
-        'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
-        'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
-        'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
-        'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
-        'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
-        'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
-        'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
-        'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
-        'windflower', 'yellowiris']
-
-
-        flower_prob = list(zip(classes, output_list))
-
-        flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
-
-        top_three = flower_prob[0:3]
-
-
-        return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, top_three = top_three)
-    return render_template('index.html')
-
 @app.route('/more_info', methods=['GET', 'POST'])
 def more_info():
     if request.method == 'POST':
@@ -120,8 +62,55 @@ def database():
 def citations():
     return render_template('citations.html')
 
-@app.route('/identify')
-def identify():
+@app.route('/identify', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            flash('No file part')
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            flash('No selected file')
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            file.save(save_to)
+            pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
+            flower = flowerInfo(str(pred_class))
+            name = flower[1]
+
+            output_list = [element.item() for element in output.flatten()]
+
+            classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
+        'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
+        'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
+        'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
+        'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
+        'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
+        'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
+        'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
+        'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
+        'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
+        'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
+        'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
+        'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
+        'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
+        'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
+        'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
+        'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
+        'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
+        'windflower', 'yellowiris']
+
+            flower_prob = list(zip(classes, output_list))
+            flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
+            top_three = flower_prob[0:3]
+
+            return render_template('displayResult.html', filename=filename, prediction=pred_class,
+             name=name, top_three = top_three)
     return render_template('identify.html')
 
 
