@@ -66,12 +66,11 @@ def upload_file():
         'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
         'windflower', 'yellowiris']
 
-
         flower_prob = list(zip(classes, output_list))
-
         flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
-
         top_three = flower_prob[0:3]
+        top_three[1][1] = round(top_three[1][1], 3)*100
+        top_three[2][1] = round(top_three[2][1], 3)*100
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
