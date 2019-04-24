@@ -10,7 +10,7 @@
                 {% if name %}
                 <h2>Based off of our analysis this flower is {{ name }}!</h2>
                 {% endif %}
-                You can learn more about the {{ name }} and how to plant it and take care of it! There is also a {{top_three[1][1]}}% chance that it is a {{top_three[1][0]}} and {{top_three[2][1]}}%  chance that it is a {{top_three[2][0]}}!
+                You can learn more about the {{ name }} and how to plant it and take care of it! There is also a {{top_three[1][1]}}% chance that it is a {{second_prob}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
                 <br></br>
                 <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
                 <br></br>
