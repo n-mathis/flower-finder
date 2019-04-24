@@ -5,15 +5,38 @@
         <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
     </head>
         <body>
+
           <div>
-          <center>
-          <h1>Identify!</h1>
-          <p>Upload an image of a flower and we'll tell what kind it is.</p>
-          <form method=post enctype=multipart/form-data>
+          <h1 class="page-title"> Flower Finder </h1>
+      <div class="card-deck">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Identify your flower</h5>
+            <p class="card-text">Upload an image of a flower and find out what type it is! 
+            You can learn more about the flower and how to care for it.</p>
+          </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" href="{{url_for('databse')}}">Learn more about different flowers</h5>
+              <p class="card-text">Learn more about the different flowers available in the Flower Finder database.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" href="{{url_for('citations')}}"> Citations </h5>
+              <p class="card-text">The work done to build this app would not have been possible without all the information we gathered from other sources and websites. 
+              If you're interested in learning more about flowers and other plants, check out these sources!</p>
+            </div>
+          </div>
+        </div>
+        <form method=post enctype=multipart/form-data>
             <input type=file name=file>
             <input type=submit value=Upload>
           </form>
-          </center>
         </body>
     </html>
 {% endblock %}
