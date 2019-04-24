@@ -120,6 +120,11 @@ def database():
 def citations():
     return render_template('citations.html')
 
+@app.route('/identify')
+def citations():
+    return render_template('identify.html')
+
+
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
