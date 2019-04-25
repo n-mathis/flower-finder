@@ -128,7 +128,44 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-  background-color: #ADACB5;
+  background-color: rgb(130, 181, 141);
+}
+.nav-tabs {
+    border-bottom: 1px solid rgb(89, 86, 86);
+  }
+  
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    background-color: rgb(130, 181, 141);
+}
+  
+.nav-tabs .nav-link {
+    border: 1px solid  rgb(89, 86, 86);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+  
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+  
+.nav-tabs .nav-link.disabled {
+    color: rgb(130, 181, 141);
+    background-color: transparent;
+    border-color: transparent;
+}
+  
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: rgb(130, 181, 141);
+    border-color: rgb(89, 86, 86);
+}
+  
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 /* Add a black background color to the top navigation */
@@ -138,29 +175,7 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Times New Roman', Times, serif;
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #2D3142;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #EAE8FF;
-    color: #5B5B5B;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-      /* 7F9D6F */
-    background-color: #D8D5DB;
-    color: #2D3142;
-  }
-
 /* Style the tab */
 .tab {
     overflow: hidden;
