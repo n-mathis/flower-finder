@@ -500,6 +500,7 @@ h1, h2, h3, h4, h5, h6,
   
   .btn-primary:focus, .btn-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
+<<<<<<< HEAD
   }
   
   .btn-primary.disabled, .btn-primary:disabled {
@@ -516,10 +517,28 @@ h1, h2, h3, h4, h5, h6,
     border-color: #5889bd;
   }
   
+=======
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #5889bd;
+    border-color: #5889bd;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #466f9b;
+    border-color: #5889bd;
+  }
+  
+>>>>>>> master
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
   }
+<<<<<<< HEAD
 =======
 /* Paragraph Styling */
 p {
@@ -558,4 +577,6 @@ p {
   background-color: transparent;
   border-color: transparent;
 }
+>>>>>>> master
+=======
 >>>>>>> master
