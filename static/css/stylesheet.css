@@ -37,7 +37,7 @@ body {
 }
 .home-image .image {
     display: block;
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 .home-image .text {
