@@ -13,14 +13,13 @@
                 You can learn more about the {{ name }} and how to plant it and take care of it! 
 
 
-                {% if second_prob > 1.0 %}
-                    {% if third_prob > 1.0 %}
+                {% if second_prob > 1.0 and if third_prob > 1.0 %}
                     There is also a {{top_three[1][1]}}% chance that it is a {{second_prob}} and {{top_three[2][1]}}%  chance that it is a {{third_prob}}!
-                    {% else %}
-                    There is also a {{top_three[1][1]}}% chance that it is a {{second_prob}} and {{top_three[2][1]}}%  chance that it is a {{third_prob}}!
-                    
-                {% endif %}
-
+    
+                {% elif second_prob > 1.0 %}
+                    There is also a {{top_three[1][1]}}% chance that it is a {{second_prob}} 
+    
+            {% endif %}
 
                 <br></br>
                 <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
