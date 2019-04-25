@@ -136,20 +136,20 @@ h1, h2, h3, h4, h5, h6,
 
 .nav{
     font-size: 30px;
-    background-color: #697479d4;
+    background-color: #697479c6;
 }
  
 .nav-item {
     font-size: 30px;
     border: 1px;
     border-color: #e9ecef #e9ecef #dee2e6;
-    background-color: #697479d4;
+    background-color: #697479c6;
     color: #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-link {
     font-size: 30px;
-    border: 1px solid  transparent;
+    border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     color: #e9ecef #e9ecef #dee2e6;
@@ -157,13 +157,15 @@ h1, h2, h3, h4, h5, h6,
   
 .nav-link:hover, .nav-tabs .nav-link:focus {
     font-size: 30px;
+    background-color: #697479c6;
     border-color: #e9ecef #e9ecef #dee2e6;
+    color: #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-link.disabled {
     font-size: 30px;
     color: #e9ecef #e9ecef #dee2e6;
-    background-color: #697479d4;
+    background-color: #697479c6;
     border-color: #e9ecef #e9ecef #dee2e6;
 }
 
@@ -171,7 +173,7 @@ h1, h2, h3, h4, h5, h6,
 .nav-item.show .nav-link {
     font-size: 30px;
     color:  #e9ecef #e9ecef #dee2e6;
-    background-color: #697479d4;
+    background-color: #697479c6;
     border-color:  #e9ecef #e9ecef #dee2e6;
 }
 
