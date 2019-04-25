@@ -21,7 +21,7 @@ def get_file(filename):
     return send_from_directory('static', filename)
 
 @app.route('/identify', methods=['GET', 'POST'])
-def upload_file():
+def identify():
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -66,16 +66,15 @@ def upload_file():
         'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
         'windflower', 'yellowiris']
 
-
         flower_prob = list(zip(classes, output_list))
-
         flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
-
         top_three = flower_prob[0:3]
+        second_prob = round(top_three[1][1], 3)*100
+        third_prob = round(top_three[2][1], 3)*100
 
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, top_three = top_three)
+             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob)
     return render_template('identify.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
@@ -111,6 +110,10 @@ def more_info():
 @app.route('/')
 def home_route():
     return render_template("index.html")
+
+@app.route('/nav')
+def nav():
+    return render_template("navbar.html")
 
 @app.route('/database')
 def database():
