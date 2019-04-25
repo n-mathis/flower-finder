@@ -12,6 +12,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
+    background-color: #5db2df;
 }
 .subpage-title{
     color: #4c586d;
@@ -126,23 +127,24 @@ h1, h2, h3, h4, h5, h6,
   margin: 4px 2px;
   cursor: pointer;
 }
+
 .nav{
-    background-color: rgb(130, 181, 141);
+    background-color: #697479d4;
 }
 .navbar {
-  background-color: rgb(130, 181, 141);
+  background-color: #697479d4;
 }
 .nav-tabs {
-    border-bottom: 1px solid rgb(89, 86, 86);
+    border-bottom: 1px solid transparent;
   }
   
 .nav-tabs .nav-item {
     margin-bottom: -1px;
-    background-color: rgb(130, 181, 141);
+    background-color: #697479d4;
 }
   
 .nav-tabs .nav-link {
-    border: 1px solid  rgb(89, 86, 86);
+    border: 1px solid  transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
 }
@@ -152,7 +154,7 @@ h1, h2, h3, h4, h5, h6,
 }
   
 .nav-tabs .nav-link.disabled {
-    color: rgb(130, 181, 141);
+    color: #697479d4;
     background-color: transparent;
     border-color: transparent;
 }
@@ -160,8 +162,8 @@ h1, h2, h3, h4, h5, h6,
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: rgb(130, 181, 141);
-    border-color: rgb(89, 86, 86);
+    background-color: #697479d4;
+    border-color:  #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-tabs .dropdown-menu {
