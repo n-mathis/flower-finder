@@ -21,12 +21,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
+    margin: auto;
 }
 .subpage-title{
     color: #1d1d1d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    margin: auto;
 }
 .home-image{
     position: relative;
