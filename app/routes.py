@@ -49,34 +49,49 @@ def identify():
 
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
-        'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
-        'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
-        'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
-        'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
-        'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
-        'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
-        'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
-        'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
-        'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
-        'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
-        'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
-        'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
-        'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
-        'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
-        'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
-        'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
-        'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
-        'windflower', 'yellowiris']
+            'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
+            'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
+            'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
+            'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
+            'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
+            'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
+            'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
+            'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
+            'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
+            'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
+            'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
+            'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
+            'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
+            'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
+            'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
+            'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
+            'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
+            'windflower', 'yellowiris']
 
         flower_prob = list(zip(classes, output_list))
         flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
         top_three = flower_prob[0:3]
         second_prob = round(top_three[1][1], 3)*100
         third_prob = round(top_three[2][1], 3)*100
-
+        flower = flowerInfo(pred_class)
+        name = flower[1]
+        gen_info = flower[2]
+        lifecycle = flower[3]
+        seasons = flower[7]
+        difficulty = flower[4]
+        planting = flower[5]
+        sunlight = flower[9]
+        watering = flower[6]
+        soil = flower[10]
+        warnings = flower[8]
+        website = flower[11]
+        citation = flower[12]
 
         return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob)
+             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, flower = flower, name = name, \
+        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
+        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
+        soil = soil, website = website, citation = citation)
     return render_template('identify.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
