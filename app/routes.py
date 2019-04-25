@@ -111,6 +111,10 @@ def more_info():
 def home_route():
     return render_template("index.html")
 
+@app.route('/nav')
+def nav():
+    return render_template("navbar.html")
+
 @app.route('/database')
 def database():
     return render_template('database.html')
