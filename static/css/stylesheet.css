@@ -55,8 +55,8 @@ body {
 }
 .home-image .image {
     display: block;
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: auto;
 }
 .home-image .text {
     color: #fff;
