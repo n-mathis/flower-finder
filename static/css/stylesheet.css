@@ -176,6 +176,8 @@ h1 {
 
 .nav-link {
     position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 /* Card styling  */
