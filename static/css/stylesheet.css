@@ -62,12 +62,12 @@ body {
 
 .crophomeimg {
     position: absolute;
-    clip: rect(50px,0px,0px,0px);
+    clip: rect(100px,0px,0px,0px);
 }
 
 .cropimg {
     position: absolute;
-    clip: rect(0px,50px,100px,50px);
+    clip: rect(50px,0px,0px,0px);
 }
 
 hr {
