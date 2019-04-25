@@ -131,11 +131,7 @@ h1, h2, h3, h4, h5, h6,
 .nav{
     background-color: #697479d4;
 }
-.navbar {
-  background-color: #697479d4;
-}
-
-  
+ 
 .nav-item {
     margin-bottom: -1px;
     background-color: #697479d4;
@@ -155,8 +151,8 @@ h1, h2, h3, h4, h5, h6,
   
 .nav-tabs .nav-link.disabled {
     color: #e9ecef #e9ecef #dee2e6;
-    background-color: transparent;
-    border-color: transparent;
+    background-color: #697479d4;
+    border-color: #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-tabs .nav-link.active,
