@@ -134,19 +134,19 @@ h1, h2, h3, h4, h5, h6,
 .navbar {
   background-color: #697479d4;
 }
-.nav-tabs {
-    border-bottom: 1px solid transparent;
-  }
+
   
-.nav-tabs .nav-item {
+.nav-item {
     margin-bottom: -1px;
     background-color: #697479d4;
+    color: #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-tabs .nav-link {
     border: 1px solid  transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+    color: #e9ecef #e9ecef #dee2e6;
 }
   
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -154,14 +154,14 @@ h1, h2, h3, h4, h5, h6,
 }
   
 .nav-tabs .nav-link.disabled {
-    color: #697479d4;
+    color: #e9ecef #e9ecef #dee2e6;
     background-color: transparent;
     border-color: transparent;
 }
   
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
+    color: #697479d4;
     background-color: #697479d4;
     border-color:  #e9ecef #e9ecef #dee2e6;
 }
