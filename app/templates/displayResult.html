@@ -13,7 +13,7 @@
                 You can learn more about the {{ name }} and how to plant it and take care of it! {{top_three[0][1]}} {{second_prob}} {{third_prob}}
 
 
-                {% if second_prob > .01 and third_prob > .01 %}
+                {% if second_prob > 0.01 and third_prob > 0.01 %}
                     There is also a {{top_three[1][1]}}% chance that it is a {{second_prob}} and {{top_three[2][1]}}%  chance that it is a {{third_prob}}!
     
                 {% elif second_prob > 1.0 %}
