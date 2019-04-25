@@ -36,6 +36,7 @@ def identify():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             UPLOAD_FOLDER = '/cs121/static/uploads'
+            app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
