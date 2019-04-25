@@ -35,7 +35,7 @@ def identify():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            UPLOAD_FOLDER = '/cs121/static/uploads'
+            UPLOAD_FOLDER = '../cs121/static/uploads'
             app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
