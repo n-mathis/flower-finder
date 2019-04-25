@@ -53,10 +53,10 @@ body {
 }
 #resizeh img {
     width: 100%;
+    top: -25px;
 }
 .home-image .image {
     display: block;
-    top: -25px;
     /* width: 100%;
     height: auto; */
 }
