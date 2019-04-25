@@ -32,13 +32,13 @@ body {
 .home-image{
     position: relative;
     display: block;
-    height: auto;
-    width: 100%;
+    /* height: auto;
+    width: 100%; */
 }
 .home-image .image {
     display: block;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 .home-image .text {
     color: #fff;
@@ -299,18 +299,18 @@ h1, h2, h3, h4, h5, h6,
   }
   
   .card-img {
-    width: 100%;
+    /* width: 100%; */
     border-radius: calc(0.25rem - 1px);
   }
   
   .card-img-top {
-    width: 100%;
+    /* width: 100%; */
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
   }
   
   .card-img-bottom {
-    width: 100%;
+    /* width: 100%; */
     border-bottom-right-radius: calc(0.25rem - 1px);
     border-bottom-left-radius: calc(0.25rem - 1px);
   }
