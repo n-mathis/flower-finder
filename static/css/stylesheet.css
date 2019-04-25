@@ -488,6 +488,15 @@ h1, h2, h3, h4, h5, h6,
     background-color: #466f9b;
     border-color: #466f9b;
   }
+
+  /* Making containers responsive to any device */
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
   .btn-primary:focus, .btn-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
@@ -498,6 +507,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: #5889bd;
     border-color: #5889bd;
   }
+<<<<<<< HEAD
   
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
@@ -510,3 +520,42 @@ h1, h2, h3, h4, h5, h6,
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
   }
+=======
+/* Paragraph Styling */
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+  text-decoration: none;
+}
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+}
+>>>>>>> master
