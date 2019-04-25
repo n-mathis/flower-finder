@@ -126,7 +126,9 @@ h1, h2, h3, h4, h5, h6,
   margin: 4px 2px;
   cursor: pointer;
 }
-
+.nav{
+    background-color: rgb(130, 181, 141);
+}
 .navbar {
   background-color: rgb(130, 181, 141);
 }
