@@ -31,12 +31,12 @@ body {
 }
 #resize{
     position: relative;
-    width: 100%;
+    width: auto;
     height: 160px;
     overflow: hidden;
 }
 #resize img {
-    height: 160px;
+    width: 100%;
 }
 
 .home-image{
