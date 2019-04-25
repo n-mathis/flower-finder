@@ -1,18 +1,23 @@
 <!doctype html>
 {% extends "base.html" %} {% block content %}  
-    <html lang="en">
+  <html lang="en">
     <head>
+      <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
     </head>
-        <body>
-          <div>
-          <center>
-          <h1>Identify!</h1>
-          <p>Upload an image of a flower and we'll tell what kind it is.</p>
-          <form method=post enctype=multipart/form-data>
-            <input type=file name=file>
-            <input type=submit value=Upload>
-          </form>
-          </center>
-        </body>
-    </html>
+    <body>
+      <div class="jumbotron">
+      <div class="display-4">Identify your flower!</div>
+          <br>
+      <div class="lead">Upload an image of a flower and we'll tell you what kind it is.</div>
+      <div class="my-4">
+      <p>Make sure to upload a .png, .jpeg, or .jpg file.</p> </div> 
+      <div class="btn btn-primary btn-lg" href="#" role="button">
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
+    </div>
+      </div> 
+    </body>
+  </html>
 {% endblock %}

@@ -5,28 +5,35 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #4c586d;
 }
-h1 {
-    color: #2D3142;
-    font-family: 'Courier New';
-}
 
-.page-title{
-    color: #4c586d;
+.base-title{
+    color: #1d1d1d;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.page-title{
+    color: #1d1d1d;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
 }
 .subpage-title{
-    color: #4c586d;
+    color: #1d1d1d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    margin: auto;
+    
 }
 .home-image{
     position: relative;
     display: block;
-    height: 100%
+    height: auto;
+    width: 100%;
 }
 .home-image .image {
     display: block;
@@ -46,30 +53,38 @@ h1 {
     transform: translate(-50%, -50%);
     width: 100%;
 }
-.background-image{
-    background-size: cover;
-    opacity: 0.2;
-}
 
-.background-image .card-citation{
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 4px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    border-color: #4c586d;
-}
 .rectangle {
     height: 5px;
     width: auto;
     background-color: #4c586d;
-  }
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2D3142;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
 
 .center-fit{
     max-width: 100%;
@@ -81,7 +96,6 @@ h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-
 }
 
 .heightset{
@@ -105,74 +119,58 @@ h1 {
   cursor: pointer;
 }
 
-.navbar {
-  background-color: #ADACB5;
+.nav{
+    font-size: 30px;
 }
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #ADACB5;
-    overflow: hidden;
-    font-family: 'Courier New';
-  }
+ 
+.nav-item {
+    font-size: 30px;
+    border: 1px;
+    border-color: #e9ecef #e9ecef #dee2e6;
+    color: #e9ecef #e9ecef #dee2e6;
+}
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #2D3142;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.nav-link {
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: #e9ecef #e9ecef #dee2e6;
+}
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #EAE8FF;
-    color: #5B5B5B;
-  }
+.nav-link:hover, .nav-tabs .nav-link:focus {
+    font-size: 30px;
+    border-color: #e9ecef #e9ecef #dee2e6;
+    color: #e9ecef #e9ecef #dee2e6;
+}
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-      /* 7F9D6F */
-    background-color: #D8D5DB;
-    color: #2D3142;
+.nav-link.disabled {
+    font-size: 30px;
+    color: #e9ecef #e9ecef #dee2e6;
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+    font-size: 30px;
+    color:  #e9ecef #e9ecef #dee2e6;
+    border-color:  #e9ecef #e9ecef #dee2e6;
+}
+
+.card-citation {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    border-color: #4c586d;
   }
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    /* border: 1px solid #ccc; */
-    background-color: #ADACB5;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #A4B8C4;
-}
-
-    /* Create an active/current tablink class */
-.tab button.active {
-    background-color: #BFACC8;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-}
 
 .card-link {
     position: absolute;
@@ -200,13 +198,13 @@ h1 {
   }
   
   .card > .list-group:first-child .list-group-item:first-child {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
   }
   
   .card > .list-group:last-child .list-group-item:last-child {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
 
   .card-body {
@@ -252,8 +250,11 @@ h1 {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
   }
   
-  .card-header + .list-group .list-group-item:first-child {
+  .card-header {
     border-top: 0;
+  }
+  .list-group .list-group-item:first-child{
+      border-bottom: .5rem;
   }
   
   .card-footer {
@@ -434,4 +435,78 @@ h1 {
   .accordion > .card .card-header {
     margin-bottom: -1px;
   }
+
+  /* Jumbotron  */
+  .jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border: 4px;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .my-4 {
+    margin: 1.5rem !important;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Jumbotron button  */
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: #5889bd;
+    border-color: #5889bd;
+  }
   
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #466f9b;
+    border-color: #466f9b;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #5889bd;
+    border-color: #5889bd;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #466f9b;
+    border-color: #5889bd;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
+  }
