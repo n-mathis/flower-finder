@@ -29,11 +29,20 @@ body {
     margin: auto;
     
 }
-.home-image{
+/* #resize{
     position: relative;
+    width: 250px;
+    height: 250px;
     display: block;
-    /* height: auto;
-    width: 100%; */
+    background-image: url(http://techssl.com/images/demo-css-300x300.jpg);
+    background-position: 55% 55%;
+} */
+.home-image{
+    position: absolute;
+    display: block;
+    /* height: auto; */
+    clip: rect(60px, 225px, 225px, 70px);
+    /* width: 100%; */
 }
 .home-image .image {
     display: block;
@@ -58,10 +67,6 @@ body {
     height: 5px;
     width: auto;
     background-color: #4c586d;
-}
-
-.cropimg {
-    clip: rect(50px,0px,0px,0px);
 }
 
 hr {
