@@ -14,10 +14,10 @@
 
 
                 {% if second_prob > 0.01 and third_prob > 0.01 %}
-                    There is also a {{top_three[1][0]}}% chance that it is a {{second_prob}} and {{top_three[2][0]}}%  chance that it is a {{third_prob}}!
+                    There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
     
-                {% elif second_prob > 1.0 %}
-                    There is also a {{top_three[1][0]}}% chance that it is a {{second_prob}} 
+                {% elif second_prob > 0.01 %}
+                    There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
     
             {% endif %}
 
