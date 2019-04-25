@@ -37,7 +37,7 @@ body {
 }
 .home-image .image {
     display: block;
-    height: 75%;
+    clip: rect(100px,0px,0px,0px);
     /* width: 100%;
     height: auto; */
 }
@@ -59,11 +59,6 @@ body {
     height: 5px;
     width: auto;
     background-color: #4c586d;
-}
-
-.crophomeimg {
-    
-    /* clip: rect(100px,0px,0px,0px); */
 }
 
 .cropimg {
