@@ -126,8 +126,8 @@ h1, h2, h3, h4, h5, h6,
 .nav-item {
     font-size: 20px;
     border: 1px;
-    border-color: #e9ecef #e9ecef #dee2e6;
-    color: #e9ecef #e9ecef #dee2e6;
+    border-color: #4c586d #4c586d #4c586d;
+    color: #4c586d #4c586d #4c586d;
 }
   
 .nav-link {
@@ -135,26 +135,26 @@ h1, h2, h3, h4, h5, h6,
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    color: #e9ecef #e9ecef #dee2e6;
+    color: #4c586d #4c586d #4c586d;
 }
   
 .nav-link:hover, .nav-tabs .nav-link:focus {
     font-size: 20px;
-    border-color: #e9ecef #e9ecef #dee2e6;
-    color: #e9ecef #e9ecef #dee2e6;
+    border-color: #4c586d #4c586d #4c586d;
+    color: #4c586d #4c586d #4c586d;
 }
   
 .nav-link.disabled {
     font-size: 20px;
-    color: #e9ecef #e9ecef #dee2e6;
-    border-color: #e9ecef #e9ecef #dee2e6;
+    color: #4c586d #4c586d #4c586d;
+    border-color: #4c586d #4c586d #4c586d;
 }
 
 .nav-link.active,
 .nav-item.show .nav-link {
     font-size: 20px;
-    color:  #e9ecef #e9ecef #dee2e6;
-    border-color:  #e9ecef #e9ecef #dee2e6;
+    color:  #4c586d #4c586d #4c586d;
+    border-color:  #4c586d #4c586d #4c586d;
 }
 
 .card-citation {
