@@ -32,15 +32,15 @@ body {
 .home-image{
     position: relative;
     display: block;
-    height: auto;
-    width: 100%;
+    /* height: auto;
+    width: 100%; */
     clip: rect(100px,0px,0px,0px);
 }
 .home-image .image {
     display: block;
     clip: rect(100px,0px,0px,0px);
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 .home-image .text {
     color: #fff;
