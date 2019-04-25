@@ -29,6 +29,46 @@ body {
     margin: auto;
     
 }
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
 .home-image{
     position: relative;
     display: block;
@@ -500,7 +540,7 @@ h1, h2, h3, h4, h5, h6,
   
   .btn-primary:focus, .btn-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
-<<<<<<< HEAD
+
   }
   
   .btn-primary.disabled, .btn-primary:disabled {
@@ -508,7 +548,7 @@ h1, h2, h3, h4, h5, h6,
     background-color: #5889bd;
     border-color: #5889bd;
   }
-<<<<<<< HEAD
+
   
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
@@ -517,7 +557,7 @@ h1, h2, h3, h4, h5, h6,
     border-color: #5889bd;
   }
   
-=======
+
   }
   
   .btn-primary.disabled, .btn-primary:disabled {
@@ -533,13 +573,11 @@ h1, h2, h3, h4, h5, h6,
     border-color: #5889bd;
   }
   
->>>>>>> master
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
   }
-<<<<<<< HEAD
-=======
+
 /* Paragraph Styling */
 p {
     margin-top: 0;
@@ -577,6 +615,3 @@ p {
   background-color: transparent;
   border-color: transparent;
 }
->>>>>>> master
-=======
->>>>>>> master
