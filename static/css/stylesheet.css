@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6,
   
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-    color: #697479d4;
+    color:  #e9ecef #e9ecef #dee2e6;
     background-color: #697479d4;
     border-color:  #e9ecef #e9ecef #dee2e6;
 }
