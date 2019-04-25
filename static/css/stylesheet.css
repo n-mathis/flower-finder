@@ -34,12 +34,12 @@ body {
     display: block;
     /* height: auto;
     width: 100%; */
-    clip: rect(100px,0px,0px,0px);
+    /* clip: rect(100px,0px,0px,0px); */
 }
 .home-image .image {
     display: block;
     max-width: 100%;
-    max-height: 3200px;
+    max-height: 320px;
     overflow: hidden;
 }
 .home-image .text {
