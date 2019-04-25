@@ -10,12 +10,21 @@
                 {% if name %}
                 <h2>Based off of our analysis this flower is {{ name }}!</h2>
                 {% endif %}
-                You can learn more about the details of the flower and how to plant it and take care of it!
+                You can learn more about the {{ name }} and how to plant it and take care of it!
+
+
+                {% if second_prob > 0.01 and third_prob > 0.01 %}
+                    There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
+    
+                {% elif second_prob > 0.01 %}
+                    There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
+    
+            {% endif %}
+
                 <br></br>
                 <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
                 <br></br>
-		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info</a> 
-                <p> {{top_three}} </p> 
+		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info about {{name}}</a>  
             </center>
         </div>
     </body>
