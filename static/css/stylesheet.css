@@ -151,27 +151,21 @@ h1, h2, h3, h4, h5, h6,
     color: #e9ecef #e9ecef #dee2e6;
 }
   
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+.nav-link:hover, .nav-tabs .nav-link:focus {
     border-color: #e9ecef #e9ecef #dee2e6;
 }
   
-.nav-tabs .nav-link.disabled {
+.nav-link.disabled {
     color: #e9ecef #e9ecef #dee2e6;
     background-color: #697479d4;
     border-color: #e9ecef #e9ecef #dee2e6;
 }
-  
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+
+.nav-link.active,
+.nav-item.show .nav-link {
     color:  #e9ecef #e9ecef #dee2e6;
     background-color: #697479d4;
     border-color:  #e9ecef #e9ecef #dee2e6;
-}
-  
-.nav-tabs .dropdown-menu {
-    margin-top: -1px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
 }
 
 
