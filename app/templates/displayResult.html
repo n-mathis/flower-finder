@@ -20,62 +20,15 @@
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
     
             {% endif %}
-            
+            <center>
               </div>
-              <center>
                 <br></br>
                 <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
                 <br></br>
-                <div class="page-title">
-    
-                        More information about the {{prediction}}  
-                    </div>
-                    <!-- Tab links -->
-                    <div class="tab">
-                        <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
-                        <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">Lifecycle and Seasons</button>
-                        <button class="tablinks" onclick="openInfo(event, 'difficulty-planting')">Planting</button>
-                        <button class="tablinks" onclick="openInfo(event, 'sunlight-watering-soil-warnings')">More Care Info</button>
-                        <button class="tablinks" onclick="openInfo(event, 'citation')">Citation</button>
-                    </div>
-                      
-                    <!-- Tab content -->
-                    <div id="gen_info" class="tabcontent">
-                        <h3>General Info</h3>
-                        <p>{{gen_info}}</p>
-                    </div>
-                        
-                    <div id="lifecycle-seasons" class="tabcontent">
-                        <h3>Lifecycle and Seasons</h3>
-                        <p>{{lifecycle}}</p>
-                        <!-- <br></br> -->
-                        <p>{{seasons}}</p>
-                    </div>
-                    <div id="difficulty-planting" class="tabcontent">
-                        <h3>Planting</h3>
-                        <p>{{difficulty}}</p>
-                        <!-- <br></br> -->
-                        <p>{{planting}}</p>
-                    </div>
-                    <div id="sunlight-watering-soil-warnings" class="tabcontent">
-                        <h3>More Care Info</h3>
-                        <p>{{sunlight}}</p>
-                        <!-- <br></br> -->
-                        <p>{{watering}}</p>
-                        <!-- <br></br> -->
-                        <p>{{soil}}</p>
-                        <!-- <br></br> -->
-                        <p>{{warnings}}</p>
-                    </div>
-                    <div id="citation" class="tabcontent">
-                        <h3>Citation</h3>
-                        <p>{{citation}}</p>
-                    </div>
-                  
 		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info about {{name}}</a>  
-            
+            </center>
         </div>
-    </center>
+            
         
     </body>
 </html>
