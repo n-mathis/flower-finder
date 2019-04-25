@@ -19,9 +19,11 @@ function openInfo(evt, infoType) {
     evt.currentTarget.className += " active";
   }
 $(document).ready(function () {
-    $(".nav li").removeClass("active");//this will remove the active class from  
-                                       //previously active menu item 
+    $(".nav li").removeClass("active"); //this will remove the active class from  
+                                        //previously active menu item 
     $('#home').addClass('active');
+    //for about
+    $('#about').addClass('active');
     //for identify
     $('#identify').addClass('active');
     //for database 
