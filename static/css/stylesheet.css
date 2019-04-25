@@ -140,11 +140,13 @@ h1, h2, h3, h4, h5, h6,
  
 .nav-item {
     margin-bottom: -1px;
+    border: 1px;
+    border-color: #e9ecef #e9ecef #dee2e6;
     background-color: #697479d4;
     color: #e9ecef #e9ecef #dee2e6;
 }
   
-.nav-tabs .nav-link {
+.nav-link {
     border: 1px solid  transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
