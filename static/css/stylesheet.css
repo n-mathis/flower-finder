@@ -210,6 +210,7 @@ h1, h2, h3, h4, h5, h6,
     border: 2px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     border-color: #4c586d;
+    margin: 5px;
   }
 
 .card-link {
