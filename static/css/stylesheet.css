@@ -29,25 +29,25 @@ body {
     margin: auto;
     
 }
-/* #resize{
+#resize{
     position: relative;
     width: 250px;
     height: 250px;
-    display: block;
-    background-image: url(http://techssl.com/images/demo-css-300x300.jpg);
-    background-position: 55% 55%;
-} */
+    overflow: hidden;
+}
+#resize img {
+    width: 100%;
+}
 .home-image{
-    position: absolute;
+    position: relative;
     display: block;
-    /* height: auto; */
-    clip: rect(60px, 225px, 225px, 70px);
-    /* width: 100%; */
+    /* height: auto;
+    width: 100%; */
 }
 .home-image .image {
     display: block;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 .home-image .text {
     color: #fff;

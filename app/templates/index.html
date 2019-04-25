@@ -7,7 +7,7 @@
         <body>
         <div>
       <div class="home-image"><a href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/types-of-flowers-1520214627.jpg">
-        <img class="image crophomeimg" height="50px" width="150px" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/types-of-flowers-1520214627.jpg" alt="Alt text" />
+        <img id="resize" class="image" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/types-of-flowers-1520214627.jpg" alt="Alt text" />
         <div class="text center-fit"> Welcome to Flower Finder! </div>
       </a></div>
       <!-- <div class="home-image"> 
@@ -18,7 +18,7 @@
       <br>
       <div class="card-deck">
         <div class="card" style="overflow: hidden"><a href="{{url_for('identify')}}" value="identify" style="display:block text; text-decoration:none;">
-            <img src="https://www.outsidepride.com/images/products/detail/gardenflower/cosmoswonder.jpg" class="card-img-top"  width="329" height="160" alt="pink flowers">
+            <img id="resize" src="https://www.outsidepride.com/images/products/detail/gardenflower/cosmoswonder.jpg" class="card-img-top"  width="329" height="160" alt="pink flowers">
             <div class="card-body">
                 <h5 class="card-title">Identify your flower</h5>
                 <p class="card-text">Upload an image of a flower and find out what type it is! 
@@ -27,7 +27,7 @@
             </a>
         </div>
         <div class="card"><a href="{{url_for('database')}}" value="database" style="display:block text; text-decoration:none;">
-            <img src="https://www.burpee.com/on/demandware.static/-/Sites-BURPEE-Library/default/dwcf9a95bc/Images/Content/CLP%20Flowers/CATID-3460_Marigolds.jpg" class="card-img-top cropimg" width="329" height="160" alt="flowers">
+            <img id="resize" src="https://www.burpee.com/on/demandware.static/-/Sites-BURPEE-Library/default/dwcf9a95bc/Images/Content/CLP%20Flowers/CATID-3460_Marigolds.jpg" class="card-img-top" width="329" height="160" alt="flowers">
             <div class="card-body">
                 <h5 class="card-title"> Discover flowers</h5>
                 <p class="card-text"> View the different flowers available in the Flower Finder database.</p>
@@ -35,7 +35,7 @@
             </a>
           </div>
           <div class="card"><a href="{{url_for('citations')}}" value="citations" style="display:block text; text-decoration:none;">
-            <img src="https://thumbs.dreamstime.com/t/blooming-spring-hyacinths-flowers-plant-garden-background-green-foliage-border-banner-39421627.jpg" class="card-img-top cropimg" alt="more flowers">
+            <img id="resize" src="https://thumbs.dreamstime.com/t/blooming-spring-hyacinths-flowers-plant-garden-background-green-foliage-border-banner-39421627.jpg" class="card-img-top" alt="more flowers">
             <div class="card-body">
                 <h5 class="card-title"> Citations </h5>
                 <p class="card-text">The work done to build this app would not have been possible without all the information we gathered from other sources and websites. 
