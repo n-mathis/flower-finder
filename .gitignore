@@ -2,5 +2,6 @@
 **/__pycache__
 myenv/
 *.pyc
-
+**/.DS_Store
 **.pth
+/static/uploads/*
