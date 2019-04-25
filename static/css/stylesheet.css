@@ -42,7 +42,7 @@ body {
 .home-image{
     position: relative;
     display: block;
-    top: 25%
+    top: -25px;
     /* height: auto;
     width: 100%; */
 }
