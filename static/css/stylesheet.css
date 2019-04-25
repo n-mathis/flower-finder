@@ -6,13 +6,20 @@ body {
     color: #4c586d;
 }
 
-.page-title{
+.base-title{
     color: #4c586d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
     background-color: #5db2df;
+}
+.page-title{
+    color: #4c586d;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
 }
 .subpage-title{
     color: #4c586d;
