@@ -8,7 +8,7 @@
     <body>
         <div class=page-title>
                 Based off of our analysis this flower is {{ name }}!
-            </div>
+          </div>
                  <div class="subpage-title">
                 You can learn more about the {{ name }} and how to plant it and take care of it!
 
@@ -20,14 +20,13 @@
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
     
             {% endif %}
-            <center>
               </div>
                 <br></br>
-                <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
+                <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
                 <br></br>
 		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info about {{name}}</a>  
-            </center>
-        </div>
+          
+</div>
             
         
     </body>
