@@ -32,25 +32,31 @@ body {
 
 .pagination {
     display: inline-block;
-  }
+}
   
-  .pagination a {
+.pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
-  }
+}
   
-  .pagination a.active {
+.pagination a.active {
     background-color: #4CAF50;
     color: white;
-  }
+}
   
-  .pagination a:hover:not(.active) {background-color: #ddd;}
-  .cssPagination .pages > .page:target ~ .page:last-child,
-  .cssPagination .pages > .page {display: none;}
-  .cssPagination .pages > :last-child,
-  .cssPagination .pages > .page:target {display: block;}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.cssPagination .pages > .page:target ~ .page:last-child,
+.cssPagination .pages > .page {
+    display: none;
+}
+.cssPagination .pages > :last-child,
+.cssPagination .pages > .page:target {
+    display: block;
+}
 
 .home-image{
     position: relative;
