@@ -19,25 +19,25 @@
   <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
 
   <head> 
-        
-
-  </head>
-
-<body>
-    <div class=""nav">
-            <a id="logo" href="{{url_for('home_route')}}">Flower Finder</div>
+    <div class="nav">
+      <a id="logo" href="{{url_for('home_route')}}">Flower Finder</div>
             
-              <a class="nav-a" href="{{url_for('home_route')}}"> Home</a>
-              <a class="nav-a" href="{{url_for('about')}}">About</a>
-              <a class="nav-a" href="{{url_for('identify')}}">Identify</a>
-              <a class="nav-a" href="{{url_for('database')}}">Database</a>
-              <a class="nav-a" href="{{url_for('citations')}}">Citations</a>
+      <a class="nav-a" href="{{url_for('home_route')}}"> Home</a>
+      <a class="nav-a" href="{{url_for('about')}}">About</a>
+      <a class="nav-a" href="{{url_for('identify')}}">Identify</a>
+      <a class="nav-a" href="{{url_for('database')}}">Database</a>
+      <a class="nav-a" href="{{url_for('citations')}}">Citations</a>
             
-        </div>
+    </div>
         
     <div class="container">
         <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
     </div>
+
+  </head>
+
+<body>
+    
 </body>
 
   
