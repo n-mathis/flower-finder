@@ -21,7 +21,7 @@ def get_file(filename):
     return send_from_directory('static', filename)
 
 @app.route('/identify', methods=['GET', 'POST'])
-def upload_file():
+def identify():
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -35,6 +35,8 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            UPLOAD_FOLDER = '../cs121/static/uploads'
+            app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
@@ -47,24 +49,24 @@ def upload_file():
 
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
-        'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
-        'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
-        'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
-        'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
-        'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
-        'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
-        'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
-        'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
-        'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
-        'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
-        'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
-        'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
-        'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
-        'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
-        'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
-        'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
-        'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
-        'windflower', 'yellowiris']
+            'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
+            'blackberrylily', 'blackeyedsusan', 'blanketflower', 'bolerodeepblue', 'bougainvillea', \
+            'bromelia', 'buttercup', 'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
+            'capeflower', 'carnation', 'cautleyaspicata', 'clematis', 'coltsfoot', 'columbine', \
+            'commondandelion', 'cornpoppy', 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
+            'firelily', 'foxglove', 'frangipani', 'fritillary', 'gardenphlox', 'gaura', 'gazania', \
+            'geranium', 'giantwhitearumlily', 'globeflower', 'globethistle', 'grapehyacinth', \
+            'greatmasterwort', 'hardleavedpocketorchid', 'hibiscus', 'hippeastrum', \
+            'japaneseanemone', 'kingprotea', 'lentenrose', 'lotus', 'loveinthemist', 'magnolia', \
+            'mallow', 'marigold', 'mexicanaster', 'mexicanpetunia', 'monkshood', 'moonorchid', \
+            'morningglory', 'orangedahlia', 'osteospermum', 'oxeyedaisy', 'passionflower',\
+            'pelargonium', 'peruvianlily', 'petunia', 'pincushionflower', 'pinkprimrose', \
+            'pinkyellowdahlia', 'poinsettia', 'primula', 'princeofwalesfeathers', 'purpleconeflower', \
+            'redginger', 'rose', 'rubylippedcattleya', 'siamtulip', 'silverbush', 'snapdragon', \
+            'spearthistle', 'springcrocus', 'stemlessgentian', 'sunflower', 'sweetpea', \
+            'sweetwilliam', 'swordlily', 'thornapple', 'tigerlily', 'toadlily', 'treemallow', \
+            'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
+            'windflower', 'yellowiris']
 
         flower_prob = list(zip(classes, output_list))
         flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
@@ -110,6 +112,10 @@ def more_info():
 @app.route('/')
 def home_route():
     return render_template("index.html")
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 @app.route('/nav')
 def nav():

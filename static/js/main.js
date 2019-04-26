@@ -18,6 +18,19 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
+$(document).ready(function () {
+    $(".nav li").removeClass("active"); //this will remove the active class from  
+                                        //previously active menu item 
+    $('#home').addClass('active');
+    //for about
+    $('#about').addClass('active');
+    //for identify
+    $('#identify').addClass('active');
+    //for database 
+    $('#database').addClass('active');
+    //for citations 
+    $('#citations').addClass('active');
+});
 // $(document).ready(function () {
 //     // Init
 //     $('.image-section').hide();
