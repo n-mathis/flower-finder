@@ -5,28 +5,25 @@
     <title> Database</title>
     <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
     <style>
-            .pagination {
-              display: inline-block;
-            }
-            
-            .pagination a {
-              color: black;
-              float: left;
-              padding: 8px 16px;
-              text-decoration: none;
-            }
-            
-            .pagination a.active {
-              background-color: #4CAF50;
-              color: white;
-            }
-            
-            .pagination a:hover:not(.active) {background-color: #ddd;}
-            .cssPagination .pages > .page:target ~ .page:last-child,
-            .cssPagination .pages > .page {display: none;}
-            .cssPagination .pages > :last-child,
-            .cssPagination .pages > .page:target {display: block;}
-            </style>
+        .pagination {
+            display: inline-block;
+        }
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pagination a:hover:not(.active) {background-color: #ddd;}
+        .cssPagination .pages > .page:target ~ .page:last-child,
+        .cssPagination .pages > .page {display: none;}
+        .cssPagination .pages > :last-child,
+        .cssPagination .pages > .page:target {display: block;}
+    </style>
 </head>
 <body>
     <div class="page-title">
@@ -65,133 +62,163 @@
     <div class="cssPagination"> 
         <div class="pages">
             <div class="page" id="As">
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                    Alpine Sea Holly
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/anthurium.jpg" class="flowerimg">
-                    Anthurium
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/artichoke.jpg" class="flowerimg">
-                    Artichoke
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/azalea.jpg" class="flowerimg">
-                    Azalea
+                <div class="row"> 
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
+                            Alpine Sea Holly
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/anthurium.jpg" class="flowerimg">
+                            Anthurium
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/artichoke.jpg" class="flowerimg">
+                            Artichoke
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/azalea.jpg" class="flowerimg">
+                            Azalea
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="page" id="Bs">
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/ballmoss.jpg" class="flowerimg">
-                    Ball Moss
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/balloonflower.jpg" class="flowerimg">
-                    Balloon Flower
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/barbetondaisy.jpg" class="flowerimg">
-                    Barbeton Daisy
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/beardediris.jpg" class="flowerimg">
-                    Bearded Iris
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/beebalm.jpg" class="flowerimg">
-                    Bee Balm
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/birdofparadise.jpg" class="flowerimg">
-                    Bird of Paradise
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/bishopofllandaff.jpg" class="flowerimg">
-                    Bishop of Llandaff
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/blackberrylily.jpg" class="flowerimg">
-                    Blackberry Lily
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/blackeyedsusan.jpg" class="flowerimg">
-                    Black-eyed Susan
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/bougainvillea.jpg" class="flowerimg">
-                    Blanket Flower
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/bolerodeepblue.jpg" class="flowerimg">
-                    Bolero Deep Blue
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/bougainvillea.jpg" class="flowerimg">
-                    Bougainvillea
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/bromelia.jpg" class="flowerimg">
-                    Bromelia
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/buttercup.jpg" class="flowerimg">
-                    Buttercup
+                <div class="row"> 
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/ballmoss.jpg" class="flowerimg">
+                            Ball Moss
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/balloonflower.jpg" class="flowerimg">
+                            Balloon Flower
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/barbetondaisy.jpg" class="flowerimg">
+                            Barbeton Daisy
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/beardediris.jpg" class="flowerimg">
+                            Bearded Iris
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/beebalm.jpg" class="flowerimg">
+                            Bee Balm
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/birdofparadise.jpg" class="flowerimg">
+                            Bird of Paradise
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/bishopofllandaff.jpg" class="flowerimg">
+                            Bishop of Llandaff
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/blackberrylily.jpg" class="flowerimg">
+                            Blackberry Lily
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/blackeyedsusan.jpg" class="flowerimg">
+                            Black-eyed Susan
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/bougainvillea.jpg" class="flowerimg">
+                            Blanket Flower
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/bolerodeepblue.jpg" class="flowerimg">
+                            Bolero Deep Blue
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/bougainvillea.jpg" class="flowerimg">
+                            Bougainvillea
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/bromelia.jpg" class="flowerimg">
+                            Bromelia
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/buttercup.jpg" class="flowerimg">
+                            Buttercup
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="page" id="Cs">
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/californiapoppy.jpg" class="flowerimg">
-                    Californian Poppy
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/camellia.jpg" class="flowerimg">
-                    Camellia
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/cannalily.jpg" class="flowerimg">
-                    Canna Lily
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/canterburybells.jpg" class="flowerimg">
-                    Canterbury Bells
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/capeflower.jpg" class="flowerimg">
-                    Cape Flower
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/carnation.jpg" class="flowerimg">
-                    Carnation
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/caulteyaspicata.jpg" class="flowerimg">
-                    Cautleya Spicata
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/clematis.jpg" class="flowerimg">
-                    Clematis
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/coltsfoot.jpg" class="flowerimg">
-                    Colt's Foot
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/columbine.jpg" class="flowerimg">
-                    Columbine
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/commondandelion.jpg" class="flowerimg">
-                    Common Dandelion
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/cornpoppy.jpg" class="flowerimg">
-                    Corn Poppy
-                </div>
-                <div style="width:image width px; font-size:80%; text-align:center;">
-                    <img src="/static/img/flowers/cyclamen.jpg" class="flowerimg">
-                    Cyclamen
+                <div class="row">
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/californiapoppy.jpg" class="flowerimg">
+                            Californian Poppy
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/camellia.jpg" class="flowerimg">
+                            Camellia
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/cannalily.jpg" class="flowerimg">
+                            Canna Lily
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/canterburybells.jpg" class="flowerimg">
+                            Canterbury Bells
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/capeflower.jpg" class="flowerimg">
+                            Cape Flower
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/carnation.jpg" class="flowerimg">
+                            Carnation
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/caulteyaspicata.jpg" class="flowerimg">
+                            Cautleya Spicata
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/clematis.jpg" class="flowerimg">
+                            Clematis
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/coltsfoot.jpg" class="flowerimg">
+                            Colt's Foot
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/columbine.jpg" class="flowerimg">
+                            Columbine
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/commondandelion.jpg" class="flowerimg">
+                            Common Dandelion
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/cornpoppy.jpg" class="flowerimg">
+                            Corn Poppy
+                        </div>
+                        <div style="width:image width px; font-size:80%; text-align:center;">
+                            <img src="/static/img/flowers/cyclamen.jpg" class="flowerimg">
+                            Cyclamen
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="page" id="Ds">
