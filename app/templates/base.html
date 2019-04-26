@@ -26,11 +26,13 @@
 <body>
     <div class=""nav">
             <div class="logo" href="{{url_for('home_route')}}">Flower Finder</div>
-            <div class="nav-a" href="{{url_for('home_route')}}">Home</div>
-            <div class="nav-a" href="{{url_for('about')}}">About</div>
-            <div class="nav-a" href="{{url_for('identify')}}">Identify</div>
-            <div class="nav-a" href="{{url_for('database')}}">Database</div>
-            <div class="nav-a" href="{{url_for('citations')}}">Citations</div>
+            <div class="nav-a">
+              <div href="{{url_for('home_route')}}"> Home</div>
+              <div href="{{url_for('about')}}">About</div>
+              <div href="{{url_for('identify')}}">Identify</div>
+              <div href="{{url_for('database')}}">Database</div>
+              <div href="{{url_for('citations')}}">Citations</div>
+            </div>
         </div>
         
     <div class="container">
