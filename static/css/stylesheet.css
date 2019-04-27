@@ -207,6 +207,27 @@ nav a:hover {
   margin-right: 10px;
 }
 
+#about-page body{
+  background-color: #87cfb7;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4c586d;
+}
+/* .aboutcontainer{
+    margin: 30px;
+    background-color: #87cfb7;
+    border: 1px solid #1d1d1d;
+    opacity: 0.6;
+  }
+  
+  .aboutcontainer p{
+    margin: 5%;
+    font-weight: bold;
+    color: #1d1d1d;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  } */
+
 .card-citation {
     position: relative;
     display: -ms-flexbox;
