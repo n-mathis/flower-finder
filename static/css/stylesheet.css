@@ -99,7 +99,10 @@ body {
     width: auto;
     background-color: #4c586d;
 }
+
 .aboutpage-title{
+  border: 2px;
+  border-color:#1d1d1d;
   color: #1d1d1d;
   font-family: 'Times New Roman', Times, serif;
   height: 20%;
