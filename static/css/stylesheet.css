@@ -6,6 +6,43 @@ body {
     color: #4c586d;
 }
 /*Navigation Bar styling*/
+.nav{
+  font-size: 20px;
+}
+
+.nav-item {
+  font-size: 20px;
+  border: 1px;
+  border-color: #e9ecef #e9ecef #e9ecef;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link:hover, .nav-tabs .nav-link:focus {
+  font-size: 20px;
+  border-color: #e9ecef #e9ecef #e9ecef;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link.disabled {
+  font-size: 20px;
+  color: #e9ecef #e9ecef #e9ecef;
+  border-color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+  font-size: 20px;
+  color:  #e9ecef #e9ecef #e9ecef;
+  border-color:  #e9ecef #e9ecef #e9ecef;
+}
 
 nav {
   width: 100%;
