@@ -171,22 +171,18 @@ nav {
 */
 nav a {
   display: block;
-  float: left;
-                
+  float: left;         
   font-family: sans-serif;
   font-size: 20px;
   color: white;
-
-  border 1px solid #000;
-
+  border: 1px solid #000;
   padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-
   text-decoration: none;
 
-}
+} 
 
 /*Hover styling*/
 
@@ -574,7 +570,6 @@ nav a:hover {
   }
   
 
-  }
   
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
