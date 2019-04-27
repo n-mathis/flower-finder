@@ -101,11 +101,10 @@ body {
 }
 
 .about-page{
-  
+    position: absolute;
     height: 15%;
     width: auto;
     background-color:  #87cfb7;
-    text-align: center;
 
 }
 
