@@ -99,14 +99,17 @@ body {
     width: auto;
     background-color: #4c586d;
 }
-
-.about-page{
-    position: absolute;
-    height: 15%;
-    width: auto;
-    background-color:  #87cfb7;
-
+.aboutpage-title{
+  color: #1d1d1d;
+  font-family: 'Times New Roman', Times, serif;
+  height: 20%;
+  width: auto;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #87cfb7;
 }
+
 
 hr {
     box-sizing: content-box;
