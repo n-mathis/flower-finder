@@ -578,9 +578,6 @@ h1, h2, h3, h4, h5, h6,
     margin-left:-50px;
   }
   .btn {
-    position:absolute;
-    margin-top:-60px;
-    margin-left:-50px;
     display: inline-block;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
@@ -600,11 +597,7 @@ h1, h2, h3, h4, h5, h6,
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   .btn-primary {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-top:-60px;
-    margin-left:-50px;
+  
     text-align: center;
     color: #fff;
     background-color: #5889bd;
@@ -612,11 +605,7 @@ h1, h2, h3, h4, h5, h6,
   }
   
   .btn-primary:hover {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-top:-60px;
-    margin-left:-50px;
+ 
     text-align: center;
     color: #fff;
     background-color: #466f9b;
