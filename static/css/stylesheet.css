@@ -486,22 +486,7 @@ nav a:hover {
   .accordion > .card .card-header {
     margin-bottom: -1px;
   }
-  /* About page styling  */
-.aboutcontainer{
-  margin: 30px;
-  background-color: #87cfb7;
-  border: 1px solid #1d1d1d;
-  opacity: 0.6;
-}
 
-.aboutcontainer p{
-  margin: 5%;
-  font-weight: bold;
-  color: #1d1d1d;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
 
 
 /* Jumbotron  */
