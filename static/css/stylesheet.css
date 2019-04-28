@@ -513,7 +513,7 @@ nav a:hover {
 
   /* Jumbotron button  */
   .btn {
-    display: inline-block;
+    display: block;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     color: #212529;
@@ -532,6 +532,7 @@ nav a:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   .btn-primary {
+    text-align: center;
     color: #fff;
     background-color: #5889bd;
     border-color: #5889bd;
@@ -569,9 +570,6 @@ nav a:hover {
     color: #fff;
     background-color: #466f9b;
     border-color: #5889bd;
-  }
-  
-
   }
   
   .btn-primary.disabled, .btn-primary:disabled {
