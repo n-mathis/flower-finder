@@ -34,7 +34,7 @@ body {
 .pagination {
     display: inline-block;
     font-size: 15px;
-    text-align: center;
+    justify-content: center;
 } 
 .pagination a {
     color: black;
