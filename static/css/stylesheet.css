@@ -232,6 +232,17 @@ nav a:hover {
 
 
 /* About page */
+.aboutpage-title{
+  color: #1d1d1d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+  background-color: #455e8acd;
+  /* padding-top: 15px; */
+}
+
 .about-deck {
   display: -ms-flexbox;
   display: flex;
