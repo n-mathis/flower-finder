@@ -513,7 +513,7 @@ nav a:hover {
 
   /* Jumbotron button  */
   .btn {
-    display: block;
+    display: inline-block;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     color: #212529;
