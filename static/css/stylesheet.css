@@ -5,14 +5,97 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: #4c586d;
 }
+/*Navigation Bar styling*/
+.nav{
+  font-size: 20px;
+}
 
-.base-title{
+.nav-item {
+  font-size: 20px;
+  border: 1px;
+  border-color: #e9ecef #e9ecef #e9ecef;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link:hover, .nav-tabs .nav-link:focus {
+  font-size: 20px;
+  border-color: #e9ecef #e9ecef #e9ecef;
+  color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link.disabled {
+  font-size: 20px;
+  color: #e9ecef #e9ecef #e9ecef;
+  border-color: #e9ecef #e9ecef #e9ecef;
+}
+
+.nav-link.active,
+.nav-item.show .nav-link {
+  font-size: 20px;
+  color:  #e9ecef #e9ecef #e9ecef;
+  border-color:  #e9ecef #e9ecef #e9ecef;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #95a599;
+}
+
+/*Buttons on navigation bar styling
+*/
+nav a {
+  display: block;
+  float: left;         
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  border: 1px solid #000;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+
+} 
+
+/*Hover styling*/
+
+nav a:hover {
+  background-color: #ccffd1;
+  text-decoration: none;
+  color: white;
+                
+}
+
+/*Flower finder logo
+*/
+#logo {
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 2px #c4c4c4;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+/* .base-title{
     color: #1d1d1d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
-}
+} */
 .page-title{
     color: #1d1d1d;
     font-family: 'Times New Roman', Times, serif;
@@ -146,6 +229,7 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Times New Roman', Times, serif;
 }
 .lead {
+    text-align: center;
     font-size: 1.25rem;
     font-weight: 300;
     font-family: 'Times New Roman', Times, serif;
@@ -184,14 +268,14 @@ h1, h2, h3, h4, h5, h6,
   cursor: pointer;
 }
 
-<<<<<<< HEAD
+
 /*Navigation Bar styling*/
 
 nav {
   width: 100%;
   height: 60px;
   background-color: #95a599;
-=======
+
 .nav{
     font-size: 20px;
 }
@@ -211,7 +295,7 @@ nav {
     color: #e9ecef #e9ecef #e9ecef;
     display: block;
     padding: 0.5rem 1rem;
->>>>>>> 82900fd694dd377aeb43cd8edb0b605456b4db9c
+
 }
 
 /*Buttons on navigation bar styling
@@ -257,28 +341,27 @@ nav a:hover {
   margin-right: 10px;
 }
 
-  .nav-link:hover, .nav-link:focus {
-    text-decoration: none;
+/* body#about-page {
+  background-color: #87cfb7;
+  font-family: 'Times New Roman', Times, serif;
+  color: #4c586d;
+} */
+/* .aboutcontainer{
+    margin: 30px;
+    background-color: #87cfb7;
+    border: 1px solid #1d1d1d;
+    opacity: 0.6;
   }
-  .nav-tabs {
-    border-bottom: 1px solid #dee2e6;
-  }
-  .nav-tabs .nav-item {
-    margin-bottom: -1px;
-  }
-  .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-  }
-  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    border-color: #e9ecef #e9ecef #dee2e6;
-  }
-  .nav-tabs .nav-link.disabled {
-    color: #6c757d;
-    background-color: transparent;
-    border-color: transparent;
-  }
+  
+  .aboutcontainer p{
+    margin: 5%;
+    font-weight: bold;
+    color: #1d1d1d;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  } */
+
 
 .card-citation {
     position: relative;
@@ -524,15 +607,17 @@ nav a:hover {
     margin-bottom: -1px;
   }
 
-  /* Jumbotron  */
-  .jumbotron {
+
+
+/* Jumbotron  */
+.jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border: 4px;
     background-color: #e9ecef;
     border-radius: 0.3rem;
     font-family: 'Times New Roman', Times, serif;
-  }
+}
   .display-4 {
     text-align: center;
     font-size: 3.5rem;
@@ -547,7 +632,9 @@ nav a:hover {
   }
 
   /* Jumbotron button  */
+ 
   .btn {
+    justify-content: center;
     display: inline-block;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
@@ -567,11 +654,14 @@ nav a:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   .btn-primary {
+  
+    text-align: center;
     color: #fff;
     background-color: #5889bd;
     border-color: #5889bd;
   }
   .btn-primary:hover {
+ 
     color: #fff;
     background-color: #466f9b;
     border-color: #466f9b;
@@ -601,6 +691,10 @@ nav a:hover {
     background-color: #466f9b;
     border-color: #5889bd;
   }
+
+
+  
+
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
     background-color: #5889bd;
@@ -613,11 +707,12 @@ nav a:hover {
 
 /* Paragraph Styling */
 p {
+
     margin-top: 0;
     margin-bottom: 1rem;
-<<<<<<< HEAD
-}
 
-=======
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
 }
->>>>>>> 82900fd694dd377aeb43cd8edb0b605456b4db9c

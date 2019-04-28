@@ -22,6 +22,10 @@
                 {% endif %}
               </div>
                 <br></br>
+                <div class="page-title"></div>
+                    More information about {{prediction}}  
+                </div>
+                
                 <img class="heightset widthset" src="/static/{{ url_for('get_file', filename=filename) }}">
                 <br></br>
 		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info about {{name}}</a>  
