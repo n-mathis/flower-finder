@@ -55,7 +55,10 @@ body {
 .cssPagination .pages > .page:target {
     display: block;
 }
-
+.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}
 .flowerimg{
     width: 100%
 }
