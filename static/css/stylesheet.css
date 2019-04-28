@@ -33,6 +33,7 @@ body {
 /* DATABASE PAGE */
 .pagination {
     display: inline-block;
+    font-size: 15px;
 } 
 .pagination a {
     color: black;
