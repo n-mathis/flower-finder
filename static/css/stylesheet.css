@@ -224,7 +224,6 @@ nav a:hover {
     border: 2px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
     border-color: #4c586d;
-    margin: 8px;
   }
 
 .card-link {
@@ -501,7 +500,6 @@ nav a:hover {
     font-family: 'Times New Roman', Times, serif;
   }
   .display-4 {
-    text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
@@ -510,7 +508,6 @@ nav a:hover {
 
   .my-4 {
     margin: 1.5rem !important;
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
   }
 
