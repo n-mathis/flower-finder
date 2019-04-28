@@ -30,12 +30,7 @@ body {
     
 }
 
-/* DATABASE PAGE */
-/* .pagination {
-    display: inline-block;
-    font-size: 15px;
-} 
-.pagination a {
+/* .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
@@ -48,7 +43,7 @@ body {
 }
 .pagination a:hover:not(.active) {
     background-color: #ddd;
-}
+} */
 .cssPagination .pages > .page:target ~ .page:last-child,
 .cssPagination .pages > .page {
     display: none;
@@ -57,10 +52,7 @@ body {
 .cssPagination .pages > .page:target {
     display: block;
 }
-.disabled{
-  cursor: not-allowed;
-  pointer-events: none;
-} */
+
 .flowerimg{
     width: 100%
 }
