@@ -78,6 +78,7 @@ def identify():
         for data in flower:
             if str(data) == "" or str(data) == " ":
                 data="Sorry! We don't have extensive information about this flower :("
+                print(data)
         name = flower[1]
         gen_info = flower[2]
         lifecycle = flower[3]
