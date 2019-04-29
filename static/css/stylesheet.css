@@ -97,9 +97,6 @@ body {
 .cssPagination .pages > .page:target {
     display: block;
 }
-.cssPagination {
-    padding-bottom: 50px;
-}
 
 .flowerimg{
     width: 100%
@@ -250,6 +247,7 @@ h1, h2, h3, h4, h5, h6,
     border: 1px solid #ccc;
     border-top: none;
     padding-bottom: 20px;
+    margin-bottom: 30px;
   }
 
 
