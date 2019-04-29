@@ -18,9 +18,8 @@
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
                 {% endif %}
             </div>
-            <br></br>
             <div style="text-align: center;">
-                <h3>Uploaded flower and Predicted flower:</h3>
+                <h6>Uploaded flower and Predicted flower:</h6>
                 <div>
                     <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}"/>
                     <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}"/>
