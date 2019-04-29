@@ -75,10 +75,9 @@ def identify():
         third_prob = round(top_three[2][1], 3)*100
         predimg=str(pred_class)+".jpg"
         flower = flowerInfo(str(pred_class))
-        for data in flower:
-            if str(data) == "" or str(data) == " ":
-                data="Sorry! We don't have extensive information about this flower :("
-                print(data)
+        for i in range(len(flower)):
+            if str(flower[i]) == "" or str(flower[i]) == " ":
+                flower[i]="Sorry! We don't have extensive information about this flower :("
         name = flower[1]
         gen_info = flower[2]
         lifecycle = flower[3]

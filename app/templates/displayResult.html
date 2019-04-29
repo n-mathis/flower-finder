@@ -28,13 +28,16 @@
                     <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}" alt='predicted flower image'>
                 </figure>
                 <br>
+                <div class="subpage-title">
+                    Identify another flower!
+                </div>
                 <div class="btn btn-primary btn-lg" href="#" role="button">
                     <form method=post enctype=multipart/form-data>
                         <input type=file name=file>
                         <input type=submit value=Upload>
                     </form>
                 </div>
-                <a href="{{url_for('identify')}}" class="button" value="identify">Identify another flower!</a>
+                <!-- <a href="{{url_for('identify')}}" class="button" value="identify">Identify another flower!</a> -->
             </div>
         <br>
         <div class="page-title">More information about the {{ name }}</div>
