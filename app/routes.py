@@ -43,8 +43,6 @@ def identify():
             flower = flowerInfo(str(pred_class))
             name = flower[1]
 
-
-
             output_list = [element.item() for element in output.flatten()]
 
 
@@ -82,28 +80,12 @@ def identify():
         gen_info = flower[2]
         lifecycle = flower[3]
         seasons = flower[7]
-        # if lifecycle == seasons:
-        #     seasons = ""
         difficulty = flower[4]
         planting = flower[5]
-        # if difficulty == planting:
-        #     planting = ""
         sunlight = flower[9]
         watering = flower[6]
         soil = flower[10]
         warnings = flower[8]
-        # if sunlight == watering:
-        #     if sunlight == soil:
-        #         if sunlight == warnings:
-        #             warnings = ""
-        #         soil = ""
-        #     watering = ""
-        # elif watering == soil:
-        #     if watering == warnings:
-        #         warnings = ""
-        #     soil = ""
-        # elif soil == warnings:
-        #     warnings= ""
         website = flower[11]
         citation = flower[12]
 
@@ -113,35 +95,35 @@ def identify():
              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     return render_template('identify.html')
 
-@app.route('/more_info', methods=['GET', 'POST'])
-def more_info():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
+# @app.route('/more_info', methods=['GET', 'POST'])
+# def more_info():
+#     if request.method == 'POST':
+#         # do stuff when the form is submitted
 
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-    preds  = request.args.get('preds')
-    index  = request.args.get('index')
-    output  = request.args.get('output')
-    flower = flowerInfo(preds)
-    name = flower[1]
-    gen_info = flower[2]
-    lifecycle = flower[3]
-    seasons = flower[7]
-    difficulty = flower[4]
-    planting = flower[5]
-    sunlight = flower[9]
-    watering = flower[6]
-    soil = flower[10]
-    warnings = flower[8]
-    website = flower[11]
-    citation = flower[12]
+#         # redirect to end the POST handling
+#         # the redirect can be to the same route or somewhere else
+#         return redirect(url_for('index'))
+#     preds  = request.args.get('preds')
+#     index  = request.args.get('index')
+#     output  = request.args.get('output')
+#     flower = flowerInfo(preds)
+#     name = flower[1]
+#     gen_info = flower[2]
+#     lifecycle = flower[3]
+#     seasons = flower[7]
+#     difficulty = flower[4]
+#     planting = flower[5]
+#     sunlight = flower[9]
+#     watering = flower[6]
+#     soil = flower[10]
+#     warnings = flower[8]
+#     website = flower[11]
+#     citation = flower[12]
 
-    return render_template('more.html', prediction = name, flower = flower, name = name, \
-        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
-        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
-        soil = soil, website = website, citation = citation)
+#     return render_template('more.html', prediction = name, flower = flower, name = name, \
+#         gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
+#         watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
+#         soil = soil, website = website, citation = citation)
 
 @app.route('/')
 def home_route():
