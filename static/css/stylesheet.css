@@ -232,6 +232,7 @@ nav a:hover {
 /* About page */
 
 .aboutpage-title{
+  display: inline-block;
   color: #1d1d1d;
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
