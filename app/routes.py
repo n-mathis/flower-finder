@@ -73,10 +73,25 @@ def identify():
         top_three = flower_prob[0:3]
         second_prob = round(top_three[1][1], 3)*100
         third_prob = round(top_three[2][1], 3)*100
+        predimg=str(pred_class)+".jpg"
+        flower = flowerInfo(str(pred_class))
+        name = flower[1]
+        gen_info = flower[2]
+        lifecycle = flower[3]
+        seasons = flower[7]
+        difficulty = flower[4]
+        planting = flower[5]
+        sunlight = flower[9]
+        watering = flower[6]
+        soil = flower[10]
+        warnings = flower[8]
+        website = flower[11]
+        citation = flower[12]
 
-
-        return render_template('displayResult.html', filename=filename, prediction=pred_class,
-             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob)
+        return render_template('displayResult.html', filename=filename, prediciton=pred_class, predictionimg=predimg,
+             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
+             lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
+             warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     return render_template('identify.html')
 
 @app.route('/more_info', methods=['GET', 'POST'])
