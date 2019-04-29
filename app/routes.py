@@ -103,7 +103,7 @@ def identify():
                 warnings = ""
             soil = ""
         elif soil == warnings:
-            warnings=""
+            warnings= ""
         website = flower[11]
         citation = flower[12]
 
