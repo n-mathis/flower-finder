@@ -19,13 +19,15 @@
                 {% endif %}
             </div>
             <br></br>
-            <div style="width:image width px; font-size:80%; text-align:center;">
-                Uploaded flower:
-                <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
-            </div>
-            <div style="width:image width px; font-size:80%; text-align:center;">
-                Predicted flower:
-                <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}">
+            <div style="text-align: center;">
+                <div style="width:image width px; font-size:80%;">
+                    Uploaded flower:
+                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
+                </div>
+                <div style="width:image width px; font-size:80%;">
+                    Predicted flower:
+                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}">
+                </div>
             </div>
             <br></br>
         <div class="page-title">More information about the {{prediction}}</div>
