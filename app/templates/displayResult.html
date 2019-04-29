@@ -19,10 +19,12 @@
                 {% endif %}
             </div>
             <div style="text-align: center;">
-                <div class="subpage-title">Uploaded flower and Predicted flower:</div>
                 <div>
+                    <div class="subpage-title">Uploaded flower:</div>
                     <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}"/>
+                    <div class="subpage-title">Predicted flower:</div>
                     <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}"/>
+                    
                 </div>
                 <a href="{{url_for('identify')}}" class="button" value="identify">Identify another flower!</a>
             </div>
@@ -63,6 +65,8 @@
             <h3>Citation</h3>
             <p>{{citation}}</p>
         </div> 
+        <br>
+        <br>
     </body>
 </html>
 {% endblock %}
