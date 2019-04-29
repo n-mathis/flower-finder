@@ -15,7 +15,50 @@
     <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
     <link rel="short cut icon" type="image/png" href="/static/img/sunflower-favicon-new.png">
+<style>
+            nav {
+                width: 100%;
+                height: 60px;
+                background-color: #95a599;
+            }
 
+            nav a {
+                display: block;
+                float: left;
+                
+                font-family: sans-serif;
+                font-size: 20px;
+                color: white;
+
+                padding-top: 25px;
+                padding-right: 10px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+
+                text-decoration: none;
+
+            }
+            
+            nav a:hover {
+                background-color: #ccffd1;
+                text-decoration: none;
+                color: white;
+                
+            }
+
+            #logo {
+                font-family: 'Hind', sans-serif;
+                font-size: 30px;
+                letter-spacing: -2px;
+                text-shadow: 1px 1px 2px #c4c4c4;
+
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-right: 10px;
+                margin-top: -15px;
+            }
+
+        </style>
     <div>
     <nav>
         <a id="logo" href="{{url_for('home_route')}}">Flower Finder</a>
@@ -24,7 +67,7 @@
         <a href="{{url_for('identify')}}">Identify</a>
         <a href="{{url_for('database')}}">Database</a>
         <a href="{{url_for('citations')}}">Citations</a>
-        </nav>   
+    </nav>   
     </div>
         
     <div class="container">
