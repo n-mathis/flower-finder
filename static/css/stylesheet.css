@@ -242,12 +242,11 @@ h1, h2, h3, h4, h5, h6,
   }
   /* Style the tab content */
   .tabcontent {
-    display: block;
+    display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
     padding-bottom: 20px;
-    margin-bottom: 30px;
   }
 
 
@@ -255,7 +254,7 @@ h1, h2, h3, h4, h5, h6,
   background-color: #ADACB5;
   border: none;
   color: #2D3142;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
