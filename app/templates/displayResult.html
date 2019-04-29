@@ -8,30 +8,25 @@
     </head>
     <body>
         <div class=page-title>
-                Based off of our analysis this flower is {{ name }}!
-            </div>
-                 <div class="subpage-title">
+            Based off of our analysis this flower is {{ name }}!
+        </div>
+            <div class="subpage-title">
                 You can learn more about the {{ name }} and how to plant it and take care of it!
-
-
                 {% if second_prob > 0.01 and third_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
-    
                 {% elif second_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
-    
-            {% endif %}
-              </div>
-                <br></br>
-                <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
-                <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}">
-                <br></br>
-		        <a href="{{url_for('more_info', preds = prediction, index = index, output = output)}}" class="button" value="more_info">More Info about {{name}}</a>  
-        </div>
-        <div class="page-title">
-    
-            More information about the {{prediction}}  
-        </div>
+                {% endif %}
+            </div>
+            <div style="text-align: center;">
+                <div class="subpage-title">Uploaded flower and Predicted flower:</div>
+                <div>
+                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}"/>
+                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}"/>
+                    <a href="{{url_for('identify')}}" class="button" value="identify">Identify another flower!</a>  
+                </div>
+            </div>
+        <div class="page-title">More information about the {{ name }}</div>
         <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
@@ -50,23 +45,18 @@
         <div id="lifecycle-seasons" class="tabcontent">
             <h3>Lifecycle and Seasons</h3>
             <p>{{lifecycle}}</p>
-            <!-- <br></br> -->
             <p>{{seasons}}</p>
         </div>
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
             <p>{{difficulty}}</p>
-            <!-- <br></br> -->
             <p>{{planting}}</p>
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
             <p>{{sunlight}}</p>
-            <!-- <br></br> -->
             <p>{{watering}}</p>
-            <!-- <br></br> -->
             <p>{{soil}}</p>
-            <!-- <br></br> -->
             <p>{{warnings}}</p>
         </div>
         <div id="citation" class="tabcontent">
