@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6,
   }
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: #ADACB5;
   }
   /* Style the tab content */
   .tabcontent {
