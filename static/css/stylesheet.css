@@ -30,6 +30,49 @@ body {
     
 }
 
+/* NAV BAR STYLING */
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #95a599;
+}
+
+nav a {
+    display: block;
+    float: left;
+    
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    background-color: #ccffd1;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#logo {
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px 2px #c4c4c4;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
 /* DATABASE PAGE */
 .pagination {
     display: inline-block;
@@ -137,7 +180,7 @@ hr {
 }
 p {
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     font-family: 'Times New Roman', Times, serif;
 }
 h1, h2, h3, h4, h5, h6,
@@ -187,55 +230,7 @@ h1, h2, h3, h4, h5, h6,
   cursor: pointer;
 }
 
-/*Navigation Bar styling*/
 
-nav {
-  width: 100%;
-  height: 60px;
-  background-color: #95a599;
-}
-
-/*Buttons on navigation bar styling
-*/
-nav a {
-  display: block;
-  float: left;
-                
-  font-family: sans-serif;
-  font-size: 20px;
-  color: white;
-
-  padding-top: 25px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-
-  text-decoration: none;
-
-}
-
-/*Hover styling*/
-
-nav a:hover {
-  background-color: #ccffd1;
-  text-decoration: none;
-  color: white;
-                
-}
-
-/*Flower finder logo
-*/
-#logo {
-  font-family: 'Hind', sans-serif;
-  font-size: 30px;
-  letter-spacing: -2px;
-  text-shadow: 1px 1px 2px #c4c4c4;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: 10px;
-  margin-top: -15px;
-}
 
 .card-citation {
     position: relative;
@@ -254,74 +249,7 @@ nav a:hover {
 .card-link {
     position: absolute;
 }
-
-
-/* About page */
-
-.aboutpage-title{
-  color: #1d1d1d;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  background-size: auto;
-  background-color: #4777c9d3;
-  margin: 0;
-  padding: 0;
-  /* padding-top: 15px; */
-}
-
-.about-deck {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.about-deck .card1 {
-  margin-bottom: 15px;
-}
-
-@media (min-width: 576px) {
-  .about-deck {
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  .about-deck .card1 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex: 1 0 0%;
-    flex: 1 0 0%;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 0;
-    margin-left: 15px;
-  }
-}
-.card1 {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 4px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  border-color: #4c586d;
-}
-.card1-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
-
-/* Card styling for home page */
+/* Card styling  */
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -549,7 +477,6 @@ nav a:hover {
 
   /* Jumbotron  */
   .jumbotron {
-    text-align: center;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border: 4px;
@@ -558,14 +485,12 @@ nav a:hover {
     font-family: 'Times New Roman', Times, serif;
   }
   .display-4 {
-    text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
     font-family: 'Times New Roman', Times, serif;
   }
   .my-4 {
-    text-align: center;
     margin: 1.5rem !important;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -573,7 +498,6 @@ nav a:hover {
   /* Jumbotron button  */
   .btn {
     display: inline-block;
-    text-align: center;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     color: #212529;
@@ -592,15 +516,12 @@ nav a:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   .btn-primary {
-    text-align: center;
-    text-align: center;
     color: #fff;
     background-color: #5889bd;
     border-color: #5889bd;
   }
   .btn-primary:hover {
     color: #fff;
-    text-align: center;
     background-color: #466f9b;
     border-color: #466f9b;
   }
@@ -629,7 +550,6 @@ nav a:hover {
     background-color: #466f9b;
     border-color: #5889bd;
   }
-  
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
     background-color: #5889bd;
