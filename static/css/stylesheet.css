@@ -267,6 +267,7 @@ nav a:hover {
   font-family: 'Times New Roman', Times, serif;
 }
 .display-4about {
+  color: #1d1d1d;
   text-align: center;
   font-size: 3.5rem;
   font-weight: 300;
@@ -274,27 +275,18 @@ nav a:hover {
   font-family: 'Times New Roman', Times, serif;
 }
 .my-4about {
+  color: #1d1d1d;
   text-align: center;
   margin: 1.5rem !important;
   font-family: 'Times New Roman', Times, serif;
 }
 .leadabout {
+  color: #1d1d1d;
   font-size: 1.25rem;
   font-weight: 300;
   font-family: 'Times New Roman', Times, serif;
 }
-.aboutpage-title{
-  color: #1d1d1d;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  background-size: auto;
-  background-color: #4777c9d3;
-  margin: 0;
-  padding: 0;
-  /* padding-top: 15px; */
-}
+
 
 .about-deck {
   display: -ms-flexbox;
