@@ -76,7 +76,7 @@ def identify():
         predimg=str(pred_class)+".jpg"
         flower = flowerInfo(str(pred_class))
         for data in flower:
-            if data == "":
+            if str(data) == "" or str(data) == " ":
                 data="Sorry! We don't have extensive information about this flower :("
         name = flower[1]
         gen_info = flower[2]
