@@ -621,7 +621,9 @@ nav a:hover {
     background-color: #466f9b;
     border-color: #466f9b;
   }
-
+  .identify {
+    text-align: center;
+}
   /* Making containers responsive to any device */
   .container-fluid {
     width: 100%;
