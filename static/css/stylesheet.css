@@ -97,8 +97,7 @@ body {
 .cssPagination .pages > .page:target {
     display: block;
 }
-
-.page{
+.cssPagination {
     margin-bottom: 50px;
 }
 
