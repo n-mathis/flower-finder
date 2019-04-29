@@ -47,14 +47,14 @@ body {
 }
 
 .base-title{
-    color: #4c586d;
+    color: #1d1d1d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
 }
 .page-title{
-    color: #4c586d;
+    color: #1d1d1d;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: bold;
@@ -62,7 +62,7 @@ body {
     /* padding-top: 15px; */
 }
 .subpage-title{
-    color: #4c586d;
+    color: #1d1d1d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
