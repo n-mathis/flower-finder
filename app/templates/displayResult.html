@@ -8,28 +8,27 @@
     </head>
     <body>
         <div class=page-title>
-                Based off of our analysis this flower is {{ name }}!
-            </div>
-                 <div class="subpage-title">
+            Based off of our analysis this flower is {{ name }}!
+        </div>
+            <div class="subpage-title">
                 You can learn more about the {{ name }} and how to plant it and take care of it!
-
-
                 {% if second_prob > 0.01 and third_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
-    
                 {% elif second_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
-    
-            {% endif %}
-              </div>
-                <br></br>
+                {% endif %}
+            </div>
+            <br></br>
+            <div style="width:image width px; font-size:80%; text-align:center;">
+                Uploaded flower:
                 <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
+            </div>
+            <div style="width:image width px; font-size:80%; text-align:center;">
+                Predicted flower:
                 <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}">
-                <br></br>
-        </div>
-        <div class="page-title">
-            More information about the {{prediction}}  
-        </div>
+            </div>
+            <br></br>
+        <div class="page-title">More information about the {{prediction}}</div>
         <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
