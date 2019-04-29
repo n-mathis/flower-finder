@@ -257,6 +257,13 @@ nav a:hover {
 
 
 /* About page */
+.aboutsubpage-title{
+  color: #1d1d1d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin: auto;
+  
+}
 .jumbotronabout {
   text-align: center;
   padding: 2rem 1rem;
