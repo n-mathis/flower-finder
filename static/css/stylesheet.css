@@ -177,7 +177,6 @@ nav a {
   font-size: 20px;
   color: white;
 
-
   padding-top: 20px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -231,6 +230,17 @@ nav a:hover {
 
 
 /* About page */
+
+.aboutpage-title{
+  color: #1d1d1d;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-size: auto;
+  background-color: #4777c9d3;
+  /* padding-top: 15px; */
+}
 
 .about-deck {
   display: -ms-flexbox;
