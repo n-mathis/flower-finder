@@ -262,7 +262,7 @@ nav a:hover {
   padding: 0;
   margin-bottom: 2rem;
   border: 4px;
-  background-color: #4888c8d5;
+  background-color: #4888c8fa;
   border-radius: 0.3rem;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -276,6 +276,11 @@ nav a:hover {
 .my-4about {
   text-align: center;
   margin: 1.5rem !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+.leadabout {
+  font-size: 1.25rem;
+  font-weight: 300;
   font-family: 'Times New Roman', Times, serif;
 }
 .aboutpage-title{
