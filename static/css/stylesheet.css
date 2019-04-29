@@ -98,6 +98,10 @@ body {
     display: block;
 }
 
+.page{
+    padding-bottom: 50px;
+}
+
 .flowerimg{
     width: 100%
 }
