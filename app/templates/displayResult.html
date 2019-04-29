@@ -59,39 +59,20 @@
             
         <div id="lifecycle-seasons" class="tabcontent">
             <h3>Lifecycle and Seasons</h3>
-            {% if lifecycle == seasons %}
-                <p>{{lifecycle}}</p>
-            {% elif lifecycle != seasons %}
-                <p>{{lifecycle}}</p>
-                <p>{{seasons}}</p> 
-            {% endif %}
+            <p>{{lifecycle}}</p>
+            <p>{{seasons}}</p>
         </div>
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
-            {% if difficulty == planting %}
-                <p>{{difficulty}}</p>
-            {% elif difficulty != planting %}
-                <p>{{difficulty}}</p>
-                <p>{{planting}}</p> 
-            {% endif %}
+            <p>{{difficulty}}</p>
+            <p>{{planting}}</p>
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
-            {% if sunlight == watering and sunlight == soil and sunlight == warnings %}
-                <p>{{sunlight}}</p>
-            {% elif sunlight == watering and sunlight == soil and sunlight != warnings %}
-                <p>{{sunlight}}</p>
-                <p>{{warnings}}</p>
-            {% elif sunlight == watering and sunlight != soil and sunlight != warnings %}
-                <p>{{sunlight}}</p>
-                <p>{{watering}}</p>
-                <p>{{warnings}}</p>
-            {% elif sunlight != watering and sunlight != soil and sunlight != warnings %}
-                <p>{{sunlight}}</p>
-                <p>{{watering}}</p>
-                <p>{{soil}}</p>
-                <p>{{warnings}}</p>
-            {% endif %}
+            <p>{{sunlight}}</p>
+            <p>{{watering}}</p>
+            <p>{{soil}}</p>
+            <p>{{warnings}}</p>
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>

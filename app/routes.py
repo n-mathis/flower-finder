@@ -82,12 +82,28 @@ def identify():
         gen_info = flower[2]
         lifecycle = flower[3]
         seasons = flower[7]
+        if lifecycle == seasons:
+            seasons = ""
         difficulty = flower[4]
         planting = flower[5]
+        if difficulty == planting:
+            planting = ""
         sunlight = flower[9]
         watering = flower[6]
         soil = flower[10]
         warnings = flower[8]
+        if sunlight == watering:
+            if sunlight == soil:
+                if sunlight == warnings:
+                    warnings = ""
+                soil = ""
+            watering = ""
+        elif watering == soil:
+            if watering == warnings:
+                warnings = ""
+            soil = ""
+        elif soil == warnings:
+            warnings=""
         website = flower[11]
         citation = flower[12]
 
