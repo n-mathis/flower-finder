@@ -74,7 +74,7 @@ def identify():
         second_prob = round(top_three[1][1], 3)*100
         third_prob = round(top_three[2][1], 3)*100
         predimg=pred_class+".jpg"
-        flower = flowerInfo(pred_class)
+        flower = flowerInfo(str(pred_class))
         name = flower[1]
         gen_info = flower[2]
         lifecycle = flower[3]
