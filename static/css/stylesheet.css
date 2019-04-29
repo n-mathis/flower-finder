@@ -177,7 +177,6 @@ nav a {
   font-size: 20px;
   color: white;
 
-  border: 1px solid #000;
 
   padding-top: 20px;
   padding-right: 10px;
@@ -232,7 +231,6 @@ nav a:hover {
 
 
 /* About page */
-
 
 .about-deck {
   display: -ms-flexbox;
