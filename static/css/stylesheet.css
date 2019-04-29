@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6,
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    margin-bottom: 20px;
   }
   
   /* Style the buttons inside the tab */
@@ -254,7 +255,7 @@ h1, h2, h3, h4, h5, h6,
   background-color: #ADACB5;
   border: none;
   color: #2D3142;
-  padding: 15px 15px;
+  /* padding: 15px 15px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -262,8 +263,6 @@ h1, h2, h3, h4, h5, h6,
   margin: 4px 2px;
   cursor: pointer;
 }
-
-
 
 .card-citation {
     position: relative;
