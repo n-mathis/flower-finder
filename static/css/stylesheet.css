@@ -214,6 +214,9 @@ h1, h2, h3, h4, h5, h6,
 .widthset{
     max-width: 256px;
 }
+figure{
+    display: inline-block;
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
