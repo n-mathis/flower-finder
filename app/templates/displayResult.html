@@ -21,16 +21,13 @@
             <br></br>
             <div style="text-align: center;">
                 <div style="width:image width px; font-size:80%;">
-                    Uploaded flower:
-                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}">
-                </div>
-                <div style="width:image width px; font-size:80%;">
-                    Predicted flower:
-                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}">
+                    Uploaded flower and Predicted flower:
+                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}"/>
+                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}"/>
                 </div>
             </div>
             <br></br>
-        <div class="page-title">More information about the {{prediction}}</div>
+        <div class="page-title">More information about the {{ name }}</div>
         <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
