@@ -625,7 +625,7 @@ figcaption{
     text-align: center;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-    color: #212529;
+    color: white;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -643,15 +643,15 @@ figcaption{
   .btn-primary {
     text-align: center;
     text-align: center;
-    color: #fff;
-    background-color: #82AFB4;
-    border-color: #82AFB4;
+    color: black;
+    background-color: white;
+    border-color: white;
   }
   .btn-primary:hover {
     color: #fff;
     text-align: center;
-    background-color: #82AFB4;
-    border-color: #82AFB4;
+    background-color: white;
+    border-color: white;
   }
   .identify {
     text-align: center;
@@ -665,29 +665,29 @@ figcaption{
     margin-left: auto;
   }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 1);
 
   }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #5889bd;
-    border-color: #5889bd;
+    background-color: white;
+    border-color: white;
   }
  
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #466f9b;
-    border-color: #5889bd;
+    background-color: white;
+    border-color: white;
   }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #5889bd;
-    border-color: #5889bd;
+    background-color: white;
+    border-color: white;
   } 
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(63, 125, 191, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 1);
   }
 
 /* Paragraph Styling */
