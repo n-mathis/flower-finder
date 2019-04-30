@@ -71,6 +71,11 @@ body {
 }
 
 /* DATABASE PAGE */
+.page-bar .pagination>li>a,
+.page-bar .pagination>li>span {
+    border: 1px #E3ECE5;
+    color: #434D5F;
+}
 .pagination {
     display: inline-block;
     font-size: 15px;
@@ -87,7 +92,7 @@ body {
     color: white;
 }
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: #B8D0BE;
 }
 .cssPagination .pages > .page:target ~ .page:last-child,
 .cssPagination .pages > .page {
