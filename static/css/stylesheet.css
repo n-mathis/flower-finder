@@ -71,8 +71,6 @@ body {
 }
 
 /* DATABASE PAGE */
-
-
 .pagination {
     display: inline-block;
     font-size: 15px;
@@ -89,9 +87,9 @@ body {
     background-color: #B8D0BE;
     color: white;
 }
-.pagination>.disabled>span{
+.disabled{
     background-color: #E3ECE5 !important;
-    color: white !important;
+    color: grey !important;
 }
 .pagination a:hover:not(.active) {
     background-color: #B8D0BE;
