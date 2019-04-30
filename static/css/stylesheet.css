@@ -77,7 +77,7 @@ body {
     justify-content: center;
 } 
 .pagination a {
-    color: black;
+    color: #434D5F;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
@@ -625,7 +625,7 @@ figcaption{
     text-align: center;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: #434D5F;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -643,12 +643,12 @@ figcaption{
   .btn-primary {
     text-align: center;
     text-align: center;
-    color: black;
+    color: #434D5F;
     background-color: #B8D0BE;
     border-color: #B8D0BE;
   }
   .btn-primary:hover {
-    color: black;
+    color: #434D5F;
     text-align: center;
     background-color: #B8D0BE;
     border-color: #B8D0BE;
@@ -669,19 +669,19 @@ figcaption{
 
   }
   .btn-primary.disabled, .btn-primary:disabled {
-    color: black;
+    color: #434D5F;
     background-color: #B8D0BE;
     border-color: #B8D0BE;
   }
  
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
-    color:black;
+    color:#434D5F;
     background-color: #B8D0BE;
     border-color: #B8D0BE;
   }
   .btn-primary.disabled, .btn-primary:disabled {
-    color: black;
+    color: #434D5F;
     background-color: #B8D0BE;
     border-color: #B8D0BE;
   } 
