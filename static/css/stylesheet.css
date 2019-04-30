@@ -71,11 +71,8 @@ body {
 }
 
 /* DATABASE PAGE */
-.page-bar .pagination>li>a,
-.page-bar .pagination>li>span {
-    border: 1px #E3ECE5 !important;
-    color: #434D5F !important;
-}
+
+
 .pagination {
     display: inline-block;
     font-size: 15px;
@@ -92,7 +89,7 @@ body {
     background-color: #B8D0BE;
     color: white;
 }
-.pagination a.disabled .page-link {
+.pagination>.disabled>span{
     background-color: #E3ECE5 !important;
     color: white !important;
 }
