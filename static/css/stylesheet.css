@@ -99,8 +99,10 @@ body {
 }
 
 .flowerimg{
-    text-align:center;
-    width: 100%;
+    width: 100%
+}
+.flowercap{
+    text-align: center;
 }
 * {
     box-sizing: border-box;
@@ -141,9 +143,6 @@ body {
 }
 
 /* HOMEPAGE STUFF */
-#resizeh{
-    height: 500px;
-}
 .home-image{
     position: relative;
     display: block;
@@ -262,17 +261,16 @@ figcaption{
 
 
 .button {
-    border-color: white;
-    background-color: #white;
-    border: none;
-    color: black;
-    padding: 15px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: #ADACB5;
+  border: none;
+  color: #2D3142;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .card-citation {
@@ -282,7 +280,6 @@ figcaption{
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
-    width: auto;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
@@ -296,9 +293,6 @@ figcaption{
 
 
 /* About page */
-#resize {
-    height:250px;
-}
 .jumbotronabout {
   text-align: center;
   padding: 2rem 1rem;
