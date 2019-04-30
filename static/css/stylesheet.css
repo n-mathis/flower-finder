@@ -2,7 +2,7 @@
 nav {
     width: 100%;
     height: 60px;
-    background-color: #90B298;
+    background-color: #9AB7A1;
 }
 nav a {
     display: block;
@@ -298,7 +298,7 @@ figcaption{
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   border: 4px;
-  background-color: #E3ECE5;
+  background-color: #F1F6F2;
   border-radius: 0.3rem;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -602,7 +602,7 @@ figcaption{
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border: 4px;
-    background-color: #E3ECE5;
+    background-color: #F1F6F2;
     border-radius: 0.3rem;
     font-family: 'Times New Roman', Times, serif;
   }
