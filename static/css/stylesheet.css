@@ -43,18 +43,18 @@ body {
     background-color: white;
     /* #B5CBB7 */
     font-family: 'Times New Roman', Times, serif;
-    color: #1d1d1d;
+    color: #4c586d;
 }
 
 .base-title{
-    color: #1d1d1d;
+    color: #4c586d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
 }
 .page-title{
-    color: #1d1d1d;
+    color: #4c586d;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: bold;
@@ -62,7 +62,7 @@ body {
     /* padding-top: 15px; */
 }
 .subpage-title{
-    color: #1d1d1d;
+    color: #4c586d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
-    color: #1d1d1d;
+    color: #4c586d;
     font-family: 'Times New Roman', Times, serif;
 }
 .lead {
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* citations */
 .citations-about{
-    color: #1d1d1d;
+    color: #4c586d;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -263,7 +263,7 @@ figcaption{
 .button {
   background-color: #ADACB5;
   border: none;
-  color: #1d1d1d;
+  color: #4c586d;
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
@@ -303,7 +303,7 @@ figcaption{
   font-family: 'Times New Roman', Times, serif;
 }
 .display-4about {
-  color: #1d1d1d;
+  color: #4c586d;
   text-align: center;
   font-size: 3.5rem;
   font-weight: 300;
@@ -311,13 +311,13 @@ figcaption{
   font-family: 'Times New Roman', Times, serif;
 }
 .my-4about {
-  color: #1d1d1d;
+  color: #4c586d;
   text-align: center;
   margin: 1.5rem !important;
   font-family: 'Times New Roman', Times, serif;
 }
 .leadabout {
-  color: #1d1d1d;
+  color: #4c586d;
   font-size: 1.25rem;
   font-weight: 300;
   font-family: 'Times New Roman', Times, serif;
