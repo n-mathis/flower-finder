@@ -644,14 +644,14 @@ figcaption{
     text-align: center;
     text-align: center;
     color: black;
-    /* background-color: white;
-    border-color: white; */
+    background-color: #CAD2CC;
+    border-color: #CAD2CC;
   }
   .btn-primary:hover {
     color: black;
     text-align: center;
-    /* background-color: white;
-    border-color: white; */
+    background-color: #CAD2CC;
+    border-color: #CAD2CC;
   }
   .identify {
     text-align: center;
@@ -670,20 +670,20 @@ figcaption{
   }
   .btn-primary.disabled, .btn-primary:disabled {
     color: black;
-    /* background-color: white;
-    border-color: white; */
+    background-color: #CAD2CC;
+    border-color: #CAD2CC;
   }
  
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color:black;
-    /* background-color: white;
-    border-color: white; */
+    background-color: #CAD2CC;
+    border-color: #CAD2CC;
   }
   .btn-primary.disabled, .btn-primary:disabled {
     color: black;
-    /* background-color: white;
-    border-color: white; */
+    background-color: #CAD2CC;
+    border-color: #CAD2CC;
   } 
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
   .show > .btn-primary.dropdown-toggle:focus {
