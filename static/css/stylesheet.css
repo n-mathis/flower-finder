@@ -247,7 +247,7 @@ figcaption{
   }
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #D7DDD9;
+    background-color: #CAD2CC;
   }
   /* Style the tab content */
   .tabcontent {
@@ -298,7 +298,7 @@ figcaption{
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   border: 4px;
-  background-color: #4888c8d3;
+  background-color: #E5E8E6;
   border-radius: 0.3rem;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -602,7 +602,7 @@ figcaption{
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border: 4px;
-    background-color: #e9ecef;
+    background-color: #F2F4F2;
     border-radius: 0.3rem;
     font-family: 'Times New Roman', Times, serif;
   }
