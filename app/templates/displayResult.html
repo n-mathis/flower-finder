@@ -11,22 +11,36 @@
             Based off of our analysis this flower is {{ name }}!
         </div>
             <div class="subpage-title">
-                You can learn more about the {{ name }} and how to plant it and take care of it!
                 {% if second_prob > 0.01 and third_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
                 {% elif second_prob > 0.01 %}
                     There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
                 {% endif %}
+                You can learn more about the {{ name }} and how to plant it and take care of it!
             </div>
             <div style="text-align: center;">
-                <div class="subpage-title">Uploaded flower and Predicted flower:</div>
-                <div>
-                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}"/>
-                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}"/>
-                    <a href="{{url_for('identify')}}" class="button" value="identify">Identify another flower!</a>  
+                <figure>
+                    <figcaption class="subpage-title">Uploaded flower</figcaption>
+                    <img class="heightset widthset" src="/static/uploads{{ url_for('get_file', filename=filename) }}" alt='uploaded image of flower'>
+                </figure>
+                <figure>
+                    <figcaption class="subpage-title">Predicted flower</figcaption>
+                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}" alt='predicted flower image'>
+                </figure>
+                <br>
+                <div class="subpage-title">
+                    Identify another flower!
+                </div>
+                <div style="background-color: white; border-color: white; color: black" class="btn btn-primary btn-lg" href="#" role="button">
+                    <form method=post enctype=multipart/form-data>
+                        <input type=file name=file>
+                        <input type=submit value=Upload>
+                    </form>
                 </div>
             </div>
+        <br>
         <div class="page-title">More information about the {{ name }}</div>
+        <br>
         <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
@@ -44,26 +58,27 @@
             
         <div id="lifecycle-seasons" class="tabcontent">
             <h3>Lifecycle and Seasons</h3>
-            <p>{{lifecycle}}</p>
-            <p>{{seasons}}</p>
+            <p>Lifecycle: {{lifecycle}}</p>
+            <p>Seasons: {{seasons}}</p>
         </div>
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
-            <p>{{difficulty}}</p>
-            <p>{{planting}}</p>
+            <p>Difficulty: {{difficulty}}</p>
+            <p>How to Plant: {{planting}}</p>
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
-            <p>{{sunlight}}</p>
-            <p>{{watering}}</p>
-            <p>{{soil}}</p>
-            <p>{{warnings}}</p>
+            <p>Sunlight: {{sunlight}}</p>
+            <p>Watering: {{watering}}</p>
+            <p>Soil: {{soil}}</p>
+            <p>Warnings: {{warnings}}</p>
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>
             <p>{{citation}}</p>
         </div> 
-        
+        <br>
+        <br>
     </body>
 </html>
 {% endblock %}

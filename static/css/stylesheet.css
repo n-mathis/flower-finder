@@ -216,6 +216,12 @@ h1, h2, h3, h4, h5, h6,
 .widthset{
     max-width: 256px;
 }
+figure{
+    display: inline-block;
+}
+figcaption{
+    font-weight: bold; 
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -249,6 +255,7 @@ h1, h2, h3, h4, h5, h6,
     border: 1px solid #ccc;
     border-top: none;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 
 
@@ -256,7 +263,7 @@ h1, h2, h3, h4, h5, h6,
   background-color: #ADACB5;
   border: none;
   color: #2D3142;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;

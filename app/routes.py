@@ -9,6 +9,10 @@ from app import predictor
 import csv
 
 def flowerInfo(prediction):
+    """
+        Inputs: flower species common name
+        Outputs: all care and planting info about the inputted flower stored in the data.csv file
+    """
     with open('../cs121/app/Data.csv') as f:
         csv_f = csv.reader(f)
         flowers = {}
@@ -22,6 +26,9 @@ def get_file(filename):
 
 @app.route('/identify', methods=['GET', 'POST'])
 def identify():
+    """
+        routes/directs server to identify.html page and predicts the flower of an image if the file is uploaded under the right restrictions
+    """
     if request.method == 'POST':
         # check if the post request has the file part
         if 'file' not in request.files:
@@ -42,8 +49,6 @@ def identify():
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             flower = flowerInfo(str(pred_class))
             name = flower[1]
-
-
 
             output_list = [element.item() for element in output.flatten()]
 
@@ -75,6 +80,9 @@ def identify():
         third_prob = round(top_three[2][1], 3)*100
         predimg=str(pred_class)+".jpg"
         flower = flowerInfo(str(pred_class))
+        for i in range(len(flower)):
+            if str(flower[i]) == "" or str(flower[i]) == " ":
+                flower[i]="Sorry! We don't have extensive information about this flower :("
         name = flower[1]
         gen_info = flower[2]
         lifecycle = flower[3]
@@ -93,36 +101,6 @@ def identify():
              lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     return render_template('identify.html')
-
-@app.route('/more_info', methods=['GET', 'POST'])
-def more_info():
-    if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
-        return redirect(url_for('index'))
-    preds  = request.args.get('preds')
-    index  = request.args.get('index')
-    output  = request.args.get('output')
-    flower = flowerInfo(preds)
-    name = flower[1]
-    gen_info = flower[2]
-    lifecycle = flower[3]
-    seasons = flower[7]
-    difficulty = flower[4]
-    planting = flower[5]
-    sunlight = flower[9]
-    watering = flower[6]
-    soil = flower[10]
-    warnings = flower[8]
-    website = flower[11]
-    citation = flower[12]
-
-    return render_template('more.html', prediction = name, flower = flower, name = name, \
-        gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, \
-        watering = watering, seasons = seasons, warnings = warnings, sunlight = sunlight, \
-        soil = soil, website = website, citation = citation)
 
 @app.route('/')
 def home_route():
