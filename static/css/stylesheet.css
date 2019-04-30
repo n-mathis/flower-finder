@@ -87,12 +87,8 @@ body {
     background-color: #B8D0BE;
     color: white;
 }
-.disabled{
-    background-color: #E3ECE5 !important;
-    color: grey !important;
-}
 .pagination a:hover:not(.active) {
-    background-color: #B8D0BE;
+    background-color: #E3ECE5;
 }
 .cssPagination .pages > .page:target ~ .page:last-child,
 .cssPagination .pages > .page {
