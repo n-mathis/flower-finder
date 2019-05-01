@@ -53,7 +53,9 @@
         <!-- Tab content -->
         <div id="gen_info" class="tabcontent">
             <h3>General Info</h3>
-            <p>{{gen_info}}</p>
+                {% for line in gen_info %}
+                <p>{{line}}</p>
+                {% endfor %}
         </div>
             
         <div id="lifecycle-seasons" class="tabcontent">
@@ -64,17 +66,29 @@
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
             <p>Difficulty: {{difficulty}}</p>
-            <p>How to Plant: {{planting}}</p>
+            <p>How to Plant: </p>
+                {% for line in planting %}
+                <p>{{line}}</p>
+                {% endfor %}
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
-            <p>Sunlight: {{sunlight}}</p>
-            <p>Watering: {{watering}}</p>
+            <p>Sunlight: </p>
+                {% for line in sunlight %}
+                <p>{{line}}</p>
+                {% endfor %}
+            <p>Watering: </p>
+                {% for line in watering %}
+                <p>{{line}}</p>
+                {% endfor %}
             <p>Soil: </p>
-            {% for line in soil %}
-            <p>{{line}}</p>
-            {% endfor %}
-            <p>Warnings: {{warnings}}</p>
+                {% for line in soil %}
+                <p>{{line}}</p>
+                {% endfor %}
+            <p>Warnings:</p>
+                {% for line in warnings %}
+                <p>{{line}}</p>
+                {% endfor %}
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>

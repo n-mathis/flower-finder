@@ -87,15 +87,15 @@ def identify():
             if str(flower[i]) == "" or str(flower[i]) == " ":
                 flower[i]="Sorry! We don't have extensive information about this flower :("
         name = flower[1]
-        gen_info = flower[2]
+        gen_info = flower[2].split('\n')
         lifecycle = flower[3]
         seasons = flower[7]
         difficulty = flower[4]
-        planting = flower[5]
-        sunlight = flower[9]
-        watering = flower[6]
+        planting = flower[5].split('\n')
+        sunlight = flower[9].split('\n')
+        watering = flower[6].split('\n')
         soil = flower[10].split('\n')
-        warnings = flower[8]
+        warnings = flower[8].split('\n')
         website = flower[11]
         citation = flower[12]
 
