@@ -41,7 +41,6 @@
         <br>
         <div class="page-title">More information about the {{ name }}</div>
         <br>
-        <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
             <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">Lifecycle and Seasons</button>
@@ -50,7 +49,6 @@
             <button class="tablinks" onclick="openInfo(event, 'citation')">Citation</button>
         </div>
           
-        <!-- Tab content -->
         <div id="gen_info" class="tabcontent">
             <h3>General Info</h3>
                 {% for line in gen_info %}
@@ -68,31 +66,31 @@
             <p><b>Difficulty:</b> {{difficulty}}</p>
             <p><b>How to Plant:</b> </p>
                 {% for line in planting %}
-                <p class="info" style="text-indent: 40px">{{line}}</p>
+                <p>{{line}}</p>
                 {% endfor %}
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
             <p><b>Sunlight:</b> </p>
                 {% for line in sunlight %}
-                <p class="info">{{line}}</p>
+                <p>{{line}}</p>
                 {% endfor %}
             <p><b>Watering:</b> </p>
                 {% for line in watering %}
-                <p class="info">{{line}}</p>
+                <p>{{line}}</p>
                 {% endfor %}
             <p><b>Soil:</b> </p>
                 {% for line in soil %}
-                <p class="info">{{line}}</p>
+                <p>{{line}}</p>
                 {% endfor %}
             <p><b>Warnings:</b> </p>
                 {% for line in warnings %}
-                <p class="info">{{line}}</p>
+                <p>{{line}}</p>
                 {% endfor %}
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>
-            <p class="info">{{citation}}</p>
+            <p>{{citation}}</p>
         </div> 
         <br>
         <br>
