@@ -30,7 +30,7 @@ def more_info(species):
     warnings = flower[8].split('\n')
     website = flower[11]
     citation = flower[12]
-    return render_template('more_info.html', name=name,gen_info=gen_info, 
+    return render_template('more_info.html', species=species,name=name,gen_info=gen_info, 
              lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
 
