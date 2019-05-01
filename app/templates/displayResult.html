@@ -70,7 +70,10 @@
             <h3>More Care Info</h3>
             <p>Sunlight: {{sunlight}}</p>
             <p>Watering: {{watering}}</p>
-            <p>Soil: {{soil}}</p>
+            <p>Soil: </p>
+            {% for line in soil %}
+            <p>{{line}}</p>
+            {% endfor %}
             <p>Warnings: {{warnings}}</p>
         </div>
         <div id="citation" class="tabcontent">
