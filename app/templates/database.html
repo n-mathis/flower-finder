@@ -53,10 +53,7 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            <form action= '{% more_info%}' method="POST">
-                                    <input type="submit" value="Toggle" id="toggle1" />
-                                </form>
-                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" href='more_info'>Alpine Sea Holly</button>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Alpine Sea Holly</button>
                             <div class="modal fade" id="myModal" role="dialog">
                                 
                                 <div class="modal-dialog">
@@ -79,27 +76,27 @@
                                             
                                             <div id="gen_info" class="tabcontent">
                                                 <h3>General Info</h3>
-                                                    {% for line in gen_info %}
+                                                    <!-- {% for line in gen_info %}
                                                     <p>{{line}}</p>
-                                                    {% endfor %}
+                                                    {% endfor %} -->
                                             </div>
                                                 
                                             <div id="lifecycle-seasons" class="tabcontent">
                                                 <h3>Lifecycle and Seasons</h3>
-                                                <p> <b>Lifecycle:</b> {{lifecycle}}</p>
-                                                <p> <b>Seasons:</b> {{seasons}}</p>
+                                                <!-- <p> <b>Lifecycle:</b> {{lifecycle}}</p>
+                                                <p> <b>Seasons:</b> {{seasons}}</p> -->
                                             </div>
                                             <div id="difficulty-planting" class="tabcontent">
                                                 <h3>Planting</h3>
-                                                <p> <b>Difficulty:</b> {{difficulty}}</p>
+                                                <!-- <p> <b>Difficulty:</b> {{difficulty}}</p>
                                                 <p> <b>How to Plant:</b> </p>
                                                     {% for line in planting %}
                                                     <p>{{line}}</p>
-                                                    {% endfor %}
+                                                    {% endfor %} -->
                                                 </div>
                                                 <div id="sunlight-watering-soil-warnings" class="tabcontent">
                                                     <h3>More Care Info</h3>
-                                                <p> <b>Sunlight:</b> </p>
+                                                <!-- <p> <b>Sunlight:</b> </p>
                                                     {% for line in sunlight %}
                                                     <p>{{line}}</p>
                                                     {% endfor %}
@@ -114,11 +111,11 @@
                                                 <p> <b>Warnings:</b> </p>
                                                     {% for line in warnings %}
                                                     <p>{{line}}</p>
-                                                    {% endfor %}
+                                                    {% endfor %} -->
                                             </div>
                                             <div id="citation" class="tabcontent">
                                                 <h3>Citation</h3>
-                                                <p>{{citation}}</p>
+                                                <!-- <p>{{citation}}</p> -->
                                             </div> 
                                         </div>
                                         <div class="modal-footer">
