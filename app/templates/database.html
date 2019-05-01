@@ -53,7 +53,74 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            Alpine Sea Holly
+                            <div class="modal fade" id="myModal" role="dialog">
+                                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Alpine Sea Holly</button>
+                                <div class="modal-dialog">
+                                    
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <!-- <button type="button" class="close" data-dismiss="modal" >&times;</button> -->
+                                    <h4 class="modal-title">Alpine Sea Holly</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                        <div class="tab">
+                                            <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
+                                            <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">Lifecycle and Seasons</button>
+                                            <button class="tablinks" onclick="openInfo(event, 'difficulty-planting')">Planting</button>
+                                            <button class="tablinks" onclick="openInfo(event, 'sunlight-watering-soil-warnings')">More Care Info</button>
+                                            <button class="tablinks" onclick="openInfo(event, 'citation')">Citation</button>
+                                        </div>
+                                        
+                                        <!--<div id="gen_info" class="tabcontent">
+                                            <h3>General Info</h3>
+                                                {% for line in gen_info %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                        </div>
+                                            
+                                        <div id="lifecycle-seasons" class="tabcontent">
+                                            <h3>Lifecycle and Seasons</h3>
+                                            <p> <b>Lifecycle:</b> {{lifecycle}}</p>
+                                            <p> <b>Seasons:</b> {{seasons}}</p>
+                                        </div>
+                                        <div id="difficulty-planting" class="tabcontent">
+                                            <h3>Planting</h3>
+                                            <p> <b>Difficulty:</b> {{difficulty}}</p>
+                                            <p> <b>How to Plant:</b> </p>
+                                                {% for line in planting %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                        </div>
+                                        <div id="sunlight-watering-soil-warnings" class="tabcontent">
+                                            <h3>More Care Info</h3>
+                                            <p> <b>Sunlight:</b> </p>
+                                                {% for line in sunlight %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                            <p> <b>Watering:</b> </p>
+                                                {% for line in watering %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                            <p> <b>Soil:</b> </p>
+                                                {% for line in soil %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                            <p> <b>Warnings:</b> </p>
+                                                {% for line in warnings %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
+                                        </div>
+                                        <div id="citation" class="tabcontent">
+                                            <h3>Citation</h3>
+                                            <p>{{citation}}</p>
+                                        </div>  -->
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                     <div class="column">
