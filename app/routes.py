@@ -146,7 +146,8 @@ def nav():
 @app.route('/database', methods=['GET', 'POST'])
 def database():
     if request.method == 'POST':
-        flower = flowerInfo(str(species))
+        species = request.form['flower']
+        flower = flowerInfo(species)
         for i in range(len(flower)):
             if str(flower[i]) == "" or str(flower[i]) == " ":
                 flower[i]="Sorry! We don't have extensive information about this flower :("
