@@ -18,3 +18,26 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
+// function CSVToArray(filename){
+//     var cols = 13;
+//     var allTextLines = allText.split(/\r\n|\n/);
+//     var entries = allTextLines[0].split(',');
+//     var lines = [];
+
+//     var headings = entries.splice(0,cols);
+//     while (entries.length>0) {
+//         var tarr = [];
+//         for (var j=0; j<cols; j++) {
+//             tarr.push(headings[j]+":"+entries.shift());
+//         }
+//         lines.push(tarr);
+//     }
+
+//     with open('../cs121/app/flower-data.csv') as f:
+//         csv_f = csv.reader(f)
+//         flowers = {}
+//         for row in csv_f:
+//             flowers[row[0]] = row
+//         return flowers[prediction]
+
+// }
