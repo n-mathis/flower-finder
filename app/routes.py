@@ -8,7 +8,7 @@ from werkzeug import secure_filename
 from app import predictor 
 import csv
 
-@app.route('/more_info/<species>')
+@app.route('/<species>')
 def more_info(species):
     """
         Inputs: flower species common name
@@ -31,9 +31,8 @@ def more_info(species):
     warnings = flower[8].split('\n')
     website = flower[11]
     citation = flower[12]
-    return render_template('more_info.html', species=species,name=name,gen_info=gen_info, 
-             lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-             warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
+    return (species,name,gen_info, lifecycle, difficulty, planting , watering , seasons , 
+             warnings , sunlight , soil , website , citation )
 
 def flowerInfo(prediction):
     """
