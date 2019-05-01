@@ -8,7 +8,7 @@ from werkzeug import secure_filename
 from app import predictor 
 import csv
 
-@app.route('/<species>')
+@app.route('/more_info')
 def more_info(species):
     """
         Inputs: flower species common name
