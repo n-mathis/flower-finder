@@ -14,6 +14,7 @@ def more_info(species):
         Inputs: flower species common name
         Outputs: all care and planting info about the inputted flower stored in the data.csv file
     """
+    species = request.args.get('species')
     flower = flowerInfo(str(species))
     for i in range(len(flower)):
         if str(flower[i]) == "" or str(flower[i]) == " ":
