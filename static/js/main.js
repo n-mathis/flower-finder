@@ -1,3 +1,5 @@
+npm install papaparse
+
 function openInfo(evt, infoType) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -18,26 +20,25 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
-// function CSVToArray(filename){
-//     var cols = 13;
-//     var allTextLines = allText.split(/\r\n|\n/);
-//     var entries = allTextLines[0].split(',');
-//     var lines = [];
+  // this function is called when a "change" event happens on the "input" element in the HTML
+function loadFile(event) {
+    output.innerHTML = ""; // make sure to clear the output when getting a new file
+    let file = event.target.files[0]; // the "change" event itself gets passed to this function
+    
+    // make sure the file is a CSV
+    if (file.type !== "text/csv") {
+      printToOutput("This app can only take CSV files!");
+      return; // stop trying to do the other stuff in this function
+  }
+  import CSV from 'comma-separated-values';
+function readCSV(flower){}
+    const csv = new CSV(data, {header: true}).parse();
+    const cols = [[],[],[],[]];
+    csv.forEach(row => {
+    row.forEach((cell, idx) => {
+        cols[idx].push(cell);
+    });
+    })
+    return flowers[flower]
+  }
 
-//     var headings = entries.splice(0,cols);
-//     while (entries.length>0) {
-//         var tarr = [];
-//         for (var j=0; j<cols; j++) {
-//             tarr.push(headings[j]+":"+entries.shift());
-//         }
-//         lines.push(tarr);
-//     }
-
-//     with open('../cs121/app/flower-data.csv') as f:
-//         csv_f = csv.reader(f)
-//         flowers = {}
-//         for row in csv_f:
-//             flowers[row[0]] = row
-//         return flowers[prediction]
-
-// }
