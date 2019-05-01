@@ -261,6 +261,7 @@ figcaption{
   }
 .info {
     text-indent: 40px;
+    color: green;
 }
 
 .button {
@@ -695,6 +696,6 @@ figcaption{
 
 /* Paragraph Styling */
 p {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
