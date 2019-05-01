@@ -94,7 +94,7 @@ def identify():
         planting = flower[5]
         sunlight = flower[9]
         watering = flower[6]
-        soil = flower[10]
+        soil = flower[10].replace("\n","<br />\n")
         warnings = flower[8]
         website = flower[11]
         citation = flower[12]
