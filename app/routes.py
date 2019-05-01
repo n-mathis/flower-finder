@@ -56,6 +56,7 @@ def identify():
         routes/directs server to identify.html page and predicts the flower of an image if the file is uploaded under the right restrictions
     """
     if request.method == 'POST':
+        classes=[]
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
