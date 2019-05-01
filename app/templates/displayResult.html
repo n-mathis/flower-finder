@@ -60,39 +60,39 @@
             
         <div id="lifecycle-seasons" class="tabcontent">
             <h3>Lifecycle and Seasons</h3>
-            <p>Lifecycle: {{lifecycle}}</p>
-            <p>Seasons: {{seasons}}</p>
+            <p><b>Lifecycle:</b> {{lifecycle}}</p>
+            <p><b>Seasons:</b> {{seasons}}</p>
         </div>
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
-            <p>Difficulty: {{difficulty}}</p>
-            <p>How to Plant: </p>
+            <p><b>Difficulty:</b> {{difficulty}}</p>
+            <p><b>How to Plant:</b> </p>
                 {% for line in planting %}
-                <p>{{line}}</p>
+                <p class="info">{{line}}</p>
                 {% endfor %}
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
-            <p>Sunlight: </p>
+            <p><b>Sunlight:</b> </p>
                 {% for line in sunlight %}
-                <p>{{line}}</p>
+                <p class="info">{{line}}</p>
                 {% endfor %}
-            <p>Watering: </p>
+            <p><b>Watering:</b> </p>
                 {% for line in watering %}
-                <p>{{line}}</p>
+                <p class="info">{{line}}</p>
                 {% endfor %}
-            <p>Soil: </p>
+            <p><b>Soil:</b> </p>
                 {% for line in soil %}
-                <p>{{line}}</p>
+                <p class="info">{{line}}</p>
                 {% endfor %}
-            <p>Warnings:</p>
+            <p><b>Warnings:</b> </p>
                 {% for line in warnings %}
-                <p>{{line}}</p>
+                <p class="info">{{line}}</p>
                 {% endfor %}
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>
-            <p>{{citation}}</p>
+            <p class="info">{{citation}}</p>
         </div> 
         <br>
         <br>

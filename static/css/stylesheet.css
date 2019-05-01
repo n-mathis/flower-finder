@@ -259,7 +259,9 @@ figcaption{
     padding-bottom: 20px;
     padding-top: 20px;
   }
-
+.info {
+    padding-right: 5px;
+}
 
 .button {
   background-color: #ADACB5;
