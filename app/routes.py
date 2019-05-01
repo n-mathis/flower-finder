@@ -7,7 +7,7 @@ import os
 from werkzeug import secure_filename
 from app import predictor 
 import csv
-@app.route('/more_info', methods=['POST'])
+@app.route('/data', methods=['POST'])
 def more_info():
     """
         Inputs: flower species common name
@@ -31,7 +31,7 @@ def more_info():
         warnings = flower[8].split('\n')
         website = flower[11]
         citation = flower[12]
-        return render_template('displayResult.html',
+        return render_template('database.html',
                 name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
                 lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
                 warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
