@@ -260,8 +260,7 @@ figcaption{
     padding-top: 20px;
   }
 .info {
-    text-indent: 40px;
-    color: green;
+    text-indent: 40px !important;
 }
 
 .button {
@@ -696,6 +695,6 @@ figcaption{
 
 /* Paragraph Styling */
 p {
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
