@@ -13,7 +13,7 @@ def flowerInfo(prediction):
         Inputs: flower species common name
         Outputs: all care and planting info about the inputted flower stored in the data.csv file
     """
-    with open('../cs121/app/Data.csv') as f:
+    with open('../cs121/app/flower-data.csv') as f:
         csv_f = csv.reader(f)
         flowers = {}
         for row in csv_f:
@@ -79,8 +79,8 @@ def identify():
         first_prob = round(top_three[0][1], 3)*100
         if first_prob < 50:
             return render_template('identify.html', alert= True)
-        second_prob = round(round(top_three[1][1], 3)*100,2)
-        third_prob = round(round(top_three[2][1], 3)*100,2)
+        second_prob = round(round(top_three[1][1], 3)*100,4)
+        third_prob = round(round(top_three[2][1], 3)*100,4)
         predimg=str(pred_class)+".jpg"
         flower = flowerInfo(str(pred_class))
         for i in range(len(flower)):
