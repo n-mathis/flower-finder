@@ -156,7 +156,7 @@ body {
     height: auto;
 }
 .home-image .text {
-    color: rgb(228, 228, 228);
+    color: black;
     text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
