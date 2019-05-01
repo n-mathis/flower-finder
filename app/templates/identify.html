@@ -46,7 +46,11 @@
     <title> Identify</title>
     <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
 </head>
+{% if alert %} 
+<body onload="alert('Sorry! We were unable to identify this flower. Please upload another photo.')" >
+{% else %}
 <body>
+{% endif %}
     <div class="identify">
         <div class="jumbotron">
             <div class="display-4">Identify your flower!</div>
