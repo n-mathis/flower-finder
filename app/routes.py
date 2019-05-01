@@ -76,8 +76,11 @@ def identify():
         flower_prob = list(zip(classes, output_list))
         flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
         top_three = flower_prob[0:3]
-        second_prob = round(top_three[1][1], 3)*100
-        third_prob = round(top_three[2][1], 3)*100
+        first_prob = round(top_three[0][1], 3)*100
+        if first_prob < 50:
+            return render_template('identify.html', alert= True)
+        second_prob = round(round(top_three[1][1], 3)*100,2)
+        third_prob = round(round(top_three[2][1], 3)*100,2)
         predimg=str(pred_class)+".jpg"
         flower = flowerInfo(str(pred_class))
         for i in range(len(flower)):
