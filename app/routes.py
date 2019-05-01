@@ -44,11 +44,7 @@ def flowerInfo(prediction):
         flowers = {}
         for row in csv_f:
             flowers[row[0]] = row
-        flower = flowers[prediction]
-    return (prediciton=pred_class, predictionimg=predimg,
-             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
-             lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-             warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
+        return flowers[prediction]
 
 @app.route('/<filename>')
 def get_file(filename):
