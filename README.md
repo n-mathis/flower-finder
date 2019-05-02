@@ -10,12 +10,9 @@ If you are interested in checking out the repository, here is some helpful infor
 
 ## App folder:
 - The app folder stores the model we trained, our routing file, all of the data we are using to provide users with more information about the flowers, and the templates folder. 
-	## - templates folder: 
-		- The templates folder holds all of our .html front-end code. Each page of the web app has its own
-		html file. However, base.html is the file that extend across all of our files to ensure
-		consistency. They hold the background color, the navigation, and thefooter. The rest of the file
-		names correspond to the page names. For example, database.html refers to the Databse tab on the
-		website. 
+
+## - templates folder: 
+- The templates folder holds all of our .html front-end code. Each page of the web app has its own html file. However, base.html is the file that extend across all of our files to ensure consistency. They hold the background color, the navigation, and thefooter. The rest of the file names correspond to the page names. For example, database.html refers to the Databse tab on the website. 
 		
 ## Static folder: 
 The static folder holds all of our .css files, images, and a JavaScript folder.
