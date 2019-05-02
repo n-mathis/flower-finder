@@ -58,7 +58,7 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            <form class="form-inline" id="submit-button" href="{{ url_for('getData', alpineseaholly) }}">
+                            <form class="form-inline" id="submit-button" action="/getData" method="post">
                                     <button class="btn btn-primary">Alpine Sea Holly</button>
                             </form>
                             <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">

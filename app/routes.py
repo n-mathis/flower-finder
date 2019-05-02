@@ -8,13 +8,13 @@ from werkzeug import secure_filename
 from app import predictor 
 import csv
 
-@app.route('/<species>')
-def getData(species):
+@app.route('/getData', methods=['POST'])
+def getData():
     """
         Inputs: flower species common name
         Outputs: all care and planting info about the inputted flower stored in the data.csv file
     """
-    flower = flowerInfo(str(species))
+    flower = flowerInfo('alpineseaholly')
     for i in range(len(flower)):
         if str(flower[i]) == "" or str(flower[i]) == " ":
             flower[i]="Sorry! We don't have extensive information about this flower :("
