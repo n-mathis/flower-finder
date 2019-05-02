@@ -7,6 +7,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    
 </head>
 <body>
     <div class="page-title">
@@ -53,7 +59,53 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            Alpine Sea Holly
+                            <!-- <form action="/more_info" method="post"><button name="forwardBtn" type="submit">Forward</button>
+                            </form> -->
+                            <a href="#" class="btn btn-lg btn-success flwrbtn" data-toggle="modal" data-target="#largeModal">Alpine Sea Holly</a>
+                                <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="myModalLabel">Alpine Sea Holly</h4>
+                                        </div>
+                                        <div class="tab-v2">
+                                            <ul class="nav nav-tabs" id="myTab">
+                                            <li><a href="#gen_info" data-toggle="tab">General Info</a></li>
+                                            <li><a href="#lfc_seasons" data-toggle="tab">Lifecycle and Seasons</a></li>
+                                            <li><a href="#planting" data-toggle="tab">Planting</a></li>
+                                            <li><a href="#sun_water_soil_warn" data-toggle="tab">More Care Info</a></li>
+                                            <li><a href="#citation" data-toggle="tab">Citation</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in " id="gen_info">
+                                                    <br>
+                                                    <p>General Info</p>
+                                                </div>
+                                            
+                                                <div class="tab-pane fade in" id="lfc_seasons">
+                                                    <br>          
+                                                    <p>Lifecycle and Seasons</p>          
+                                                </div>
+                                                <div class="tab-pane fade in" id="planting">
+                                                    <br>
+                                                    <p>Planting</p>
+                                                </div>
+                                                <div class="tab-pane fade in" id="sun_water_soil_warn">
+                                                    <br>          
+                                                    <p>More Care Info</p>          
+                                                </div>
+                                                <div class="tab-pane fade in" id="citation">
+                                                    <br>
+                                                    <p>Citation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="column">
