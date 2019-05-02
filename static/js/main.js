@@ -1,5 +1,3 @@
-npm install papaparse
-
 function openInfo(evt, infoType) {
     // Declare all variables
     var i, tabcontent, tablinks;
