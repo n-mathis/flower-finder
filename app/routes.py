@@ -122,7 +122,6 @@ def nav():
 def database():
     if request.method =='POST':
         species = request.form['flower']
-        print(species, file=sys.stderr)
         flower = flowerInfo(species)
         for i in range(len(flower)):
             if str(flower[i]) == "" or str(flower[i]) == " ":
