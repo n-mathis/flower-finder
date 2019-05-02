@@ -34,7 +34,7 @@ def getData():
     #          lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     # return jsonify({gen_info})
-    # return (''), 204
+    return (''), 204
 
 def flowerInfo(prediction):
     """
