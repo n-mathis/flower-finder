@@ -1,16 +1,16 @@
-#The Flower Finder Web App
-##By: Alanna DeMuro, Isaiah Fujii Bresnihan, Lizzy Riffle, NaNa Mathis
+# The Flower Finder Web App
+## By: Alanna DeMuro, Isaiah Fujii Bresnihan, Lizzy Riffle, NaNa Mathis
 
-###Flower Finder is a web application built by four computer science students for a class project. We use a ResNet34 machine learning model that accurately predicts (5% error rate) the flower type from an image that the user uploads. 
+### Flower Finder is a web application built by four computer science students for a class project. We use a ResNet34 machine learning model that accurately predicts (5% error rate) the flower type from an image that the user uploads. 
 
 If you are interested in checking out the repository, here is some helpful information. 
 
-##Setup folder: 
+## Setup folder: 
 - The set up folder holds all the necessary files to get the web app running on an AWS ec2 instance. The README file included in that folder provides instructions on how to set it up, from our professor, Prof Z. You should only use this setup if you are in the CS121 class at Harvey Mudd College during Spring 2019.
 <br> 
-##App folder:
+## App folder:
 - The app folder stores the model we trained, our routing file, all of the data we are using to provide users with more information about the flowers, and the templates folder. 
-	##- Templates folder: 
+	## - Templates folder: 
 		- The templates folder holds all of our .html front-end code. Each page of the web app has its own
 		html file. However, base.html is the file that extend across all of our files to ensure
 		consistency. They hold the background color, the navigation, and thefooter. The rest of the file
