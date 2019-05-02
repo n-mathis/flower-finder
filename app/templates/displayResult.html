@@ -39,7 +39,7 @@
                 </div>
             </div>
         <br>
-        <p>{{gen_info}}</p>
+        
         <div class="page-title">More information about the {{ name }}</div>
         <br>
         <div class="tab">
@@ -52,6 +52,7 @@
           
         <div id="gen_info" class="tabcontent">
             <h3>General Info</h3>
+            <p>{{gen_info}}</p>
                 {% for line in gen_info %}
                 <p>{{line}}</p>
                 {% endfor %}
