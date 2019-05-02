@@ -22,3 +22,15 @@ function openInfo(evt, infoType) {
     $('#myModal').modal('show');
     e.preventDefault();
   });
+
+  $('#myFormSubmit').click(function(e){
+    e.preventDefault();
+    alert($('#myField').val());
+    /*
+    $.post('http://path/to/post', 
+       $('#myForm').serialize(), 
+       function(data, status, xhr){
+         // do something here with response;
+       });
+    */
+});
