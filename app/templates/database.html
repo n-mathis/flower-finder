@@ -59,9 +59,10 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            <!-- <form action="/more_info" method="post"><button name="forwardBtn" type="submit">Forward</button>
-                            </form> -->
-                            <a href="#" class="btn btn-lg btn-success flwrbtn" data-toggle="modal" data-target="#largeModal">Alpine Sea Holly</a>
+                            <form class="form-inline" onsubmit="openModal()" id="myForm">
+                                <button type="submit" class="btn btn-primary">Alpine Sea Holly</button>
+                            </form>
+                            <!-- <a href="#" class="btn btn-lg btn-success flwrbtn" data-toggle="modal" data-target="#largeModal">Alpine Sea Holly</a> -->
                                 <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
