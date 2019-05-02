@@ -7,36 +7,36 @@ import os
 from werkzeug import secure_filename
 from app import predictor 
 import csv
-@app.route('/', methods=['POST'])
-def more_info():
-    """
-        Inputs: flower species common name
-        Outputs: all care and planting info about the inputted flower stored in the data.csv file
-    """
-    if request.method =='POST':
-        species = request.args.get('species')
-        flower = flowerInfo(str(species))
-        for i in range(len(flower)):
-            if str(flower[i]) == "" or str(flower[i]) == " ":
-                flower[i]="Sorry! We don't have extensive information about this flower :("
-        name = flower[1]
-        gen_info = flower[2].split('\n')
-        lifecycle = flower[3]
-        seasons = flower[7]
-        difficulty = flower[4]
-        planting = flower[5].split('\n')
-        sunlight = flower[9].split('\n')
-        watering = flower[6].split('\n')
-        soil = flower[10].split('\n')
-        warnings = flower[8].split('\n')
-        website = flower[11]
-        citation = flower[12]
-        return render_template('database.html',
-                name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
-                lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-                warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
+# @app.route('/', methods=['POST'])
+# def more_info():
+#     """
+#         Inputs: flower species common name
+#         Outputs: all care and planting info about the inputted flower stored in the data.csv file
+#     """
+#     if request.method =='POST':
+#         species = request.args.get('species')
+#         flower = flowerInfo(str(species))
+#         for i in range(len(flower)):
+#             if str(flower[i]) == "" or str(flower[i]) == " ":
+#                 flower[i]="Sorry! We don't have extensive information about this flower :("
+#         name = flower[1]
+#         gen_info = flower[2].split('\n')
+#         lifecycle = flower[3]
+#         seasons = flower[7]
+#         difficulty = flower[4]
+#         planting = flower[5].split('\n')
+#         sunlight = flower[9].split('\n')
+#         watering = flower[6].split('\n')
+#         soil = flower[10].split('\n')
+#         warnings = flower[8].split('\n')
+#         website = flower[11]
+#         citation = flower[12]
+#         return render_template('database.html',
+#                 name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
+#                 lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
+#                 warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
 
-    return render_template('database.html')
+#     return render_template('database.html')
 
 def flowerInfo(prediction):
     """
@@ -103,36 +103,36 @@ def identify():
             'treepoppy', 'trumpetcreeper', 'wallflower', 'watercress', 'waterlily', 'wildpansy', \
             'windflower', 'yellowiris']
 
-            flower_prob = list(zip(classes, output_list))
-            flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
-            top_three = flower_prob[0:3]
-            first_prob = round(top_three[0][1], 3)*100
-            if first_prob < 50:
-                return render_template('identify.html', alert= True)
-            second_prob = round(round(top_three[1][1], 3)*100,4)
-            third_prob = round(round(top_three[2][1], 3)*100,4)
-            predimg=str(pred_class)+".jpg"
-            flower = flowerInfo(str(pred_class))
-            for i in range(len(flower)):
-                if str(flower[i]) == "" or str(flower[i]) == " ":
-                    flower[i]="Sorry! We don't have extensive information about this flower :("
-            name = flower[1]
-            gen_info = flower[2].split('\n')
-            lifecycle = flower[3]
-            seasons = flower[7]
-            difficulty = flower[4]
-            planting = flower[5].split('\n')
-            sunlight = flower[9].split('\n')
-            watering = flower[6].split('\n')
-            soil = flower[10].split('\n')
-            warnings = flower[8].split('\n')
-            website = flower[11]
-            citation = flower[12]
+        flower_prob = list(zip(classes, output_list))
+        flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
+        top_three = flower_prob[0:3]
+        first_prob = round(top_three[0][1], 3)*100
+        if first_prob < 50:
+            return render_template('identify.html', alert= True)
+        second_prob = round(round(top_three[1][1], 3)*100,4)
+        third_prob = round(round(top_three[2][1], 3)*100,4)
+        predimg=str(pred_class)+".jpg"
+        flower = flowerInfo(str(pred_class))
+        for i in range(len(flower)):
+            if str(flower[i]) == "" or str(flower[i]) == " ":
+                flower[i]="Sorry! We don't have extensive information about this flower :("
+        name = flower[1]
+        gen_info = flower[2].split('\n')
+        lifecycle = flower[3]
+        seasons = flower[7]
+        difficulty = flower[4]
+        planting = flower[5].split('\n')
+        sunlight = flower[9].split('\n')
+        watering = flower[6].split('\n')
+        soil = flower[10].split('\n')
+        warnings = flower[8].split('\n')
+        website = flower[11]
+        citation = flower[12]
 
-            return render_template('displayResult.html', filename=filename, prediciton=pred_class, predictionimg=predimg,
-                name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
-                lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-                warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
+        return render_template('displayResult.html', filename=filename, prediciton=pred_class, predictionimg=predimg,
+             name=name, top_three = top_three, second_prob = second_prob, third_prob = third_prob, gen_info=gen_info, 
+             lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
+             warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     return render_template('identify.html')
 
 @app.route('/')
