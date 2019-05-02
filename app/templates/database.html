@@ -59,7 +59,7 @@
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
                             <form class="form-inline" id="submit-button" action="/more/alpineseaholly" method="post">
-                                    <button class="btn btn-primary"></button>Alpine Sea Holly</button>
+                                    <button class="btn btn-primary">Alpine Sea Holly</button>
                             </form>
                             <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -76,9 +76,13 @@
                                         <li><a href="#citation" data-toggle="tab">Citation</a></li>
                                         </ul>
                                         <div class="tab-content">
+                                            
                                             <div class="tab-pane fade in " id="gen_info">
                                                 <br>
-                                                <p>General Info</p>
+                                                <h3>General Info</h3>
+                                                {% for line in gen_info %}
+                                                <p>{{line}}</p>
+                                                {% endfor %}
                                             </div>
                                         
                                             <div class="tab-pane fade in" id="lfc_seasons">
