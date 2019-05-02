@@ -19,16 +19,13 @@ If you are interested in checking out the repository, here is some helpful infor
 		
 ## Static folder: 
 The static folder holds all of our .css files, images, and a JavaScript folder.
-	## - css: 
 	
-		- This folder houses all of the .css styling files for our app. The stylesheet.css is the main
-		stylesheet that sets the background, navigation bar, and most text on the website for all of the
-		pages on the website. The rest of the file names correspond to the page names on our website. For
-		example, identify.css is the style sheet for the Identify page and styles the identify.html file. 
+## - css: 
+	
+- This folder houses all of the .css styling files for our app. The stylesheet.css is the main stylesheet that sets the background, navigation bar, and most text on the website for all of the pages on the website. The rest of the file names correspond to the page names on our website. For example, identify.css is the style sheet for the Identify page and styles the identify.html file. 
 		
-	## - imgs:
-		- We use this folder to hold all the images that are displayed on our website. For example, the 
-		Database images and the About page images. 
+## - imgs:
+- We use this folder to hold all the images that are displayed on our website. For example, the Database images and the About page images. 
 		
-	## - js:
-	 	- main.js is used to display information on the displayResults.html page. 
+## - js:
+- main.js is used to display information on the displayResults.html page. 
