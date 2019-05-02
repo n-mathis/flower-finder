@@ -42,6 +42,7 @@
         
         <div class="page-title">More information about the {{ name }}</div>
         <br>
+        <!-- Tab links -->
         <div class="tab">
             <button class="tablinks" onclick="openInfo(event, 'gen_info')">General Info</button>
             <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">Lifecycle and Seasons</button>
@@ -50,44 +51,31 @@
             <button class="tablinks" onclick="openInfo(event, 'citation')">Citation</button>
         </div>
           
+        <!-- Tab content -->
         <div id="gen_info" class="tabcontent">
             <h3>General Info</h3>
-                {% for line in gen_info %}
-                <p>{{line}}</p>
-                {% endfor %}
+            <p>{{gen_info}}</p>
         </div>
             
         <div id="lifecycle-seasons" class="tabcontent">
             <h3>Lifecycle and Seasons</h3>
-            <p><b>Lifecycle:</b> {{lifecycle}}</p>
-            <p><b>Seasons:</b> {{seasons}}</p>
+            <p>Lifecycle: {{lifecycle}}</p>
+            <p>Seasons: {{seasons}}</p>
         </div>
         <div id="difficulty-planting" class="tabcontent">
             <h3>Planting</h3>
-            <p><b>Difficulty:</b> {{difficulty}}</p>
-            <p><b>How to Plant:</b> </p>
-                {% for line in planting %}
-                <p>{{line}}</p>
-                {% endfor %}
+            <p>Difficulty: {{difficulty}}</p>
+            <p>How to Plant: {{planting}}</p>
         </div>
         <div id="sunlight-watering-soil-warnings" class="tabcontent">
             <h3>More Care Info</h3>
-            <p><b>Sunlight:</b> </p>
-                {% for line in sunlight %}
-                <p>{{line}}</p>
-                {% endfor %}
-            <p><b>Watering:</b> </p>
-                {% for line in watering %}
-                <p>{{line}}</p>
-                {% endfor %}
-            <p><b>Soil:</b> </p>
-                {% for line in soil %}
-                <p>{{line}}</p>
-                {% endfor %}
-            <p><b>Warnings:</b> </p>
-                {% for line in warnings %}
-                <p>{{line}}</p>
-                {% endfor %}
+            <p>Sunlight: {{sunlight}}</p>
+            <p>Watering: {{watering}}</p>
+            <p>Soil: </p>
+            {% for line in soil %}
+            <p>{{line}}</p>
+            {% endfor %}
+            <p>Warnings: {{warnings}}</p>
         </div>
         <div id="citation" class="tabcontent">
             <h3>Citation</h3>
