@@ -79,6 +79,6 @@ function openInfo(evt, infoType) {
    
 //    });
 
-$.getJSON( '/getData', { 'thing' : some_js_value } , function( data ) {
-    //do stuff with data
-});
+// $.getJSON( '/getData', { 'thing' : some_js_value } , function( data ) {
+//     //do stuff with data
+// });
