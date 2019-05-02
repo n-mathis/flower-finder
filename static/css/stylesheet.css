@@ -143,6 +143,18 @@ body {
     }
 }
 
+/*more info page*/
+.predimg {
+  text-align: center;
+}
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #E3ECE5;
+    width: 200px; /* width of image */
+    height: 50px; /* height of image */
+    border: 0;
+}
+
 /* HOMEPAGE STUFF */
 .home-image{
     position: relative;
@@ -259,7 +271,6 @@ figcaption{
     border-top: none;
     padding-bottom: 20px;
     padding-top: 20px;
-    font-weight: bold;
   }
 
 .button {
