@@ -34,16 +34,16 @@ function openInfo(evt, infoType) {
 //        });
 //     */
 // });
-// $("#submit-button").submit(function(e){
-//     $('#largeModal').modal('show');
-//     return false;
-// });
-// $(document).ready(function() {
-//     $('#submit-button').on('submit', function(e){
-//         $('#largeModal').modal('show');
-//         e.preventDefault();
-//     });
-//   });
+$("#submit-button").submit(function(e){
+    $('#largeModal').modal('show');
+    return false;
+});
+$(document).ready(function() {
+    $('#submit-button').on('submit', function(e){
+        $('#largeModal').modal('show');
+        e.preventDefault();
+    });
+  });
 // $(function() {
 //     $('button').click(function() {
 //         $.ajax({
