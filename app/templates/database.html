@@ -12,6 +12,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="{{ url_for('static', filename='/static/js/main.js') }}" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+    $("#search_form_input").keyup(function(){
+        var text = $(this).val();
+    
+        $.ajax({
+          url: "/suggestions",
+          type: "get",
+          data: {jsdata: text},
+          success: function(response) {
+            $("#place_for_suggestions").html(response);
+          },
+          error: function(xhr) {
+            //Do Something to handle error
+          }
+        });
+    });
+    </script>
 </head>
 <body>
     <div class="page-title">
@@ -61,6 +80,7 @@
                             <form class="form-inline" id="submit-button" action="/more/alpineseaholly" method="post">
                                     <button class="btn btn-primary">Alpine Sea Holly</button>
                             </form>
+                            {{%if more%}}
                             <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -75,7 +95,7 @@
                                         <li><a href="#sun_water_soil_warn" data-toggle="tab">More Care Info</a></li>
                                         <li><a href="#citation" data-toggle="tab">Citation</a></li>
                                         </ul>
-                                        <div class="tab-content">
+                                        <div class="tab-content" id="place_for_suggestions">
                                             
                                             <div class="tab-pane fade in " id="gen_info">
                                                 <br>
@@ -109,6 +129,9 @@
                                     </div>
                                 </div>
                             </div>
+                            {% else %}
+                            <body>
+                            {% endif %}
                             <!-- <form class="form-inline" onsubmit="openModal()" id="myForm">
                                 <button type="submit" class="btn btn-primary">Alpine Sea Holly</button>
                             </form>

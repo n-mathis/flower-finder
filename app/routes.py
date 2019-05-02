@@ -9,12 +9,12 @@ from app import predictor
 import csv
 
 @app.route('/more/<species>')
-def more_info(species):
+def more_info():
     """
         Inputs: flower species common name
         Outputs: all care and planting info about the inputted flower stored in the data.csv file
     """
-    # species = request.args.get('species')
+    species = request.args.get('species')
     flower = flowerInfo(str(species))
     for i in range(len(flower)):
         if str(flower[i]) == "" or str(flower[i]) == " ":
@@ -31,7 +31,7 @@ def more_info(species):
     warnings = flower[8].split('\n')
     website = flower[11]
     citation = flower[12]
-    return render_template('database.html', species=species,name=name,gen_info=gen_info, 
+    return render_template('database.html'. species=species,name=name,gen_info=gen_info, 
              lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
 
