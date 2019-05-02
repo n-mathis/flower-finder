@@ -34,3 +34,13 @@ function openInfo(evt, infoType) {
        });
     */
 });
+$("#submit-button").submit(function(e){
+    $('#registration').modal('show');
+    return false;
+});
+$(document).ready(function() {
+    $('#submit-button').on('submit', function(e){
+        $('#registration').modal('show');
+        e.preventDefault();
+    });
+  });
