@@ -58,27 +58,50 @@
                     <div class="column">
                         <div class="flowercap">
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
-                            <form class="form-inline" onsubmit="openModal()" id="myForm">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                              </form>
-                              
-                              <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                            <form class="form-inline" id="submit-button">
+                                    <button class="btn btn-primary">Submit</button>
+                            </form>
+                            <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                      <h4 class="modal-title">Modal title</h4>
+                                    <div class="modal-content">
+                                        <div class="tab-v2">
+                                            <ul class="nav nav-tabs" id="myTab">
+                                            <li><a href="#gen_info" data-toggle="tab">General Info</a></li>
+                                            <li><a href="#lfc_seasons" data-toggle="tab">Lifecycle and Seasons</a></li>
+                                            <li><a href="#planting" data-toggle="tab">Planting</a></li>
+                                            <li><a href="#sun_water_soil_warn" data-toggle="tab">More Care Info</a></li>
+                                            <li><a href="#citation" data-toggle="tab">Citation</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in " id="gen_info">
+                                                    <br>
+                                                    <p>General Info</p>
+                                                </div>
+                                            
+                                                <div class="tab-pane fade in" id="lfc_seasons">
+                                                    <br>          
+                                                    <p>Lifecycle and Seasons</p>          
+                                                </div>
+                                                <div class="tab-pane fade in" id="planting">
+                                                    <br>
+                                                    <p>Planting</p>
+                                                </div>
+                                                <div class="tab-pane fade in" id="sun_water_soil_warn">
+                                                    <br>          
+                                                    <p>More Care Info</p>          
+                                                </div>
+                                                <div class="tab-pane fade in" id="citation">
+                                                    <br>
+                                                    <p>Citation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                      <p>One fine body&hellip;</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                  </div><!-- /.modal-content -->
-                                </div><!-- /.modal-dialog -->
-                              </div><!-- /.modal -->
+                                </div>
+                            </div>
                             <!-- <form class="form-inline" onsubmit="openModal()" id="myForm">
                                 <button type="submit" class="btn btn-primary">Alpine Sea Holly</button>
                             </form>
