@@ -18,6 +18,7 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
+  
   // this function is called when a "change" event happens on the "input" element in the HTML
 function loadFile(event) {
     output.innerHTML = ""; // make sure to clear the output when getting a new file
