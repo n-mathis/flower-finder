@@ -18,26 +18,26 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  
-  // this function is called when a "change" event happens on the "input" element in the HTML
-function loadFile(event) {
-    output.innerHTML = ""; // make sure to clear the output when getting a new file
-    let file = event.target.files[0]; // the "change" event itself gets passed to this function
+
+//   // this function is called when a "change" event happens on the "input" element in the HTML
+// function loadFile(event) {
+//     output.innerHTML = ""; // make sure to clear the output when getting a new file
+//     let file = event.target.files[0]; // the "change" event itself gets passed to this function
     
-    // make sure the file is a CSV
-    if (file.type !== "text/csv") {
-      printToOutput("This app can only take CSV files!");
-      return; // stop trying to do the other stuff in this function
-  }
-  import CSV from 'comma-separated-values';
-function readCSV(flower){}
-    const csv = new CSV(data, {header: true}).parse();
-    const cols = [[],[],[],[]];
-    csv.forEach(row => {
-    row.forEach((cell, idx) => {
-        cols[idx].push(cell);
-    });
-    })
-    return flowers[flower]
-  }
+//     // make sure the file is a CSV
+//     if (file.type !== "text/csv") {
+//       printToOutput("This app can only take CSV files!");
+//       return; // stop trying to do the other stuff in this function
+//   }
+//   import CSV from 'comma-separated-values';
+// function readCSV(flower){}
+//     const csv = new CSV(data, {header: true}).parse();
+//     const cols = [[],[],[],[]];
+//     csv.forEach(row => {
+//     row.forEach((cell, idx) => {
+//         cols[idx].push(cell);
+//     });
+//     })
+//     return flowers[flower]
+//   }
 
