@@ -8,31 +8,31 @@ from werkzeug import secure_filename
 from app import predictor 
 import csv
 
-@app.route('/getData/<species>')
-def getData(species):
-    """
-        Inputs: flower species common name
-        Outputs: all care and planting info about the inputted flower stored in the data.csv file
-    """
-    flower = flowerInfo(str(species))
-    for i in range(len(flower)):
-        if str(flower[i]) == "" or str(flower[i]) == " ":
-            flower[i]="Sorry! We don't have extensive information about this flower :("
-    name = flower[1]
-    gen_info = flower[2].split('\n')
-    lifecycle = flower[3]
-    seasons = flower[7]
-    difficulty = flower[4]
-    planting = flower[5].split('\n')
-    sunlight = flower[9].split('\n')
-    watering = flower[6].split('\n')
-    soil = flower[10].split('\n')
-    warnings = flower[8].split('\n')
-    website = flower[11]
-    citation = flower[12]
-    return render_template('database.html'. species=species,name=name,gen_info=gen_info, 
-             lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-             warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
+# @app.route('/getData/<species>')
+# def getData(species):
+#     """
+#         Inputs: flower species common name
+#         Outputs: all care and planting info about the inputted flower stored in the data.csv file
+#     """
+#     flower = flowerInfo(str(species))
+#     for i in range(len(flower)):
+#         if str(flower[i]) == "" or str(flower[i]) == " ":
+#             flower[i]="Sorry! We don't have extensive information about this flower :("
+#     name = flower[1]
+#     gen_info = flower[2].split('\n')
+#     lifecycle = flower[3]
+#     seasons = flower[7]
+#     difficulty = flower[4]
+#     planting = flower[5].split('\n')
+#     sunlight = flower[9].split('\n')
+#     watering = flower[6].split('\n')
+#     soil = flower[10].split('\n')
+#     warnings = flower[8].split('\n')
+#     website = flower[11]
+#     citation = flower[12]
+#     return render_template('database.html'. species=species,name=name,gen_info=gen_info, 
+#              lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
+#              warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     # return jsonify({gen_info})
 
 def flowerInfo(prediction):
