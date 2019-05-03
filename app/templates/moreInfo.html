@@ -15,76 +15,85 @@
 </head>
 
 <body>
+    <a class="btn btn-primary" href="{{url_for('database')}}" role="button"> 
+        < Back to the Database 
+    </a>
 
-    <a href="{{url_for('database')}}"> < Database </a>
 
     <!-- Importing image for the predicted flower type -->
 
-        <br>
-        <div class="page-title">More information about the {{ name }}</div>
-        <div class="flowerimg">
-            </figcaption>
-                <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
+    <br>
+    <div class="page-title">
+        More information about the {{ name }}
+    </div>
+    
+    <div class="flowerimg">
+        <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
                 alt='predicted flower image'>
-        </div>
+    </div>
         <!-- More information navigation bar -->
-        <br>
-        <div class="tab">
+    <br>
+    <div class="tab">
             
-            <button class="tablinks" onclick="openInfo(event, 'gen_info')">
-                General Info
-            </button>
+        <button class="tablinks" onclick="openInfo(event, 'gen_info')">
+            General Info
+        </button>
 
-            <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">
-                Lifecycle and Seasons
-            </button>
+        <button class="tablinks" onclick="openInfo(event, 'lifecycle-seasons')">
+            Lifecycle and Seasons
+        </button>
 
-            <button class="tablinks" onclick="openInfo(event, 'difficulty-planting')">
-                Planting
-            </button>
+        <button class="tablinks" onclick="openInfo(event, 'difficulty-planting')">
+            Planting
+        </button>
 
-            <button class="tablinks" onclick="openInfo(event, 'sunlight-watering-soil-warnings')">
-                More Care Info
-            </button>
+        <button class="tablinks" onclick="openInfo(event, 'sunlight-watering-soil-warnings')">
+            More Care Info
+        </button>
             
-            <button class="tablinks" onclick="openInfo(event, 'citation')">
-                Citation
-            </button>
+        <button class="tablinks" onclick="openInfo(event, 'citation')">
+            Citation
+        </button>
 
-        </div>
+    </div>
           
-        <!-- Importing the content for each tab of the navigation bar -->
-        <div id="gen_info" class="tabcontent">
-            <h3>
-                General Info
-            </h3>
-                {% for line in gen_info %}
-            <p>
-                {{line}}
-            </p>
-                {% endfor %}
-        </div>
+    <!-- Importing the content for each tab of the navigation bar -->
+    <div id="gen_info" class="tabcontent">
+        <h3>
+            General Info
+        </h3>
+            {% for line in gen_info %}
+        <p>
+            {{line}}
+        </p>
+            {% endfor %}
+    </div>
             
-        <div id="lifecycle-seasons" class="tabcontent">
-            <h3>
-                Lifecycle and Seasons
-            </h3>
-            <p> 
-                <b>
-                    Lifecycle:
-                </b> 
-                {{lifecycle}}
-            </p>
-            <p> 
-                <b>
-                    Seasons:
-                </b> 
-                {{seasons}}
-            </p>
-        </div>
+    <div id="lifecycle-seasons" class="tabcontent">
+        <h3>
+            Lifecycle and Seasons
+        </h3>
+        <p> 
+            <b>
+                Lifecycle:
+            </b> 
+            
+            {{lifecycle}}
+            
+        </p>
+        
+        <p> 
+            <b>
+                Seasons:
+            </b> 
+            
+            {{seasons}}
+            
+        </p>
+    </div>
 
-        <div id="difficulty-planting" class="tabcontent">
-            <h3>
+    <div id="difficulty-planting" class="tabcontent">
+        <h3>
                 Planting
             </h3>
             <p> 
@@ -105,69 +114,69 @@
                 {{line}}
             </p>
                 {% endfor %}
-        </div>
+    </div>
 
-        <div id="sunlight-watering-soil-warnings" class="tabcontent">
-            <h3>
-                More Care Info
-            </h3>
-            <p> 
-                <b>
-                    Sunlight:
-                </b> 
-            </p>
+    <div id="sunlight-watering-soil-warnings" class="tabcontent">
+        <h3>
+            More Care Info
+        </h3>
+        <p> 
+            <b>
+                Sunlight:
+            </b> 
+        </p>
             
             {% for line in sunlight %}
 
-                <p>
-                    {{line}}
-                </p>
+        <p>
+            {{line}}
+        </p>
 
-                {% endfor %}
+        {% endfor %}
 
-            <p> 
-                <b>
-                    Watering:
-                </b> 
-            </p>
+        <p> 
+            <b>
+                Watering:
+            </b> 
+        </p>
                 
-            {% for line in watering %}
+        {% for line in watering %}
                
-            <p>
-                {{line}}
-            </p>
+        <p>
+            {{line}}
+        </p>
             
-            {% endfor %}
+        {% endfor %}
 
-            <p> 
-                <b>
-                    Soil:
-                </b> 
-            </p>
+        <p> 
+            <b>
+                Soil:
+            </b> 
+        </p>
             
-            {% for line in soil %}
+        {% for line in soil %}
                 
-            <p>
-                {{line}}
-            </p>
+        <p>
+            {{line}}
+        </p>
             
-            {% endfor %}
+        {% endfor %}
 
-            <p> 
-                <b>
-                    Warnings:
-                </b> 
-            </p>
+        <p> 
+            <b>
+                Warnings:
+            </b> 
+        </p>
             
-            {% for line in warnings %}
+        {% for line in warnings %}
             
-            <p>
-                {{line}}
-            </p>
+        <p>
+            {{line}}
+        </p>
                 
-            {% endfor %}
+        {% endfor %}
 
-        </div>
+    </div>
 
         <div id="citation" class="tabcontent">
             <h3>
@@ -177,8 +186,9 @@
                 {{citation}}
             </p>
         </div> 
+        
         <br>
         <br>
-    </body>
+</body>
 </html>
 {% endblock %}
