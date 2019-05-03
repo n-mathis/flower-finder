@@ -7,10 +7,11 @@
         <script src="{{ url_for('static', filename='/static/js/main.js') }}" type="text/javascript"></script>
     </head>
     <body>
-
+            <div class="predimg">
                 <figure>
-                    <img class="heightset widthset predimg" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" alt='predicted flower image'>
+                    <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" alt='predicted flower image'>
                 </figure>
+                </div>
         <br>
         <div class="page-title">More information about the {{ name }}</div>
         <br>
