@@ -12,4 +12,7 @@
   	background-color: #95a599;
   	border: none;
   }
+.btn a:hover{
+    background-color: #ccffd1;
+}
 
