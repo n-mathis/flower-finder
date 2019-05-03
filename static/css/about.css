@@ -1,0 +1,95 @@
+/* About page styling sheet*/
+
+/* Styling for the about paragraphs  */
+.aboutsubpage-title{
+    color: #1d1d1d;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+  
+/* Jumbotron styling */
+.jumbotronabout {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border: 4px;
+    background-color: #F1F6F2;
+    border-radius: 0.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+/* Styling the text of the jumbotron */
+.display-4about {
+    color: #434D5F;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.leadabout {
+    color: #434D5F;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+/* Styling the cards of each group memeber   */
+.about-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+  
+.about-deck .card1 {
+    margin-bottom: 15px;
+}
+  
+.about-deck .card1 {
+    margin-bottom: 15px;
+}
+  
+/* Organizes the card deck when the screen width changes  */
+@media (min-width: 576px) {
+    .about-deck {
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .about-deck .card1 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 1 0 0%;
+      flex: 1 0 0%;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+}
+  
+.card1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 4px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    border-color: #434D5F;
+}
+  
+.card1-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}

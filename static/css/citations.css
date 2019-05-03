@@ -1,0 +1,25 @@
+/* Citations style sheet */
+
+/* Styles the boxes that the citations are in  */
+.card-citation {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    border-color: #434D5F;
+}
+
+  /* Formats the text that describes our citations */
+.citations-about{
+    color: #434D5F;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

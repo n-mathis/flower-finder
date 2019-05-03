@@ -7,56 +7,68 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="{{ url_for('static', filename='/static/js/main.js') }}" type="text/javascript"></script>
+=======
+    <link rel="stylesheet" type="text/css" href="/static/css/database.css">
+>>>>>>> 3d88622efc0511fc5542aa2746a3c92257099c02
 </head>
 <body>
+    
     <div class="page-title">
         Database
     </div>
+    
     <div class="subpage-title">
         Browse the 102 flower species that are in our database!
     </div>
+    
+    <!-- Alphabet navigation bar  -->
     <div class="example">
-    <ul class="pagination justify-content-center">
-        <li><a class="page-link" href="#As">&laquo;</a></li>
-        <li><a class="page-link" href="#As">A</a></li>
-        <li><a class="page-link" href="#Bs">B</a></li>
-        <li><a class="page-link" href="#Cs">C</a></li>
-        <li><a class="page-link" href="#Ds">D</a></li>
-        <li><a class="page-link" href="#Es">E</a></li>
-        <li><a class="page-link" href="#Fs">F</a></li>
-        <li><a class="page-link" href="#Gs">G</a></li>
-        <li><a class="page-link" href="#Hs">H</a></li>
-        <li class="disabled"><a class="page-link">I</a></li>
-        <li><a class="page-link" href="#Js">J</a></li>
-        <li><a class="page-link" href="#Ks">K</a></li>
-        <li><a class="page-link" href="#Ls">L</a></li>
-        <li><a class="page-link" href="#Ms">M</a></li>
-        <li class="disabled"><a class="page-link">N</a></li>
-        <li><a class="page-link" href="#Os">O</a></li>
-        <li><a class="page-link" href="#Ps">P</a></li>
-        <li class="disabled"><a class="page-link">Q</a></li>
-        <li><a class="page-link" href="#Rs">R</a></li>
-        <li><a class="page-link" href="#Ss">S</a></li>
-        <li><a class="page-link" href="#Ts">T</a></li>
-        <li class="disabled"><a class="page-link">U</a></li>
-        <li class="disabled"><a class="page-link">V</a></li>
-        <li><a class="page-link" href="#Ws">W</a></li>
-        <li class="disabled"><a class="page-link">X</a></li>
-        <li><a class="page-link" href="#Ys">Y</a></li>
-        <li class="disabled"><a class="page-link">Z</a></li>
-        <li><a class="page-link" href="#Ys">&raquo;</a></li>
-    </ul>
+        <ul class="pagination justify-content-center">
+            <li><a class="page-link" href="#As">&laquo;</a></li>
+            <li><a class="page-link" href="#As">A</a></li>
+            <li><a class="page-link" href="#Bs">B</a></li>
+            <li><a class="page-link" href="#Cs">C</a></li>
+            <li><a class="page-link" href="#Ds">D</a></li>
+            <li><a class="page-link" href="#Es">E</a></li>
+            <li><a class="page-link" href="#Fs">F</a></li>
+            <li><a class="page-link" href="#Gs">G</a></li>
+            <li><a class="page-link" href="#Hs">H</a></li>
+            <li class="disabled"><a class="page-link">I</a></li>
+            <li><a class="page-link" href="#Js">J</a></li>
+            <li><a class="page-link" href="#Ks">K</a></li>
+            <li><a class="page-link" href="#Ls">L</a></li>
+            <li><a class="page-link" href="#Ms">M</a></li>
+            <li class="disabled"><a class="page-link">N</a></li>
+            <li><a class="page-link" href="#Os">O</a></li>
+            <li><a class="page-link" href="#Ps">P</a></li>
+            <li class="disabled"><a class="page-link">Q</a></li>
+            <li><a class="page-link" href="#Rs">R</a></li>
+            <li><a class="page-link" href="#Ss">S</a></li>
+            <li><a class="page-link" href="#Ts">T</a></li>
+            <li class="disabled"><a class="page-link">U</a></li>
+            <li class="disabled"><a class="page-link">V</a></li>
+            <li><a class="page-link" href="#Ws">W</a></li>
+            <li class="disabled"><a class="page-link">X</a></li>
+            <li><a class="page-link" href="#Ys">Y</a></li>
+            <li class="disabled"><a class="page-link">Z</a></li>
+            <li><a class="page-link" href="#Ys">&raquo;</a></li>
+        </ul>
+    <!-- Each image for the database grouped alphabetically by flower name with 
+    links to view more information about each flower -->
     <div class="cssPagination"> 
         <div class="pages">
             <div class="page" id="As">
                 <div class="row"> 
                     <div class="column">
+                        
                         <div class="flowercap">
+<<<<<<< HEAD
                             <img src="/static/img/flowers/alpineseaholly.jpg" class="flowerimg">
                             <form class="form-inline" id="submit-button" action="{{url_for('getData')}}">
                                     <button class="btn btn-primary">Alpine Sea Holly</button>
@@ -157,610 +169,833 @@
                                     </div>
                                 </div>
                             </div> -->
+=======
+                            <img src="/static/img/flowers/alpineseaholly.jpg" 
+                            class="flowerimg">
+                            <form  method="post">
+                                <input type="hidden" name="flower" 
+                                value="alpineseaholly">
+                                <input type="submit" value="Alpine Sea Holly">
+                            </form>
+>>>>>>> 3d88622efc0511fc5542aa2746a3c92257099c02
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/anthurium.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/anthurium.jpg" 
+                            class="flowerimg">
                             Anthurium
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/artichoke.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/artichoke.jpg" 
+                            class="flowerimg">
                             Artichoke
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/azalea.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/azalea.jpg" 
+                            class="flowerimg">
                             Azalea
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="page" id="Bs">
                 <div class="row"> 
                     <div class="column">
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/ballmoss.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/ballmoss.jpg" 
+                            class="flowerimg">
                             Ball Moss
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/beebalm.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/beebalm.jpg" 
+                            class="flowerimg">
                             Bee Balm
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/blackeyedsusan.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/blackeyedsusan.jpg" 
+                            class="flowerimg">
                             Black-eyed Susan
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/bougainvillea.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/bougainvillea.jpg" 
+                            class="flowerimg">
                             Bougainvillea
                         </div>   
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/balloonflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/balloonflower.jpg" 
+                            class="flowerimg">
                             Balloon Flower
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/birdofparadise.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/birdofparadise.jpg" 
+                            class="flowerimg">
                             Bird of Paradise
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/blanketflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/blanketflower.jpg" 
+                            class="flowerimg">
                             Blanket Flower
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/bromelia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/bromelia.jpg" 
+                            class="flowerimg">
                             Bromelia
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/barbetondaisy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/barbetondaisy.jpg" 
+                            class="flowerimg">
                             Barbeton Daisy
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/bishopofllandaff.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/bishopofllandaff.jpg" 
+                            class="flowerimg">
                             Bishop of Llandaff
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/bolerodeepblue.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/bolerodeepblue.jpg" 
+                            class="flowerimg">
                             Bolero Deep Blue
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/buttercup.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/buttercup.jpg" 
+                            class="flowerimg">
                             Buttercup
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/beardediris.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/beardediris.jpg" 
+                            class="flowerimg">
                             Bearded Iris
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/blackberrylily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/blackberrylily.jpg" 
+                            class="flowerimg">
                             Blackberry Lily
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Cs">
                 <div class="row">
                     <div class="column">
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/californiapoppy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/californiapoppy.jpg" 
+                            class="flowerimg">
                             Californian Poppy
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/capeflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/capeflower.jpg" 
+                            class="flowerimg">
                             Cape Flower
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/coltsfoot.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/coltsfoot.jpg" 
+                            class="flowerimg">
                             Colt's Foot
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/cyclamen.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/cyclamen.jpg" 
+                            class="flowerimg">
                             Cyclamen
                         </div>
                     </div>
+                    
                     <div class="column">
+                       
                         <div class="flowercap">
-                            <img src="/static/img/flowers/camellia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/camellia.jpg" 
+                            class="flowerimg">
                             Camellia
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/carnation.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/carnation.jpg" 
+                            class="flowerimg">
                             Carnation
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/columbine.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/columbine.jpg" 
+                            class="flowerimg">
                             Columbine
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/cannalily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/cannalily.jpg" 
+                            class="flowerimg">
                             Canna Lily
                         </div>
                         <div class="flowercap">
-                            <img src="/static/img/flowers/caulteyaspicata.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/caulteyaspicata.jpg" 
+                            class="flowerimg">
                             Cautleya Spicata
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/commondandelion.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/commondandelion.jpg" 
+                            class="flowerimg">
                             Common Dandelion
                         </div>  
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/canterburybells.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/canterburybells.jpg" 
+                            class="flowerimg">
                             Canterbury Bells
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/clematis.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/clematis.jpg" 
+                            class="flowerimg">
                             Clematis
                         </div>
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/cornpoppy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/cornpoppy.jpg" 
+                            class="flowerimg">
                             Corn Poppy
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Ds">
                 <div class="row">
                     <div class="column">
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/daffodil.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/daffodil.jpg" 
+                            class="flowerimg">
                             Daffodil
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/desertrose.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/desertrose.jpg" 
+                            class="flowerimg">
                             Desert Rose
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="page" id="Es"> 
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/englishmarigold.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/englishmarigold.jpg" 
+                            class="flowerimg">
                             English Marigold
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Fs">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/firelily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/firelily.jpg" 
+                            class="flowerimg">
                             Fire Lily
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/foxglove.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/foxglove.jpg" 
+                            class="flowerimg">
                             Foxglove
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/frangipani.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/frangipani.jpg" 
+                            class="flowerimg">
                             Frangipani
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/fritillary.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/fritillary.jpg" 
+                            class="flowerimg">
                             Fritillary
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Gs">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/gardenphlox.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/gardenphlox.jpg" 
+                            class="flowerimg">
                             Garden Phlox
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/giantwhitearumlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/giantwhitearumlily.jpg" 
+                            class="flowerimg">
                             Giant White Arum Lily
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/greatmasterwort.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/greatmasterwort.jpg" 
+                            class="flowerimg">
                             Great Masterwort
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/gaura.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/gaura.jpg" 
+                            class="flowerimg">
                             Gaura
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/globeflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/globeflower.jpg" 
+                            class="flowerimg">
                             Globe Flower
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/gazania.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/gazania.jpg" 
+                            class="flowerimg">
                             Gazania
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/globethistle.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/globethistle.jpg" 
+                            class="flowerimg">
                             Globe Thistle
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/geranium.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/geranium.jpg" 
+                            class="flowerimg">
                             Geranium
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/grapehyacinth.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/grapehyacinth.jpg" 
+                            class="flowerimg">
                             Grape Hyacinth
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Hs">
                 <div class="row">
                     <div class="column">
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/hardleavedpocketorchid.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/hardleavedpocketorchid.jpg" 
+                            class="flowerimg">
                             Hard-leaved Pocket Orchid
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/hibiscus.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/hibiscus.jpg" 
+                            class="flowerimg">
                             Hibiscus
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/hippeastrum.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/hippeastrum.jpg" 
+                            class="flowerimg">
                             Hippeastrum
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Is"></div>
+            
             <div class="page" id="Js">
                 <div class="row">
                     <div class="column">
+                        
                         <div class="flowercap">
-                            <img src="/static/img/flowers/japaneseanemone.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/japaneseanemone.jpg" 
+                            class="flowerimg">
                             Japanese Anemone
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Ks">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/kingprotea.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/kingprotea.jpg" 
+                            class="flowerimg">
                             King Protea
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="page" id="Ls">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/lentenrose.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/lentenrose.jpg" 
+                            class="flowerimg">
                             Lenten Rose
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/lotus.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/lotus.jpg" 
+                            class="flowerimg">
                             Lotus
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/loveinthemist.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/loveinthemist.jpg" 
+                            class="flowerimg">
                             Love in the Mist
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page" id="Ms">
 
+            <div class="page" id="Ms">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/magnolia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/magnolia.jpg" 
+                            lass="flowerimg">
                             Magnolia
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/mexicanpetunia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/mexicanpetunia.jpg" 
+                            class="flowerimg">
                             Mexican Petunia
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/mallow.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/mallow.jpg" 
+                            class="flowerimg">
                             Mallow
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/monkshood.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/monkshood.jpg" 
+                            class="flowerimg">
                             Monkshood
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/marigold.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/marigold.jpg" 
+                            class="flowerimg">
                             Marigold
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/moonorchid.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/moonorchid.jpg" 
+                            class="flowerimg">
                             Moon Orchid
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/mexicanaster.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/mexicanaster.jpg" 
+                            class="flowerimg">
                             Mexican Aster
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/morningglory.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/morningglory.jpg" 
+                            class="flowerimg">
                             Morning Glory
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="page" id="Ns"></div>
+
             <div class="page" id="Os">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/orangedahlia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/orangedahlia.jpg" 
+                            class="flowerimg">
                             Orange Dahlia
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/osteospermum.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/osteospermum.jpg" 
+                            class="flowerimg">
                             Osteospermum
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/oxeyedaisy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/oxeyedaisy.jpg" 
+                            class="flowerimg">
                             Oxeye Daisy
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Ps">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/passionflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/passionflower.jpg" 
+                            class="flowerimg">
                             Passion Flower
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/pincushionflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/pincushionflower.jpg" 
+                            class="flowerimg">
                             Pincushion Flower
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/primula.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/primula.jpg" 
+                            class="flowerimg">
                             Primula
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/pelagornium.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/pelagornium.jpg" 
+                            class="flowerimg">
                             Pelargonium
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/pinkprimrose.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/pinkprimrose.jpg" 
+                            class="flowerimg">
                             Pink Primrose
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/princeofwalefeathers.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/princeofwalefeathers.jpg" 
+                            class="flowerimg">
                             Prince of Wales Feathers
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/peruvianlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/peruvianlily.jpg" 
+                            class="flowerimg">
                             Peruvian Lily
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/pinkyellowdahlia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/pinkyellowdahlia.jpg" 
+                            class="flowerimg">
                             Pink-yellow Dahlia
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/pupleconeflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/pupleconeflower.jpg" 
+                            class="flowerimg">
                             Purple Coneflower
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/petunia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/petunia.jpg" 
+                            class="flowerimg">
                             Petunia
                         </div>
                         <div class="flowercap">
-                            <img src="/static/img/flowers/poinsettia.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/poinsettia.jpg" 
+                            class="flowerimg">
                             Poinsettia
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Qs"></div>
+
             <div class="page" id="Rs">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/redginger.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/redginger.jpg" 
+                            class="flowerimg">
                             Red Ginger
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/rose.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/rose.jpg" 
+                            class="flowerimg">
                             Rose
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/rubylippedcattleya.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/rubylippedcattleya.jpg" 
+                            class="flowerimg">
                             Ruby-lipped Cattleya
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Ss">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/siamtulip.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/siamtulip.jpg" 
+                            class="flowerimg">
                             Siam Tulip
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/springcrocus.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/springcrocus.jpg" 
+                            class="flowerimg">
                             Spring Crocus
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/sweetwilliam.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/sweetwilliam.jpg" 
+                            class="flowerimg">
                             Sweet William
                         </div>
+
                     </div>
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/silverbush.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/silverbush.jpg" 
+                            class="flowerimg">
                             Silverbush
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/stemlessgentian.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/stemlessgentian.jpg" 
+                            class="flowerimg">
                             Stemless Gentian
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/swordlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/swordlily.jpg"
+                            class="flowerimg">
                             Sword Lily
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/snapdragon.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/snapdragon.jpg" 
+                            class="flowerimg">
                             Snapdragon
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/sunflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/sunflower.jpg" 
+                            class="flowerimg">
                             Sunflower
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/spearthistle.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/spearthistle.jpg" 
+                            class="flowerimg">
                             Spear Thistle
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/sweetpea.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/sweetpea.jpg"
+                            class="flowerimg">
                             Sweet Pea
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Ts">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/thornapple.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/thornapple.jpg" 
+                            class="flowerimg">
                             Thornapple
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/treepoppy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/treepoppy.jpg" 
+                            class="flowerimg">
                             Tree Poppy
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/tigerlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/tigerlily.jpg" 
+                            class="flowerimg">
                             Tiger Lily
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/trumpetcreeper.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/trumpetcreeper.jpg" 
+                            class="flowerimg">
                             Trumpet Creeper
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/toadlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/toadlily.jpg" 
+                            class="flowerimg">
                             Toad Lily
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/treemallow.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/treemallow.jpg" 
+                            class="flowerimg">
                             Tree Mallow
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Us"></div>
+
             <div class="page" id="Vs"></div>
+            
             <div class="page" id="Ws">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/wallflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/wallflower.jpg" 
+                            class="flowerimg">
                             Wallflower
                         </div>
+
                         <div class="flowercap">
-                            <img src="/static/img/flowers/watercress.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/watercress.jpg" 
+                            class="flowerimg">
                             Watercress
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/waterlily.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/waterlily.jpg" 
+                            class="flowerimg">
                             Water Lily
                         </div>
                     </div>
+
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/wildpansy.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/wildpansy.jpg" 
+                            class="flowerimg">
                             Wild Pansy
                         </div>
                     </div>
+                    
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/windflower.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/windflower.jpg" 
+                            class="flowerimg">
                             Windflower
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="page" id="Xs"></div>
+
             <div class="page" id="Ys">
                 <div class="row">
                     <div class="column">
                         <div class="flowercap">
-                            <img src="/static/img/flowers/yellowiris.jpg" class="flowerimg">
+                            <img src="/static/img/flowers/yellowiris.jpg" 
+                            class="flowerimg">
                             Yellow Iris
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="page" id="Zs"></div>
+            
         </div>
     </div>
 </body>
+    
 </html>
 {% endblock %}

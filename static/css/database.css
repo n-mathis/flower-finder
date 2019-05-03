@@ -1,0 +1,87 @@
+/* Database style sheet */
+
+/* Pagination divides the page into other pages so images can be 
+better organized */
+.pagination {
+    display: inline-block;
+    font-size: 15px;
+    justify-content: center;
+} 
+
+.pagination a {
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.pagination a.active {
+    background-color: #B8D0BE;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #E3ECE5;
+}
+
+.cssPagination .pages > .page:target ~ .page:last-child,
+.cssPagination .pages > .page {
+    display: none;
+}
+
+.cssPagination .pages > :last-child,
+.cssPagination .pages > .page:target {
+    display: block;
+}
+
+/* Sets the width of the flower images */
+.flowerimg{
+    width: 100%
+}
+
+/* Centers the flower name under the image */
+.flowercap{
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}  
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+}
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+}
