@@ -50,9 +50,11 @@
    Imports do not need to be on separate lines, but please separate 
     lines when possible. All imports are at the top of the file. The 
     order should be: 
-        1. Standard library imports
-        2. Related third party imports
-        3. Local application/library specific imports
+        <ol>
+            <li> Standard library imports </li>
+            <li> Related third party imports </li>
+            <li> Local application/library specific imports </li>
+        </ol>
 
 # Maximum line length:
    The maximum line length for Flower Finder code is 80 lines except for 
