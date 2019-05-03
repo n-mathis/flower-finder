@@ -6,4 +6,10 @@
     max-width: 200px;
     text-align: center;
   }
+/*
+  Updating the button color to match our website colors*/
+  .btn{
+  	background-color: #95a599;
+  	border: none;
+  }
 

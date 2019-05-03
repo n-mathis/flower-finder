@@ -23,11 +23,11 @@
     
     <!-- Import second and third predictions -->
     <div class="subpage-title">
-        {% if second_prob > 0.01 and third_prob > 0.01 %}
+        {% if second_prob > 1 and third_prob > 1 %}
         There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}}
-        and {{third_prob}}%  chance that it is a {{top_three[2][0]}}!
-        {% elif second_prob > 0.01 %}
-        There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}} 
+        and {{third_prob}}%  chance that it is a {{top_three[2][0]}}.
+        {% elif second_prob > 1 %}
+        There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}}. 
         {% endif %}
         You can learn more about the {{ name }} and how to plant it 
         and take care of it!
