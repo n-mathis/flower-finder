@@ -133,11 +133,6 @@ def home_route():
 def about():
     return render_template('about.html')
 
-#Routes the navigation bar
-@app.route('/nav')
-def nav():
-    return render_template("navbar.html")
-
 #Routes the more information for the database page"
 @app.route('/database', methods=['GET', 'POST'])
 def database():
