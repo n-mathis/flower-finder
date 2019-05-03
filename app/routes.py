@@ -51,10 +51,9 @@ def identify():
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
             file.save(save_to)
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
-            flower = flowerInfo(str(pred_class))
 
+            # Transforms the tensor into a 1D array
             output_list = [element.item() for element in output.flatten()]
-
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', \
                 'ballmoss', 'balloonflower', 'barbetondaisy', 'beardediris', \
@@ -83,20 +82,24 @@ def identify():
                 'thornapple', 'tigerlily', 'toadlily', 'treemallow','treepoppy',\
                 'trumpetcreeper', 'wallflower', 'watercress', \
                 'waterlily', 'wildpansy', 'windflower', 'yellowiris']
-
+            # Create list of tuples of the classes and their probabilities, sorted
             flower_prob = list(zip(classes, output_list))
             flower_prob.sort(key=lambda tup: tup[1], reverse = True) 
             top_three = flower_prob[0:3]
             first_prob = round(top_three[0][1], 3)*100
-            if first_prob < 50:
+            # If the flower the image is classified to be has low probability, alert user
+            if first_prob < 40:
                 return render_template('identify.html', alert= True)
             second_prob = round(round(top_three[1][1], 3)*100,4)
             third_prob = round(round(top_three[2][1], 3)*100,4)
+            # Get filename of the predicted flower to compare to uploaded flower
             predimg=str(pred_class)+".jpg"
+            # Get information about the flower
             flower = flowerInfo(str(pred_class))
+            # If no information about the flower, let the user know
             for i in range(len(flower)):
                 if str(flower[i]) == "" or str(flower[i]) == " ":
-                    flower[i]="Sorry! We don't have extensive information about this flower :("
+                    flower[i]="Sorry! We don't have extensive information about this flower :("   
             name = flower[1]
             gen_info = flower[2].split('\n')
             lifecycle = flower[3]
