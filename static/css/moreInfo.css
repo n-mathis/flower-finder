@@ -11,12 +11,10 @@
     background-color: #95a599;
     border: none;
 }
-
 .btn-primary:hover {
   background-color: #ccffd1;
   border: none;
 }
-
 .btn-primary.disabled, .btn-primary:disabled {
   background-color: #ccffd1;
   border: none;
