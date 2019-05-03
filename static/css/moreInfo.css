@@ -9,6 +9,7 @@
 /*
   Updating the button color to match our website colors*/
   .btn{
-  	background-color: #E3ECE5;
+  	background-color: #95a599;
+  	border: none;
   }
 
