@@ -14,6 +14,7 @@
 
 <body>
 
+    <!-- Improting mage for the predicted flower type -->
     <figure>
         <figcaption class="subpage-title">
             Predicted flower
@@ -21,8 +22,11 @@
             <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
             alt='predicted flower image'>
     </figure>
+
         <br>
         <div class="page-title">More information about the {{ name }}</div>
+
+        <!-- More information navigation bar -->
         <br>
         <div class="tab">
             
@@ -48,6 +52,7 @@
 
         </div>
           
+        <!-- Importing the content for each tab of the navigation bar -->
         <div id="gen_info" class="tabcontent">
             <h3>
                 General Info

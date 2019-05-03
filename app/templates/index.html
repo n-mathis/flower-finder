@@ -8,16 +8,20 @@
     
 <body>
     <div>
+        <!-- Homepage image  -->
         <div class="home-image">
             <img id="resizeh" class="image" src="/static/img/homeimg.jpg" 
             alt="field of flowers">
+            <!-- Text over lay  -->
             <div class="text center-fit"> Welcome to Flower Finder! </div>
         </div>
         
+        <!-- Rectangle page breaker -->
         <br>
         <div class="rectangle"></div>
         <br>
 
+        <!-- Cards to link to identify, database, and citations -->
         <div class="card-deck">
             <div class="card" style="overflow: hidden">
                 <a class = "url" href="{{url_for('identify')}}" value="identify">

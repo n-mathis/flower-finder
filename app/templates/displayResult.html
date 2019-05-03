@@ -15,10 +15,12 @@
     
 <body>
         
+    <!-- Import the prediction -->
     <div class=page-title>
         Based off of our analysis this flower is {{ name }}!
     </div>
     
+    <!-- Import second and third predictions -->
     <div class="subpage-title">
         {% if second_prob > 0.01 and third_prob > 0.01 %}
         There is also a {{second_prob}}% chance that it is a {{top_three[1][0]}}
@@ -30,7 +32,7 @@
         and take care of it!
     </div>
             
-    <div style="text-align: center;">
+    <div class="center-display">
         <figure>
             <figcaption class="subpage-title">
                 Uploaded flower
@@ -46,6 +48,7 @@
             <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}" alt='predicted flower image'>
         </figure>
 
+        <!-- Allow users to identify another flower after getting a prediction -->
         <br>
         <div class="subpage-title">
             Identify another flower!
@@ -59,6 +62,7 @@
         </div>
     </div>
         
+    <!-- More information navigation bar  -->
     <br>
     <div class="page-title">
         More information about the {{ name }}
@@ -83,6 +87,8 @@
             </button>
         </div>
           
+        <!-- Pass information from .csv into each tab for more information 
+        navigation bar -->
         <div id="gen_info" class="tabcontent">
             <h3>
                 General Info

@@ -11,6 +11,8 @@
 
 </head>
 
+<!-- Provide an error if the model cannot identify the flower type
+i.e. the image does not contain a flower or a flower that is in our database -->
 {% if alert %} 
 
 <body onload="alert('Sorry! We were unable to identify this flower. Please upload another photo.')" >
@@ -21,6 +23,7 @@
 
     {% endif %}
     
+    <!-- Identify jumbotron to divide up the page better -->
     <div class="identify">
         <div class="jumbotron">
             
@@ -40,6 +43,7 @@
                 </p> 
             </div> 
             
+            <!-- Upload image button  -->
             <div class="btn btn-primary btn-lg" href="#" role="button">
                 <form method=post enctype=multipart/form-data>
                     <input type=file name=file>

@@ -21,7 +21,10 @@ figcaption{
     border: 1px solid #ccc;
     background-color: #F1F6F2;
 }
-  
+.center-display{
+    text-align: center;
+}
+
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;

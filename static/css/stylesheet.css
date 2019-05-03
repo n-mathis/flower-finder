@@ -1,18 +1,14 @@
+/* This serves as the base stylesheet and all is linked to all of the pages
+on the website */
 
+/* Body background styling */
 body {
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
     color: #434D5F;
 }
 
-.base-title{
-    color: #434D5F;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    font-weight: bold;
-}
-
+/* The individual page titles styling */
 .page-title{
     color: #434D5F;
     font-family: 'Times New Roman', Times, serif;
@@ -21,6 +17,7 @@ body {
     text-align: center;
 }
 
+/* The individual styling for all page descriptions */
 .subpage-title{
     color: #434D5F;
     text-align: center;
@@ -29,6 +26,7 @@ body {
     margin: auto;   
 }
 
+/* Paragraph styling element */
 p {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -37,6 +35,7 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Header styling element */
 h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
@@ -53,8 +52,7 @@ nav {
     background-color: #95a599;
 }
 
-/*Buttons on navigation bar styling
-*/
+/*Buttons on navigation bar styling*/
 nav a {
     display: block;
     float: left;
@@ -71,16 +69,14 @@ nav a {
     text-decoration: none;
 }
 
-/*Hover styling*/
-
+/*Hover styling for navigation bar*/
 nav a:hover {
     background-color: #ccffd1;
     text-decoration: none;
     color: white;              
 }
 
-/*Flower finder logo
-*/
+/*Flower finder logo for navigation bar*/
 #logo {
     font-family: 'Hind', sans-serif;
     font-size: 30px;
@@ -93,12 +89,7 @@ nav a:hover {
     margin-top: -20px;
 }
 
-/*   
-.card-link {
-    position: absolute;
-} */
- 
-  /* Making containers responsive to any device */
+/* Making containers responsive to any device */
 .container-fluid {
     width: 100%;
     padding-right: 15px;
