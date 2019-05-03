@@ -1,4 +1,4 @@
-#Introduction: 
+# Introduction: 
    This page gives an overview of how the code is formatted for the
    Flower Finder project to help increase understanding and allow 
    anyone to add more functionalities if they please. We also created 
@@ -20,7 +20,7 @@
     
    Thank you!
 
-#Indentation
+# Indentation:
     All files have matching indentations where the head and body elements 
     are on the left most side and each element in between the tags are
     indented by one. Text for the website is on its own line and  
@@ -28,25 +28,25 @@
     tags.
 
 
-#Tabs vs Space
+# Tabs vs Spaces:
     All Flower Finder code is formatted with tabs that have a length of 4 
     spaces.
 
-#Blank Lines
+# Blank Lines:
     There are blank lines between different tags and elements so code 
     blocks and specific sections can be easily found. 
 
-#Line Breaks
+# Line Breaks:
     When there are line breaks, the br element is one line above the next 
     div element and there is a blank line above the br element. 
 
-#Naming conventions
+# Naming conventions:
     Flower Finder classes, methods, and functions are all named to 
     correspond with what they represent. For example, page title classes 
     for all pages are titled "page-title" and if the text styling is 
     different for a certain page they are titled "pagenamepage-title."
 
-#Imports
+# Imports:
     Imports do not need to be on separate lines, but please separate 
     lines when possible. All imports are at the top of the file. The 
     order should be: 
@@ -54,12 +54,12 @@
         2. Related third party imports
         3. Local application/library specific imports
 
-#Maximum line length
+# Maximum line length:
     The maximum line length for Flower Finder code is 80 lines except for 
     instances where lines cannot be broken up, like URLs and calls to the 
     JavaScript and Python code.
 
-#Images
+# Images:
    All images are stored in the img folder under the static folder. 
 
    Alt labels must be used for this project to increase accessibility.  
