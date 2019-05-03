@@ -105,3 +105,9 @@ nav a:hover {
     margin-right: auto;
     margin-left: auto;
 }
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #E3ECE5;
+    border: 0;
+}
