@@ -6,4 +6,25 @@
     max-width: 200px;
     text-align: center;
   }
-
+/* the button color to match our website colors*/
+  .btn{
+    background-color: #95a599;
+    border: none;
+}
+.btn-primary:hover {
+  background-color: #ccffd1;
+  border: none;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #ccffd1;
+  border: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #ccffd1;
+  border: none;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #ccffd1;
+  border: none;
+} 
