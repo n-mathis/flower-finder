@@ -1,4 +1,6 @@
-/* HOMEPAGE STUFF */
+/* Home page style sheet */
+
+/* Styling the home page image */
 .home-image{
     position: relative;
     display: block;
@@ -12,6 +14,7 @@
     height: auto;
 }
 
+/* Overlay text on top of image */
 .home-image .text {
     color: white;
     text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
@@ -27,31 +30,27 @@
     width: 100%;
 }
 
+/* Formats the linking to identify, citations, and database pages to be simple  */
 .url {
 display: block text; 
 text-decoration: none;
 }
 
+/* Line block to divide up page  */
 .rectangle {
     height: 5px;
     width: auto;
     background-color: #434D5F;
 }
 
-hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-    font-family: 'Times New Roman', Times, serif;
-}
-
+/* Centers content */
 .center-fit{
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
 }
 
-/* Card styling for home page */
+/* Card styling */
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -164,6 +163,7 @@ hr {
     padding: 1.25rem;
 }
   
+/* Formats the images for each card */
 .card-img {
     width: 100%;
     border-radius: calc(0.25rem - 1px);
@@ -192,6 +192,7 @@ hr {
     margin-bottom: 15px;
 } 
  
+/* Makes the card deck responsive to different devices */
 @media (min-width: 576px) {
     .card-deck {
       -ms-flex-flow: row wrap;
@@ -223,6 +224,7 @@ hr {
     margin-bottom: 15px;
 } 
   
+/* Makes the card group responsive to different devices */
 @media (min-width: 576px) {
     .card-group {
       -ms-flex-flow: row wrap;
@@ -274,6 +276,7 @@ hr {
     margin-bottom: 0.75rem;
 }
   
+/* Makes the card columns responsive to different devices */
 @media (min-width: 576px) {
     .card-columns {
       -webkit-column-count: 3;

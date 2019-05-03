@@ -1,4 +1,6 @@
-/* Jumbotron  */
+/* Identify style sheet */
+
+/* Jumbotron styling */
 .jumbotron {
     text-align: center;
     padding: 2rem 1rem;
@@ -9,6 +11,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Formatting the text of the jumbotron */
 .display-4 {
     text-align: center;
     font-size: 3.5rem;
@@ -65,10 +68,6 @@
     border-color: #B8D0BE;
 }
   
-.identify {
-    text-align: center;
-}
-  
 .btn-primary.disabled, .btn-primary:disabled {
     color: #434D5F;
     background-color: #B8D0BE;
@@ -87,3 +86,8 @@
     background-color: #B8D0BE;
     border-color: #B8D0BE;
 } 
+
+/* Centering everything in the jumbotron */
+.identify {
+    text-align: center;
+}

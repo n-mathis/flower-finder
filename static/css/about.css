@@ -1,10 +1,13 @@
-/* About page */
+/* About page styling sheet*/
+
+/* Styling for the about paragraphs  */
 .aboutsubpage-title{
     color: #1d1d1d;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
   
+/* Jumbotron styling */
 .jumbotronabout {
     text-align: center;
     padding: 2rem 1rem;
@@ -15,19 +18,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
   
+/* Styling the text of the jumbotron */
 .display-4about {
     color: #434D5F;
     text-align: center;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
-    font-family: 'Times New Roman', Times, serif;
-}
-  
-.my-4about {
-    color: #434D5F;
-    text-align: center;
-    margin: 1.5rem !important;
     font-family: 'Times New Roman', Times, serif;
 }
   
@@ -38,6 +35,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
   
+/* Styling the cards of each group memeber   */
 .about-deck {
     display: -ms-flexbox;
     display: flex;
@@ -53,6 +51,7 @@
     margin-bottom: 15px;
 }
   
+/* Organizes the card deck when the screen width changes  */
 @media (min-width: 576px) {
     .about-deck {
       -ms-flex-flow: row wrap;

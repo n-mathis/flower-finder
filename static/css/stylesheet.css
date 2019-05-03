@@ -45,6 +45,14 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* Creates a thematic break to seperate content  */
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*Navigation Bar styling*/
 nav {
     width: 100%;
