@@ -43,19 +43,19 @@
 # Naming conventions:
    Flower Finder classes, methods, and functions are all named to 
     correspond with what they represent. For example, page title classes 
-    for all pages are titled "page-title" and if the text styling is 
-    different for a certain page they are titled "pagenamepage-title."
+    for all pages are titled "page-title" in the html and css files 
+    and if the text styling is different for a certain page they are 
+    titled "pagenamepage-title." The naming conventions in the Python 
+    and JavaScript files were chosen to reflect their functionality. 
+    For example get_file(filename) is called to get the file we want 
+    to access. 
+    
 
 # Imports:
    Imports do not need to be on separate lines, but please separate 
-    lines when possible. All imports are at the top of the file. The 
-    order should be: 
-        <ol>
-            <li> Standard library imports </li>
-            <li> Related third party imports </li>
-            <li> Local application/library specific imports </li>
-        </ol>
-
+    lines when possible. All imports are at the top of the file.
+    ![](/static/img/imports.png)
+    
 # Maximum line length:
    The maximum line length for Flower Finder code is 80 lines except for 
     instances where lines cannot be broken up, like URLs and calls to the 
