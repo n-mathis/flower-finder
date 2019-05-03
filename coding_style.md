@@ -57,7 +57,7 @@
     ![](/static/img/imports.png)
     
 # Maximum line length:
-   The maximum line length for Flower Finder code is 80 lines except for 
+   The maximum line length for Flower Finder code is 80 characters except for 
     instances where lines cannot be broken up, like URLs and calls to the 
     JavaScript and Python code.
 
