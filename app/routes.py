@@ -6,10 +6,19 @@ from app import app
 import os
 from werkzeug import secure_filename
 from app import predictor 
-import sys
 import csv
-from PIL import Image
-import cv2
+
+def flowerInfo(prediction):
+    """
+        Inputs: flower species common name
+        Outputs: all care and planting info about the inputted flower stored in the data.csv file
+    """
+    with open('../cs121/app/flower-data.csv') as f:
+        csv_f = csv.reader(f)
+        flowers = {}
+        for row in csv_f:
+            flowers[row[0]] = row
+        return flowers[prediction]
 
 @app.route('/<filename>')
 def get_file(filename):
@@ -34,10 +43,6 @@ def identify():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
-            im = Image.open(filename)
-            w, h = im.size
-            if w >600 or h>600:
-                file = cv2.resize(file,height=600)
             UPLOAD_FOLDER = '../cs121/static/uploads'
             app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
             save_to = (os.path.join(app.config['UPLOAD_FOLDER'], filename))
@@ -47,6 +52,7 @@ def identify():
             name = flower[1]
 
             output_list = [element.item() for element in output.flatten()]
+
 
             classes = ['alpineseaholly', 'anthurium', 'artichoke', 'azalea', 'ballmoss', 'balloonflower', \
             'barbetondaisy', 'beardediris', 'beebalm', 'birdofparadise', 'bishopofllandaff', \
@@ -150,40 +156,3 @@ app.config['ALLOWED_EXTENSIONS'] = ALLOWED_EXTENSIONS
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in app.config['ALLOWED_EXTENSIONS']
-
-def flowerInfo(prediction):
-    """
-        Inputs: flower species common name
-        Outputs: all care and planting info about the inputted flower stored in the data.csv file
-    """
-    with open('../cs121/app/flower-data.csv') as f:
-        csv_f = csv.reader(f)
-        flowers = {}
-        for row in csv_f:
-            flowers[row[0]] = row
-        return flowers[prediction]
-
-def image_resize(image, width = None, height = None, inter = cv2.INTER_AREA):
-    # grab the image size
-    dim = None
-    (h, w) = image.shape[:2]
-    # if width and height are None, return original image
-    if width is None and height is None:
-        return image
-
-    # check to see if the width is None
-    if width is None:
-        # calculate the ratio of the height
-        r = height / float(h)
-        dim = (int(w * r), height)
-
-    # otherwise, the height is None
-    else:
-        # calculate the ratio of the width
-        r = width / float(w)
-        dim = (width, int(h * r))
-
-    # resize the image
-    resized = cv2.resize(image, dim, interpolation = inter)
-
-    return resized
