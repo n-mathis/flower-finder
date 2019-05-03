@@ -6,5 +6,9 @@
     max-width: 200px;
     text-align: center;
   }
-  
+/*
+  Updating the button color to match our website colors*/
+  .btn{
+  	background-color: #E3ECE5;
+  }
 
