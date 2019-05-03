@@ -166,7 +166,7 @@ def database():
         website = flower[11]
         citation = flower[12]
         #Print content of the .csv cells
-        return render_template('MoreInfo.html',
+        return render_template('moreInfo.html',
                 predimg=predimg, name=name, gen_info=gen_info, 
                 lifecycle = lifecycle, difficulty = difficulty, 
                 planting = planting, watering = watering, seasons = seasons, 

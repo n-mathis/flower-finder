@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
     <title>
-        Results!
+        {{name}}!!!
     </title> 
-        
+
+    <link rel="stylesheet" type="text/css" href="/static/css/displayResult.css">   
+    <link rel="stylesheet" type="text/css" href="/static/css/moreInfo.css">
     <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
     <script src="{{ url_for('static', filename='/static/js/main.js') }}" type="text/javascript">
     </script>
@@ -14,18 +16,16 @@
 
 <body>
 
-    <!-- Improting mage for the predicted flower type -->
-    <figure>
-        <figcaption class="subpage-title">
-            Predicted flower
-        </figcaption>
-            <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
-            alt='predicted flower image'>
-    </figure>
+    <!-- Importing image for the predicted flower type -->
+    
 
         <br>
         <div class="page-title">More information about the {{ name }}</div>
-
+        <div class="flowerimg">
+            </figcaption>
+                <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
+                alt='predicted flower image'>
+        </div>
         <!-- More information navigation bar -->
         <br>
         <div class="tab">

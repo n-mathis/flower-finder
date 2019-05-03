@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name ec2-18-144-19-136.us-west-1.compute.amazonaws.com www.ec2-18-144-19-136.us-west-1.compute.amazonaws.com;
+    server_name ec2-13-57-43-37.us-west-1.compute.amazonaws.com www.ec2-13-57-43-37.us-west-1.compute.amazonaws.com;
 
     root /home/ubuntu/cs121;
 

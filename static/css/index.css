@@ -33,7 +33,7 @@
 /* Formats the linking to identify, citations, and database pages to be simple  */
 .url {
 display: block text; 
-text-decoration: none;
+text-decoration: none !important;
 }
 
 /* Line block to divide up page  */
