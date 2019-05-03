@@ -63,7 +63,7 @@ def identify():
                 'beebalm', 'birdofparadise', 'bishopofllandaff', \
                 'blackberrylily', 'blackeyedsusan', 'blanketflower', \
                 'bolerodeepblue', 'bougainvillea', 'bromelia', 'buttercup',\
-                'californiapoppy', 'camellia', 'cannalily', 'canterburybells', \
+                'californianpoppy', 'camellia', 'cannalily', 'canterburybells', \
                 'capeflower', 'carnation', 'cautleyaspicata', 'clematis', \
                 'coltsfoot', 'columbine', 'commondandelion', 'cornpoppy', \
                 'cyclamen', 'daffodil', 'desertrose', 'englishmarigold', \
