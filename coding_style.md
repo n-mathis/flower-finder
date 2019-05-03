@@ -20,6 +20,9 @@
     
    Thank you!
 
+# Tabs vs Spaces:
+   All Flower Finder code is formatted with four spaces.
+
 # Indentation:
    All files have matching indentations where the head and body elements 
     are on the left most side and each element in between the tags are
@@ -27,18 +30,16 @@
     div, p, and other tags are all in the same column as their closing 
     tags.
 
-
-# Tabs vs Spaces:
-   All Flower Finder code is formatted with four spaces.
-
 # Blank Lines:
    There are blank lines between different tags and elements so code 
     blocks and specific sections can be easily found. 
+    ![](/static/img/indentation_blank_spaces.png)
 
 # Line Breaks:
    When there are line breaks, the br element is one line above the next 
     div element and there is a blank line above the br element. 
-
+   ![](/static/img/linebreak.png)
+   
 # Naming conventions:
    Flower Finder classes, methods, and functions are all named to 
     correspond with what they represent. For example, page title classes 
