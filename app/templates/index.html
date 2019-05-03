@@ -1,48 +1,77 @@
 <!doctype html>
 {% extends "base.html" %} {% block content %}  
-    <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
-    </head>
-        <body>
-        <div>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+    
+<body>
+    <div>
         <div class="home-image">
-            <img id="resizeh" class="image" src="/static/img/homeimg.jpg" alt="field of flowers" />
+            <img id="resizeh" class="image" src="/static/img/homeimg.jpg" 
+            alt="field of flowers">
             <div class="text center-fit"> Welcome to Flower Finder! </div>
         </div>
+        
         <br>
         <div class="rectangle"></div>
         <br>
+
         <div class="card-deck">
-            <div class="card" style="overflow: hidden"><a href="{{url_for('identify')}}" value="identify" style="display:block text; text-decoration:none;">
-                <img id="resize" src="/static/img/card1.jpg" class="card-img-top" alt="pink flowers">
-                <div class="card-body">
-                    <h5 class="card-title">Identify your flower</h5>
-                    <p class="card-text">Upload an image of a flower and find out what type it is! 
-                    You can learn more about the flower and how to care for it.</p>
-                </div>
+            <div class="card" style="overflow: hidden">
+                <a class = "url" href="{{url_for('identify')}}" value="identify">
+                    <img id="resize" src="/static/img/card1.jpg" 
+                    class="card-img-top" alt="pink flowers">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Identify your flower
+                        </h5>
+                        <p class="card-text">
+                            Upload an image of a flower and find out what type
+                            it is! 
+                            You can learn more about the flower and how to care
+                            for it.
+                        </p>
+                    </div>
                 </a>
             </div>
-            <div class="card"><a href="{{url_for('database')}}" value="database" style="display:block text; text-decoration:none;">
-                <img id="resize" src="/static/img/card2.jpg" class="card-img-top" alt="flowers">
-                <div class="card-body">
-                    <h5 class="card-title"> Discover flowers</h5>
-                    <p class="card-text"> View the different flowers available in the Flower Finder database.</p>
-                </div>
+
+            <div class="card">
+                <a class = "url" href="{{url_for('database')}}" value="database">
+                    <img id="resize" src="/static/img/card2.jpg" 
+                    class="card-img-top" alt="flowers">
+                    <div class="card-body">
+                        <h5 class="card-title"> 
+                            Discover flowers
+                        </h5>
+                        <p class="card-text"> 
+                            View the different flowers available in the Flower
+                            Finder database.
+                        </p>
+                    </div>
                 </a>
             </div>
-            <div class="card"><a href="{{url_for('citations')}}" value="citations" style="display:block text; text-decoration:none;">
-                <img id="resize" src="/static/img/card3.jpg" class="card-img-top" alt="more flowers">
-                <div class="card-body">
-                    <h5 class="card-title"> Citations </h5>
-                    <p class="card-text">The work done to build this app would not have been possible without all the information we gathered from other sources and websites. 
-                    If you're interested in learning more about flowers and other plants, check out these sources!</p>
-                </div>
+
+            <div class="card">
+                <a class = "url" href="{{url_for('citations')}}" value="citations">
+                    <img id="resize" src="/static/img/card3.jpg" 
+                    class="card-img-top" alt="more flowers">
+                    <div class="card-body">
+                        <h5 class="card-title"> 
+                            Citations 
+                        </h5>
+                        <p class="card-text">
+                            The work done to build this app would not have been
+                            possible without all the information we gathered 
+                            from other sources and websites. If you're 
+                            interested in learning more about flowers and other
+                            plants, check out these sources!
+                        </p>
+                    </div>
                 </a>
             </div>
         </div>
-        <br>
-        <div class="rectangle"></div>
-        <br>
+
     </html>
 {% endblock %}
