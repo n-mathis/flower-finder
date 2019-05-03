@@ -32,7 +32,6 @@ def identify():
         an image if the file is uploaded under the right restrictions
     """
     if request.method == 'POST':
-        classes=[]
         # Check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
