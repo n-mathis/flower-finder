@@ -38,8 +38,7 @@
     border: none;
 } 
 .btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.btn-primary:focus {
     background-color: #ccffd1;
     border: none;
 }
