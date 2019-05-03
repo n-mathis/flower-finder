@@ -52,7 +52,6 @@ def identify():
             file.save(save_to)
             pred_class, index, output = predictor.model_predict(save_to, '/home/ubuntu/cs121/app')
             flower = flowerInfo(str(pred_class))
-            name = flower[1]
 
             output_list = [element.item() for element in output.flatten()]
 
