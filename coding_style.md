@@ -29,8 +29,7 @@
 
 
 # Tabs vs Spaces:
-   All Flower Finder code is formatted with tabs that have a length of 4 
-    spaces.
+   All Flower Finder code is formatted with four spaces.
 
 # Blank Lines:
    There are blank lines between different tags and elements so code 
