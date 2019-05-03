@@ -8,37 +8,6 @@ from werkzeug import secure_filename
 from app import predictor 
 import csv
 
-<<<<<<< HEAD
-@app.route('/getData')
-def getData():
-    """
-        Inputs: flower species common name
-        Outputs: all care and planting info about the inputted flower stored in the data.csv file
-    """
-    # flower = flowerInfo('alpineseaholly')
-    # for i in range(len(flower)):
-    #     if str(flower[i]) == "" or str(flower[i]) == " ":
-    #         flower[i]="Sorry! We don't have extensive information about this flower :("
-    # name = flower[1]
-    # gen_info = flower[2].split('\n')
-    # lifecycle = flower[3]
-    # seasons = flower[7]
-    # difficulty = flower[4]
-    # planting = flower[5].split('\n')
-    # sunlight = flower[9].split('\n')
-    # watering = flower[6].split('\n')
-    # soil = flower[10].split('\n')
-    # warnings = flower[8].split('\n')
-    # website = flower[11]
-    # citation = flower[12]
-    # return render_template('database.html'. species=species,name=name,gen_info=gen_info, 
-    #          lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
-            #  warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
-    # return jsonify({gen_info})
-    return (''), 204
-
-=======
->>>>>>> 3d88622efc0511fc5542aa2746a3c92257099c02
 def flowerInfo(prediction):
     """
         Inputs: flower species common name
@@ -170,7 +139,7 @@ def database():
         warnings = flower[8].split('\n')
         website = flower[11]
         citation = flower[12]
-        return render_template('MoreInfo.html',
+        return render_template('moreinfo.html',
                 predimg=predimg, name=name, gen_info=gen_info, lifecycle = lifecycle, difficulty = difficulty, planting = planting, watering = watering, seasons = seasons, 
                 warnings = warnings, sunlight = sunlight, soil = soil, website = website, citation = citation)
     return render_template('database.html')
