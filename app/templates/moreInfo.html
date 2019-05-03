@@ -21,11 +21,11 @@
 
         <br>
         <div class="page-title">More information about the {{ name }}</div>
-        <figure>
+        <div class="img">
             </figcaption>
-                <img class="heightset widthset predictimg" style="text-align: center;" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
+                <img class="heightset widthset predictimg" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
                 alt='predicted flower image'>
-        </figure>
+        </div>
         <!-- More information navigation bar -->
         <br>
         <div class="tab">
