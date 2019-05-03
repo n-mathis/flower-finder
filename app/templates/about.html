@@ -2,94 +2,175 @@
 {% extends "base.html" %} {% block content %}  
 <html lang="en">
 <head>
-    <title> About</title>
+    <title> 
+        About
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/about.css">
     <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
 </head>
+
 <body>
+    <!-- Jumbotron to divid up page and introduce what this page is for -->
     <div class="jumbotronabout">
+        
         <div class="display-4about">
             The Flower Finder Story...
         </div>
-            <br>
+        
+        <br>
         <div class="leadabout">
             By Alanna, Isaiah, Lizzy, and NaNa
+        </div>   
+    </div>
+
+    <div class="aboutsubpage-title">
+        Flower Finder is a web application built by computer science students 
+        Alanna DeMuro, Isaiah Fujii Bresnihan, Elizabeth Riffle, and NaNa 
+        Mathis. We were assigned to build an application with a deep learning 
+        backend for our Computer Science 121: Software Development course. 
+        We wanted to find a way to share our love of nature and flowers with 
+        the world. The goal was to make flower information accessible to all. 
+        So, we decided to build an application that is capable of recognizing 
+        102 different flower types from a user uploaded image. We hope we are 
+        able to share our love of nature with you through this app!
+    </div> 
+
+    <div class="aboutsubpage-title">
+        To get started using this app, go to the Idenitfy page and upload an 
+        image of a flower (.png, .jpg, or .jpeg). Once you click upload, you'll
+        see which flower it is, as well as the second and third predictions. 
+        We also provide more information about the flower, like how to plant 
+        it and care for it at home. Start exploring!
+    </div> 
+
+    <!-- Card deck for each group member in alphabetical order -->
+    <br>
+    <div class="about-deck">
+        <div class="card1" style="overflow: hidden">
+            <img id="resize" src="/static/img/alanna.jpg" class="card-img-top" 
+            alt="alanna">
+            <div class="card1-body">
+                <h5 class="card-title">
+                    Alanna DeMuro
+                </h5>
+
+                <p class="card-text"> 
+                    College: Claremont McKenna College
+                </p>
+
+                <p class="card-text"> 
+                    Year: Junior
+                </p>
+
+                <p class="card-text"> 
+                    Major: Computer Science 
+                </p>
+
+                <p class="card-text"> 
+                    Hometown: Wilson, WY
+                </p> 
+                 
+                <p class="card-text"> 
+                    Extracurriculars: CMS Swim Team
+                </p>
+            </div>
         </div>
-        <div class="my-4about">
-            
-        </div> 
         
-    </div>
-  <div class="aboutsubpage-title">
-      Flower Finder is a web application built by computer science students Alanna DeMuro, 
-      Isaiah Fujii Bresnihan, Elizabeth Riffle, and NaNa Mathis. We were assigned to build 
-      an application with a deep learning backend for our Computer Science 121: Software 
-      Development course. We wanted to find a way to share our love of nature and flowers
-      with the world. The goal was to make flower information accessible to all. So, we 
-      decided to build an application that is capable of recognizing 102 different flower 
-      types from a user uploaded image. We hope we are able to share our love of nature 
-      with you through this app!
-  </div> 
-  <div class="aboutsubpage-title">
-        To get started using this app, go to the Idenitfy page and upload an image of
-        a flower (.png, .jpg, or .jpeg). Once you click upload, you'll see which flower 
-        it is, as well as the second and third predictions. We also provide more information 
-        about the flower, like how to plant it and care for it at home. Start exploring!
-    </div> 
-  <br>
-  <div class="aboutsubpage-title">
-        To get started, go to the Idenitfy page and upload an image of
-        a flower (.png, .jpg, or .jpeg). Once you click upload, you'll see which flower 
-        it is, as well as the second and third predictions. We also provide more information 
-        about the flower, like how to plant it and care for it at home. Start exploring!
-    </div> 
-  <br>
-  <div class="about-deck">
-    <div class="card1" style="overflow: hidden">
-        <img id="resize" src="/static/img/alanna.jpg" class="card-img-top" alt="alanna">
-        <div class="card1-body">
-            <h5 class="card-title">Alanna DeMuro</h5>
-            <p class="card-text"> College: Claremont McKenna College</p>
-            <p class="card-text"> Year: Junior</p>
-            <p class="card-text"> Major: Computer Science </p>
-            <p class="card-text"> Hometown: Wilson, WY</p>  
-            <p class="card-text"> Extracurriculars: CMS Swim Team</p>
+        <div class="card1">
+            <img id="resize" src="/static/img/isaiah.jpg" class="card-img-top" 
+            alt="isaiah">
+            <div class="card1-body">
+                <h5 class="card-title"> 
+                    Isaiah Fujii Bresnihan 
+                </h5>
+
+                <p class="card1-text"> 
+                    College: Harvey Mudd College
+                </p>
+
+                <p class="card1-text"> 
+                    Year: Junior
+                </p>
+
+                <p class="card1-text"> 
+                    Major: Computer Science 
+                </p>
+                <p class="card1-text"> 
+                    Hometown: Olympia, WA
+                </p>  
+
+                <p class="card1-text"> 
+                    Extracurriculars: A cappella, social dancing, hiking and 
+                    outdoor activities. 
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="card1">
-        <img id="resize" src="/static/img/isaiah.jpg" class="card-img-top" alt="isaiah">
-        <div class="card1-body">
-            <h5 class="card-title"> Isaiah Fujii Bresnihan </h5>
-            <p class="card1-text"> College: Harvey Mudd College</p>
-            <p class="card1-text"> Year: Junior</p>
-            <p class="card1-text"> Major: Computer Science </p>
-            <p class="card1-text"> Hometown: Olympia, WA</p>  
-            <p class="card1-text"> Extracurriculars: A cappella, social dancing, hiking and outdoor activities. </p>
+        
+        <div class="card1">
+            <img id="resize" src="/static/img/lizzy.png" class="card-img-top" 
+            alt="lizzy">
+            <div class="card1-body">
+                <h5 class="card-title"> 
+                    Elizabeth Riffle  
+                </h5>
+
+                <p class="card-text"> 
+                    College: Claremont McKenna College
+                </p>
+
+                <p class="card-text"> 
+                    Year: Junior
+                </p>
+
+                <p class="card-text"> 
+                    Major: Computer Science 
+                </p>
+
+                <p class="card-text"> 
+                    Hometown: Kirkland, WA
+                </p>  
+
+                <p class="card-text"> 
+                    Extracurriculars: President of CMC Advocates
+                </p>   
+
+            </div>
         </div>
+        
+        <div class="card1">
+            <img id="resize" src="/static/img/NaNa.jpg" class="card-img-top" 
+            alt="nana">
+            <div class="card1-body">
+                <h5 class="card-title"> 
+                    NaNa Mathis 
+                </h5>
+
+                <p class="card1-text"> 
+                    College: Scripps College
+                </p>
+
+                <p class="card1-text"> 
+                    Year: Junior
+                </p>
+
+                <p class="card1-text"> 
+                    Major: Computer Science and Math minor
+                </p>
+
+                <p class="card1-text"> 
+                    Hometown: Chevy Chase, Maryland
+                </p>
+
+                <p class="card1-text"> 
+                    Extracurriculars: Aerial acrobatics, drawing, photography, 
+                    embroidery, sleep :)
+                </p>
+
+            </div>
       </div>
-      <div class="card1">
-        <img id="resize" src="/static/img/lizzy.png" class="card-img-top" alt="lizzy">
-        <div class="card1-body">
-            <h5 class="card-title"> Elizabeth Riffle  </h5>
-            <p class="card-text"> College: Claremont McKenna College</p>
-            <p class="card-text"> Year: Junior</p>
-            <p class="card-text"> Major: Computer Science </p>
-            <p class="card-text"> Hometown: Seattle, WA</p>  
-            <p class="card-text"> Extracurriculars: President of CMC Advocates</p>    
-        </div>
-      </div>
-      <div class="card1">
-        <img id="resize" src="/static/img/NaNa.jpg" class="card-img-top" alt="nana">
-        <div class="card1-body">
-            <h5 class="card-title"> NaNa Mathis </h5>
-            <p class="card1-text"> College: Scripps College</p>
-            <p class="card1-text"> Year: Junior</p>
-            <p class="card1-text"> Major: Computer Science and Math minor</p>
-            <p class="card1-text"> Hometown: Maryland</p>
-            <p class="card1-text"> Extracurriculars: Aerial acrobatics, drawing, photography, embroidery, sleep :)</p>
-        </div>
-      </div>
     </div>
-  </body>
+
 </body>
 </html>
 {% endblock %}

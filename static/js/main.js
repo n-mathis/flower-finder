@@ -18,25 +18,67 @@ function openInfo(evt, infoType) {
     document.getElementById(infoType).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  // this function is called when a "change" event happens on the "input" element in the HTML
-function loadFile(event) {
-    output.innerHTML = ""; // make sure to clear the output when getting a new file
-    let file = event.target.files[0]; // the "change" event itself gets passed to this function
-    
-    // make sure the file is a CSV
-    if (file.type !== "text/csv") {
-      printToOutput("This app can only take CSV files!");
-      return; // stop trying to do the other stuff in this function
-  }
-  import CSV from 'comma-separated-values';
-function readCSV(flower){}
-    const csv = new CSV(data, {header: true}).parse();
-    const cols = [[],[],[],[]];
-    csv.forEach(row => {
-    row.forEach((cell, idx) => {
-        cols[idx].push(cell);
-    });
-    })
-    return flowers[flower]
-  }
+//   $('#myForm').on('submit', function(e){
+//     $('#myModal').modal('show');
+//     e.preventDefault();
+//   });
 
+//   $('#myFormSubmit').click(function(e){
+//     e.preventDefault();
+//     alert($('#myField').val());
+//     /*
+//     $.post('http://path/to/post', 
+//        $('#myForm').serialize(), 
+//        function(data, status, xhr){
+//          // do something here with response;
+//        });
+//     */
+// });
+$("#submit-button").submit(function(e){
+    $('#largeModal').modal('show');
+    return false;
+});
+$(document).ready(function() {
+    $('#submit-button').on('submit', function(e){
+        $('#largeModal').modal('show');
+        e.preventDefault();
+    });
+  });
+// $(function() {
+//     $('button').click(function() {
+//         $.ajax({
+//             url: '/more',
+//             data: $('form').serialize(),
+//             type: 'POST',
+//             success: function(response) {
+//                 console.log(response);
+//             },
+//             error: function(error) {
+//                 console.log(error);
+//             }
+//         });
+//     });
+// });
+
+// $(document).ready(function() {
+
+//     $("#submit").click(function() {
+   
+//        var val = 1;
+//        var entry1 = 3;
+   
+//        $.getJSON({
+//        url: "/getData",
+//        data: { entry2_id: val, entry1_id: entry1 },
+//        success: function(data){
+//            $("#varID").html(data.var1);
+//        }
+//        });
+   
+//     });
+   
+//    });
+
+// $.getJSON( '/getData', { 'thing' : some_js_value } , function( data ) {
+//     //do stuff with data
+// });

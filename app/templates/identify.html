@@ -1,69 +1,54 @@
 <!doctype html>
 {% extends "base.html" %} {% block content %}  
-<<<<<<< HEAD
-  <html lang="en">
-    <head>
-        <title> Identify</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
-        <style>
-            .identify {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-      <div class="jumbotron">
+<html lang="en">
+<head>
+    <title> 
+        Identify
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/identify.css">
 
-      <div class="display-4">Identify your flower!</div>
-          <br>
-      <div class="lead">Upload an image of a flower and we'll tell you what kind it is.</div>
-      <div class="my-4">
-      <p>Make sure to upload a .png, .jpeg, or .jpg file.</p> </div> 
-      <div class="btn btn-primary btn-lg" href="#" role="button">
-      <form method=post enctype=multipart/form-data>
-        <input type=file name=file>
-        <input type=submit value=Upload>
-      </form>
-    </div>
+</head>
 
-      </div> 
-        <div class="identify">
-            <div class="jumbotron">
-                <div class="display-4">Identify your flower!</div>
-                    <br>
-                <div class="lead">Upload an image of a flower and we'll tell you what kind it is.</div>
-                <div class="my-4">
-                <p>Make sure to upload a .png, .jpeg, or .jpg file.</p> </div> 
-                <div class="btn btn-primary btn-lg" href="#" role="button">
+<!-- Provide an error if the model cannot identify the flower type
+i.e. the image does not contain a flower or a flower that is in our database -->
+{% if alert %} 
+
+<body onload="alert('Sorry! We were unable to identify this flower. Please upload another photo.')" >
+
+    {% else %}
+
+<body>
+
+    {% endif %}
+    
+    <!-- Identify jumbotron to divide up the page better -->
+    <div class="identify">
+        <div class="jumbotron">
+            
+            <div class="display-4">
+                Identify your flower!
+            </div>
+
+                <br>
+            <div class="lead">
+                Upload an image of a flower and we'll tell you 
+                what kind it is.
+            </div>
+
+            <div class="my-4">
+                <p>
+                    Make sure to upload a .png, .jpeg, or .jpg file.
+                </p> 
+            </div> 
+            
+            <!-- Upload image button  -->
+            <div class="btn btn-primary btn-lg" href="#" role="button">
                 <form method=post enctype=multipart/form-data>
                     <input type=file name=file>
                     <input type=submit value=Upload>
                 </form>
-                </div>
-=======
-<html lang="en">
-<head>
-    <title> Identify</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/stylesheet.css">
-</head>
-{% if alert %} 
-<body onload="alert('Sorry! We were unable to identify this flower. Please upload another photo.')" >
-{% else %}
-<body>
-{% endif %}
-    <div class="identify">
-        <div class="jumbotron">
-            <div class="display-4">Identify your flower!</div>
-                <br>
-            <div class="lead">Upload an image of a flower and we'll tell you what kind it is.</div>
-            <div class="my-4">
-            <p>Make sure to upload a .png, .jpeg, or .jpg file.</p> </div> 
-            <div class="btn btn-primary btn-lg" href="#" role="button">
-            <form method=post enctype=multipart/form-data>
-                <input type=file name=file>
-                <input type=submit value=Upload>
-            </form>
->>>>>>> ff58a41f20cf25a655f085c6f1e2cfe005b71a54
             </div>
         </div>
     </div> 
