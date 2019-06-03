@@ -1,6 +1,6 @@
 <!doctype html>
 {% extends "base.html" %} {% block content %}
-<html lang="en">
+<html lang="en"> 
 <head>
     <title>
         {{name}}!!!
@@ -28,7 +28,7 @@
     </div>
     
     <div class="flowerimg">
-        <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predimg) }}" 
+        <img class="heightset widthset" src="{{predimg}}" 
                 alt='predicted flower image'>
     </div>
         <!-- More information navigation bar -->

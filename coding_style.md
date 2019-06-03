@@ -20,6 +20,9 @@
     
    Thank you!
 
+# Tabs vs Spaces:
+   All Flower Finder code is formatted with four spaces.
+
 # Indentation:
    All files have matching indentations where the head and body elements 
     are on the left most side and each element in between the tags are
@@ -27,35 +30,34 @@
     div, p, and other tags are all in the same column as their closing 
     tags.
 
-
-# Tabs vs Spaces:
-   All Flower Finder code is formatted with tabs that have a length of 4 
-    spaces.
-
 # Blank Lines:
    There are blank lines between different tags and elements so code 
     blocks and specific sections can be easily found. 
+    ![](/static/img/indentation_blank_spaces.png)
 
 # Line Breaks:
    When there are line breaks, the br element is one line above the next 
     div element and there is a blank line above the br element. 
-
+   ![](/static/img/linebreak.png)
+   
 # Naming conventions:
    Flower Finder classes, methods, and functions are all named to 
     correspond with what they represent. For example, page title classes 
-    for all pages are titled "page-title" and if the text styling is 
-    different for a certain page they are titled "pagenamepage-title."
+    for all pages are titled "page-title" in the html and css files 
+    and if the text styling is different for a certain page they are 
+    titled "pagenamepage-title." The naming conventions in the Python 
+    and JavaScript files were chosen to reflect their functionality. 
+    For example get_file(filename) is called to get the file we want 
+    to access. 
+    
 
 # Imports:
    Imports do not need to be on separate lines, but please separate 
-    lines when possible. All imports are at the top of the file. The 
-    order should be: 
-        1. Standard library imports
-        2. Related third party imports
-        3. Local application/library specific imports
-
+    lines when possible. All imports are at the top of the file.
+    ![](/static/img/imports.png)
+    
 # Maximum line length:
-   The maximum line length for Flower Finder code is 80 lines except for 
+   The maximum line length for Flower Finder code is 80 characters except for 
     instances where lines cannot be broken up, like URLs and calls to the 
     JavaScript and Python code.
 

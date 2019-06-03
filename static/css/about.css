@@ -1,5 +1,5 @@
 /* About page styling sheet*/
-
+	
 /* Styling for the about paragraphs  */
 .aboutsubpage-title{
     color: #1d1d1d;
@@ -34,7 +34,7 @@
     font-weight: 300;
     font-family: 'Times New Roman', Times, serif;
 }
-  
+  	
 /* Styling the cards of each group memeber   */
 .about-deck {
     display: -ms-flexbox;

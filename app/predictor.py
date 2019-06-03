@@ -2,20 +2,11 @@
     All functions that use fast.ai and relate to the model
 """
 from __future__ import division, print_function
-# import sys
-# import os
-# import glob
-# import re
 from pathlib import Path
 
 # Import fast.ai Library
 from fastai import *
 from fastai.vision import *
-
-# Flask utils
-# from flask import Flask, redirect, url_for, request, render_template
-# from werkzeug.utils import secure_filename
-
 
 #load model
 def load_model(model_path):
