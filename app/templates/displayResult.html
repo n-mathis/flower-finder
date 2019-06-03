@@ -46,7 +46,7 @@
             <figcaption class="subpage-title">
                 Predicted flower
             </figcaption>
-            <img class="heightset widthset" src="/static/img/flowers{{ url_for('get_file', filename=predictionimg) }}" alt='predicted flower image'>
+            <img class="heightset widthset" src="{{predimg}}" alt='predicted flower image'>
         </figure>
 
         <!-- Allow users to identify another flower after getting a prediction -->
