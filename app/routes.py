@@ -92,8 +92,6 @@ def identify():
                 return render_template('identify.html', alert= True)
             second_prob = round(round(top_three[1][1], 3)*100,4)
             third_prob = round(round(top_three[2][1], 3)*100,4)
-            # Get filename of the predicted flower to compare to uploaded flower
-            predimg=str(pred_class)+".jpg"
             # Get information about the flower
             flower = flowerInfo(str(pred_class))
             # If no information about the flower, let the user know
@@ -112,15 +110,16 @@ def identify():
             warnings = flower[8].split('\n')
             website = flower[11]
             citation = flower[12]
+            imgurl = flower[13]
 
             return render_template('displayResult.html', filename=filename, 
-                prediciton=pred_class, predictionimg=predimg,
+                prediciton=pred_class,
                 name=name, top_three = top_three, second_prob = second_prob,
                 third_prob = third_prob, gen_info=gen_info, 
                 lifecycle = lifecycle, difficulty = difficulty, 
                 planting = planting, watering = watering, seasons = seasons, 
                 warnings = warnings, sunlight = sunlight, soil = soil, 
-                website = website, citation = citation)
+                website = website, citation = citation, predimg = imgurl)
     return render_template('identify.html')
 
 #Routes the index page 
@@ -139,7 +138,6 @@ def database():
     #If more information is requested
     if request.method =='POST':
         species = request.form['flower']
-        predimg=species+".jpg"
         flower = flowerInfo(species)
         # Access the information by calling the the specific rows and columns
         # from the .csv file
@@ -161,9 +159,10 @@ def database():
         warnings = flower[8].split('\n')
         website = flower[11]
         citation = flower[12]
+        imgurl = flower[13]
         #Print content of the .csv cells
         return render_template('moreInfo.html',
-                predimg=predimg, name=name, gen_info=gen_info, 
+                predimg=imgurl, name=name, gen_info=gen_info, 
                 lifecycle = lifecycle, difficulty = difficulty, 
                 planting = planting, watering = watering, seasons = seasons, 
                 warnings = warnings, sunlight = sunlight, soil = soil, 
